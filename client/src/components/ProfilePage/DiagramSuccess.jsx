@@ -3,9 +3,7 @@ import { useParams } from 'react-router-dom';
 import { PieChart, Pie, Legend, Tooltip, Cell, ResponsiveContainer } from 'recharts';
 import axios from 'axios';
 
-import { API } from '../../../../../TFG-2-DAW/client/src/config/config';
-
-import { secondRed, firstGreen } from '../../../../../TFG-2-DAW/client/src/config/config';
+import { secondRed, firstGreen, API } from '../../config/config';
 
 // TODO: Mejorar responsive del gráfico
 
