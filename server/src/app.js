@@ -15,18 +15,18 @@ import workRoutes from "./routes/work.routes.js";
 
 const app = express();
 
-app.use((req, res, next) => {
-    res.setHeader('Access-Control-Allow-Origin', 'https://autoescuela-fast.vercel.app');
-    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
-    res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
-    res.setHeader('Access-Control-Allow-Credentials', 'true');
-    next();
-});
+// app.use((req, res, next) => {
+//     res.setHeader('Access-Control-Allow-Origin', 'https://autoescuela-fast.vercel.app');
+//     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
+//     res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
+//     res.setHeader('Access-Control-Allow-Credentials', 'true');
+//     next();
+// });
 
-// app.use(cors({
-//     origin: "https://autoescuela-fast-api.onrender.com/",
-//     credentials: true,
-// }));
+app.use(cors({
+    origin: "https://autoescuela-fast-api.onrender.com/",
+    credentials: true,
+}));
 
 app.use(morgan('dev'));
 app.use(express.json());
