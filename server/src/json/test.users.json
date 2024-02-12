@@ -1,0 +1,57 @@
+[{
+  "_id": {
+    "$oid": "659489ccbbfaf0ca5b0254c3"
+  },
+  "name": "Hugo",
+  "surnames": "Díaz Casado",
+  "username": "HuGyms",
+  "email": "diaz36988@gmail.com",
+  "password": "$2a$10$Lp.Avqkc70o.4K.SuXb0X.MesaSmDgy5hAs0UjkGMlud0ha47Ezq2",
+  "birthday": "2004-01-31",
+  "premium_user": false,
+  "createdAt": {
+    "$date": "2024-01-02T22:10:20.359Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-02T22:10:20.359Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "659e5f71bd551f9e28e460cd"
+  },
+  "name": "Hugo Díaz",
+  "surnames": "Casado",
+  "username": "HuGymsForMee",
+  "email": "hugodiazcasado31@gmail.com",
+  "password": "$2a$10$kz6idSO.VMeOCyy2MT8FXemurdGGfs8n59.R8Xc1b8L68f9t4QncC",
+  "birthday": "2004-01-31",
+  "premium_user": false,
+  "createdAt": {
+    "$date": "2024-01-10T09:12:17.741Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-10T09:12:17.741Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65aa4c91fdfa5e426fd58aea"
+  },
+  "name": "Hugo",
+  "surnames": "Díaz Casado",
+  "username": "HuGymsForMe",
+  "email": "diaz36987@gmail.com",
+  "password": "$2a$10$julReUitfu1Mke2TXmHhDOso52zT.Os5tzYD4Omq68gkm1E4xWRNS",
+  "birthday": "2024-01-05",
+  "premium_user": false,
+  "createdAt": {
+    "$date": "2024-01-19T10:18:57.960Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-19T10:18:57.960Z"
+  },
+  "__v": 0
+}]

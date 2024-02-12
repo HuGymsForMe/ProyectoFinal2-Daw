@@ -1,0 +1,21 @@
+[{
+  "_id": {
+    "$oid": "659d917ff0dbb01f7723cf20"
+  },
+  "question": "¿Esta aplicación tiene algún tipo de funcionalidad de pago?",
+  "answer": "No, todos los test e información del usuario se pueden ver de forma gratuita"
+},
+{
+  "_id": {
+    "$oid": "659d9266f0dbb01f7723cf21"
+  },
+  "question": "¿Cuántos modelos de exámen puedo realizar en Autoescuela Fast?",
+  "answer": "En Autoescuela Fast disponemos de primeras 10 modelos de exámen aunque podrás optar a más modelos conforme vayas progresando."
+},
+{
+  "_id": {
+    "$oid": "659d93d0f0dbb01f7723cf22"
+  },
+  "question": "¿Hay alguna forma de contactar con ustedes?",
+  "answer": "Si, podrás contactar con nosotros en el apartado de 'Contáctanos' allí podrás enviarnos posibles dudas "
+}]

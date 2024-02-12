@@ -1,11 +1,11 @@
 import mongoose from "mongoose";
-import app from "./src/app.js";
-import { MONGODB_URI, PORT } from "./src/config.js";
+//import { user, password, database } from "./config.js";
 
 // ******* CONEXIÓN A LA DB DE MONGO ******* //
 export const connectDB = async () => {
     try {
-        await mongoose.connect(MONGODB_URI);
+        await mongoose.connect(process.env.MONGODB_URL);
+        const PORT = process.env.PORT || 8000;
         app.listen(PORT, () => {
             console.log(`App is Listening on PORT ${PORT}`);
         });
@@ -14,5 +14,3 @@ export const connectDB = async () => {
         console.error(error);
     }
 }
-
-connectDB();

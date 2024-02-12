@@ -1,0 +1,4200 @@
+[{
+  "_id": {
+    "$oid": "659ed42e7efc8a653de4be9e"
+  },
+  "image": "imagen1.webp",
+  "question": "¿Qué significa esta señal?",
+  "first_answer": "Vía reservada para automóviles.",
+  "second_answer": "Calzada obligatoria para automóviles, excepto motocicletas sin sidecar.",
+  "third_answer": "Calzada obligatoria para automóviles.",
+  "correct_answer": "Vía reservada para automóviles.",
+  "test": {
+    "$oid": "659e56222d2690f6d6cdd561"
+  }
+},
+{
+  "_id": {
+    "$oid": "659ee22c087b61e412dc9700"
+  },
+  "image": "imagen2.webp",
+  "question": "El chaleco reflectante. ¿Cuándo es obligatorio ponérselo?",
+  "first_answer": "Cuando salgo del vehículo en vías urbanas.",
+  "second_answer": "Cuando salgo del vehículo en autopistas y autovías solamente.",
+  "third_answer": "Cuando salgo del vehículo en vías interurbanas.",
+  "correct_answer": "Cuando salgo del vehículo en vías interurbanas.",
+  "test": {
+    "$oid": "659e56222d2690f6d6cdd561"
+  }
+},
+{
+  "_id": {
+    "$oid": "659f14ebc6482299f5ae7089"
+  },
+  "image": "imagen3.webp",
+  "question": "El vehículo rojo va a girar a la izquierda. ¿Puede circular por el arcén para adelantarlo por la derecha?",
+  "first_answer": "No, porque está prohibido circular por el arcén.",
+  "second_answer": "No, porque el camión no me deja ver.",
+  "third_answer": "Sí, porque es una intersección con prioridad.",
+  "correct_answer": "No, porque está prohibido circular por el arcén.",
+  "test": {
+    "$oid": "659e56222d2690f6d6cdd561"
+  }
+},
+{
+  "_id": {
+    "$oid": "659f16bec6482299f5ae708b"
+  },
+  "image": "imagen4.webp",
+  "question": "Este ciclista...",
+  "first_answer": "debería circular lo más cerca posible del eje central de la calzada.",
+  "second_answer": "circula correctamente.",
+  "third_answer": "no puede circular si la calzada no dispone de arcén.",
+  "correct_answer": "circula correctamente.",
+  "test": {
+    "$oid": "659e56222d2690f6d6cdd561"
+  }
+},
+{
+  "_id": {
+    "$oid": "659f1767c6482299f5ae708c"
+  },
+  "image": "imagen5.webp",
+  "question": "Esta señal prohibe...",
+  "first_answer": "el estacionamiento los días impares, en el lado de la calzada en que está situada la señal.",
+  "second_answer": "el estacionamiento, pero sólo en los días pares.",
+  "third_answer": "la parada.",
+  "correct_answer": "el estacionamiento los días impares, en el lado de la calzada en que está situada la señal.",
+  "test": {
+    "$oid": "659e56222d2690f6d6cdd561"
+  }
+},
+{
+  "_id": {
+    "$oid": "659f1893c6482299f5ae708d"
+  },
+  "image": "imagen6.webp",
+  "question": "La inscripción BUS dentro de un carril indica que es...",
+  "first_answer": "un carril destinado al estacionamiento de autobuses.",
+  "second_answer": "un carril reservado para la circulación de autobuses.",
+  "third_answer": "una zona de la vía reservada sólo a turismos y autobuses.",
+  "correct_answer": "un carril reservado para la circulación de autobuses.",
+  "test": {
+    "$oid": "659e56222d2690f6d6cdd561"
+  }
+},
+{
+  "_id": {
+    "$oid": "659f1942c6482299f5ae708e"
+  },
+  "image": "imagen7.webp",
+  "question": "Con niebla densa, ¿qué luces antiniebla está obligado a utilizar un turismo?",
+  "first_answer": "La luz antiniebla trasera solamente.",
+  "second_answer": "La luz antiniebla trasera y la delantera si la tiene instalada.",
+  "third_answer": "La luz antiniebla delantera y la luz de largo alcance.",
+  "correct_answer": "La luz antiniebla trasera solamente.",
+  "test": {
+    "$oid": "659e56222d2690f6d6cdd561"
+  }
+},
+{
+  "_id": {
+    "$oid": "659f19cdc6482299f5ae708f"
+  },
+  "image": "imagen8.webp",
+  "question": "Si se realiza una reforma de importancia en el vehículo, ¿qué trámites se deben realizar?",
+  "first_answer": "Presentar el vehículo a inspección técnica extraordinaria antes de volver a circular.",
+  "second_answer": "No es necesario realizar ninguna inspección, hasta que corresponda por razón de la antigüedad del vehículo.",
+  "third_answer": "No es necesario realizar una inspección técnica extraordinaria si la reforma se ha realizado en un taller autorizado.",
+  "correct_answer": "Presentar el vehículo a inspección técnica extraordinaria antes de volver a circular.",
+  "test": {
+    "$oid": "659e56222d2690f6d6cdd561"
+  }
+},
+{
+  "_id": {
+    "$oid": "659f1b93c6482299f5ae7090"
+  },
+  "image": "imagen9.webp",
+  "question": "La señales de obras...",
+  "first_answer": "tienen el mismo significado que las usadas en tramos sin obras.",
+  "second_answer": "tienen distinto símbolo y tamaño que las usadas en tramos sin obras.",
+  "third_answer": "establecen para los tramos de obras una reducción de la velocidad máxima en 10 km/h.",
+  "correct_answer": "tienen el mismo significado que las usadas en tramos sin obras.",
+  "test": {
+    "$oid": "659e56222d2690f6d6cdd561"
+  }
+},
+{
+  "_id": {
+    "$oid": "659f1c2bc6482299f5ae7091"
+  },
+  "image": "imagen10.webp",
+  "question": "Este panel se coloca debajo de una señal de peligro para indicar...",
+  "first_answer": "la longitud del tramo peligroso.",
+  "second_answer": "la distancia a la que comienza el peligro.",
+  "third_answer": "la distancia a la que termina el peligro.",
+  "correct_answer": "la distancia a la que comienza el peligro.",
+  "test": {
+    "$oid": "659e56222d2690f6d6cdd561"
+  }
+},
+{
+  "_id": {
+    "$oid": "659fa325f41a2c261b605beb"
+  },
+  "image": "imagen11.webp",
+  "question": "¿Cuál es la función del sistema antibloqueo de frenos ABS?",
+  "first_answer": "Evita el bloqueo de las ruedas sólo en calzadas secas.",
+  "second_answer": "Hace que los neumáticos se desgasten menos.",
+  "third_answer": "Impide el bloqueo de las ruedas durante el frenado.",
+  "correct_answer": "Impide el bloqueo de las ruedas durante el frenado.",
+  "test": {
+    "$oid": "659e56222d2690f6d6cdd561"
+  }
+},
+{
+  "_id": {
+    "$oid": "659fa3a8f41a2c261b605bec"
+  },
+  "image": "imagen12.webp",
+  "question": "¿Qué indica este panel bajo la señal de ceda el paso?",
+  "first_answer": "El lugar en el que hay que detenerse en la próxima intersección.",
+  "second_answer": "El sitio exacto donde hay que ceder el paso en la próxima intersección.",
+  "third_answer": "La distancia a la que se encuentra la señal de stop en la próxima intersección.",
+  "correct_answer": "La distancia a la que se encuentra la señal de stop en la próxima intersección.",
+  "test": {
+    "$oid": "659e56222d2690f6d6cdd561"
+  }
+},
+{
+  "_id": {
+    "$oid": "659fa416f41a2c261b605bed"
+  },
+  "image": "imagen13.webp",
+  "question": "¿Es obligatorio llevar un extintor de incendios en un turismo destinado al servicio privado?",
+  "first_answer": "Si.",
+  "second_answer": "No.",
+  "third_answer": "Sí, cuando transporte a más de 5 personas incluido el conductor.",
+  "correct_answer": "No.",
+  "test": {
+    "$oid": "659e56222d2690f6d6cdd561"
+  }
+},
+{
+  "_id": {
+    "$oid": "659fa480f41a2c261b605bee"
+  },
+  "image": "imagen14.webp",
+  "question": "En un autobús cuyos asientos disponen de cinturón de seguridad es obligatorio que lo utilicen...",
+  "first_answer": "sólo los pasajeros mayores de tres años de edad, además del conductor.",
+  "second_answer": "todos los pasajeros.",
+  "third_answer": "sólo el conductor.",
+  "correct_answer": "sólo los pasajeros mayores de tres años de edad, además del conductor.",
+  "test": {
+    "$oid": "659e56222d2690f6d6cdd561"
+  }
+},
+{
+  "_id": {
+    "$oid": "659fa644f41a2c261b605bef"
+  },
+  "image": "imagen15.webp",
+  "question": "Los conductores deben ceder el paso a los animales...",
+  "first_answer": "únicamente en las cañadas debidamente señalizadas.",
+  "second_answer": "siempre que se crucen sus trayectorias.",
+  "third_answer": "cuando vayan a girar con su vehículo para entrar en otra vía y haya animales cruzándola, aunque no exista paso para éstos.",
+  "correct_answer": "cuando vayan a girar con su vehículo para entrar en otra vía y haya animales cruzándola, aunque no exista paso para éstos.",
+  "test": {
+    "$oid": "659e56222d2690f6d6cdd561"
+  }
+},
+{
+  "_id": {
+    "$oid": "659fa6e2f41a2c261b605bf0"
+  },
+  "image": "imagen16.webp",
+  "question": "Circula de noche con las luces largas encendidas. Ve peatones en el arcén. ¿Está obligado a cambiar la luz larga por la corta?",
+  "first_answer": "No es necesario.",
+  "second_answer": "Sí, pero solamente en los tramos rectos.",
+  "third_answer": "Sí, para no deslumbrar",
+  "correct_answer": "Sí, para no deslumbrar",
+  "test": {
+    "$oid": "659e56222d2690f6d6cdd561"
+  }
+},
+{
+  "_id": {
+    "$oid": "659fa75df41a2c261b605bf1"
+  },
+  "image": "imagen17.webp",
+  "question": "Si circula en esta vía con tráfico denso, no puede cambiar de carril para ...",
+  "first_answer": "salir de la calzada.",
+  "second_answer": "adelantar.",
+  "third_answer": "girar a la derecha.",
+  "correct_answer": "adelantar.",
+  "test": {
+    "$oid": "659e56222d2690f6d6cdd561"
+  }
+},
+{
+  "_id": {
+    "$oid": "659fa7e0f41a2c261b605bf2"
+  },
+  "image": "imagen18.webp",
+  "question": "En esta vía, ¿a qué velocidad mínima está permitido circular con un turismo?",
+  "first_answer": "90 km/h.",
+  "second_answer": "45 km/h.",
+  "third_answer": "40 km/h.",
+  "correct_answer": "45 km/h",
+  "test": {
+    "$oid": "659e56222d2690f6d6cdd561"
+  }
+},
+{
+  "_id": {
+    "$oid": "659fa850f41a2c261b605bf3"
+  },
+  "image": "imagen19.webp",
+  "question": "Un vehículo circula por el carril izquierdo, ¿está permitido adelantarle por la derecha?",
+  "second_answer": "Sí, siempre que haya varios carriles en el mismo sentido.",
+  "third_answer": "Sí, cuando los carriles están delimitados y la vía está dentro de poblado.",
+  "correct_answer": "Sí, cuando los carriles están delimitados y la vía está dentro de poblado.",
+  "test": {
+    "$oid": "659e56222d2690f6d6cdd561"
+  },
+  "first_answer": "No, el adelantamiento siempre se realizará por la izquierda."
+},
+{
+  "_id": {
+    "$oid": "659fa8e7f41a2c261b605bf4"
+  },
+  "image": "imagen20.webp",
+  "question": "¿Qué indica esta señal?",
+  "first_answer": "Que en el carril central y en el izquierdo se deberá circular a 70 km/h como mínimo.",
+  "second_answer": "Que en el carril central y en el izquierdo está prohibido circular a más de 70 km/h.",
+  "third_answer": "Que en el carril de la derecha no se debe sobrepasar la velocidad de 70 km/h.",
+  "correct_answer": "Que en el carril central y en el izquierdo se deberá circular a 70 km/h como\nmínimo.",
+  "test": {
+    "$oid": "659e56222d2690f6d6cdd561"
+  }
+},
+{
+  "_id": {
+    "$oid": "659fa992f41a2c261b605bf5"
+  },
+  "image": "imagen21.webp",
+  "question": "¿Es recomendable regular y adaptar los reposacabezas del vehículo a la constitución física de los ocupantes?",
+  "first_answer": "Sí, porque es un elemento de seguridad que puede evitar lesiones en la zona cervical.",
+  "second_answer": "No es necesario porque es sólo un elemento de confort.",
+  "third_answer": "Sí, pero sólo en vías urbanas.",
+  "correct_answer": "Sí, porque es un elemento de seguridad que puede evitar lesiones en la zona cervical.",
+  "test": {
+    "$oid": "659e56222d2690f6d6cdd561"
+  }
+},
+{
+  "_id": {
+    "$oid": "659faa5ef41a2c261b605bf6"
+  },
+  "image": "imagen22.webp",
+  "question": "Al auxiliar a una víctima de un accidente de tráfico, ¿debe darle alimentos o bebidas?",
+  "first_answer": "Sí, si lo piden.",
+  "second_answer": "No.",
+  "third_answer": "Alimentos no, pero bebidas sí.",
+  "correct_answer": "No.",
+  "test": {
+    "$oid": "659e56222d2690f6d6cdd561"
+  }
+},
+{
+  "_id": {
+    "$oid": "659faadaf41a2c261b605bf7"
+  },
+  "image": "imagen23.webp",
+  "question": "La señal...",
+  "first_answer": "reitera la información dada por otra señal de peligro anterior.",
+  "second_answer": "indica la proximidad de un peligro distinto de los advertidos por otras señales.",
+  "third_answer": "indica la proximidad de un tramo con tráfico denso.",
+  "correct_answer": "indica la proximidad de un peligro distinto de los advertidos por otras señales.",
+  "test": {
+    "$oid": "659e56222d2690f6d6cdd561"
+  }
+},
+{
+  "_id": {
+    "$oid": "659fab5cf41a2c261b605bf8"
+  },
+  "image": "imagen24.webp",
+  "question": "¿A qué velocidad máxima tiene permitido circular una autocaravana en una autovía?",
+  "first_answer": "A 120 km/h.",
+  "second_answer": "A 90 km/h.",
+  "third_answer": "A 100 km/h, pudiendo superarla en 20 km/h para adelantar.",
+  "correct_answer": "A 120 km/h",
+  "test": {
+    "$oid": "659e56222d2690f6d6cdd561"
+  }
+},
+{
+  "_id": {
+    "$oid": "659fabdaf41a2c261b605bf9"
+  },
+  "image": "imagen25.webp",
+  "question": "¿Qué indican estas marcas viales?",
+  "first_answer": "Prohibición de estacionar.",
+  "second_answer": "Zona de estacionamiento de duración limitada.",
+  "third_answer": "Zona de estacionamiento.",
+  "correct_answer": "Zona de estacionamiento de duración limitada.",
+  "test": {
+    "$oid": "659e56222d2690f6d6cdd561"
+  }
+},
+{
+  "_id": {
+    "$oid": "659fac46f41a2c261b605bfa"
+  },
+  "image": "imagen26.webp",
+  "question": "Las distracciones al volante...",
+  "first_answer": "causan muy pocos accidentes.",
+  "second_answer": "no causan accidentes.",
+  "third_answer": "causan una gran cantidad de accidentes.",
+  "correct_answer": "causan una gran cantidad de accidentes.",
+  "test": {
+    "$oid": "659e56222d2690f6d6cdd561"
+  }
+},
+{
+  "_id": {
+    "$oid": "659fc51d9cd3f7e16aaeaefe"
+  },
+  "image": "imagen27.webp",
+  "question": "Un camión, ¿puede entrar en una vía con esta señal?",
+  "first_answer": "Sí, en cualquier caso.",
+  "second_answer": "No, tiene siempre prohibido el paso.",
+  "third_answer": "Sí, siempre que no supere los 5.500 kilogramos de masa máxima autorizada.",
+  "correct_answer": "Sí, siempre que no supere los 5.500 kilogramos de masa máxima autorizada.",
+  "test": {
+    "$oid": "659e56222d2690f6d6cdd561"
+  }
+},
+{
+  "_id": {
+    "$oid": "659fc5949cd3f7e16aaeaeff"
+  },
+  "image": "imagen28.webp",
+  "question": "En una zona señalizada para carga y descarga, ¿está permitido estacionar?",
+  "first_answer": "Sí, en cualquier caso.",
+  "second_answer": "No.",
+  "third_answer": "Sí, pero sólo fuera de las horas de utilización.",
+  "correct_answer": "Sí, pero sólo fuera de las horas de utilización.",
+  "test": {
+    "$oid": "659e56222d2690f6d6cdd561"
+  }
+},
+{
+  "_id": {
+    "$oid": "659fc60c9cd3f7e16aaeaf00"
+  },
+  "image": "imagen29.webp",
+  "question": "Si sobre el carril por el que circula hay un semáforo cuadrado con una flecha verde, ¿debe obedecer una señal de stop o de ceda el paso?",
+  "first_answer": "No, porque la flecha verde da prioridad de paso.",
+  "second_answer": "Si.",
+  "third_answer": "No, porque el semáforo tiene prioridad sobre las señales verticales.",
+  "correct_answer": "Si.",
+  "test": {
+    "$oid": "659e56222d2690f6d6cdd561"
+  }
+},
+{
+  "_id": {
+    "$oid": "659fc6909cd3f7e16aaeaf01"
+  },
+  "image": "imagen30.webp",
+  "question": "Los asientos de un camión tienen cinturones de seguridad, ¿está obligado el conductor a utilizarlo?",
+  "first_answer": "No, en vías fuera de poblado.",
+  "second_answer": "No, en ningún tipo de vía.",
+  "third_answer": "Sí, en todas las vías.",
+  "correct_answer": "Sí, en todas las vías.",
+  "test": {
+    "$oid": "659e56222d2690f6d6cdd561"
+  }
+},
+{
+  "_id": {
+    "$oid": "659fdd519cd3f7e16aaeaf02"
+  },
+  "image": "imagen31.webp",
+  "question": "¿Qué circunstancias del conductor favorecen la aparición de la fatiga?",
+  "first_answer": "Mantener una velocidad adecuada durante mucho tiempo, ya que requiere mucha concentración.",
+  "second_answer": "Conducir manteniendo los hábitos normales de conducción.",
+  "third_answer": "Conducir durante largos periodos sin parar o hacer descansos inadecuados.",
+  "correct_answer": "Conducir durante largos periodos sin parar o hacer descansos inadecuados.",
+  "test": {
+    "$oid": "659e56422d2690f6d6cdd562"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a013a839d5320856c1c3bc"
+  },
+  "image": "imagen32.webp",
+  "question": "Si vende su vehículo ¿Debe comunicarlo a la prefectura de tráfico?",
+  "first_answer": "Sí, pero no hay un periodo obligatorio para comunicar la venta.",
+  "second_answer": "Sí. Ha de comunicar la venta en el plazo de 10 días e indicar los datos del nuevo titular.",
+  "third_answer": "No. El nuevo titular es el que ha de comunicar la compra.",
+  "correct_answer": "Sí. Ha de comunicar la venta en el plazo de 10 días e indicar los datos del nuevo titular.",
+  "test": {
+    "$oid": "659e56422d2690f6d6cdd562"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a01b5c39d5320856c1c3bd"
+  },
+  "image": "imagen33.webp",
+  "question": "Un vehículo prioritario circula haciendo uso únicamente de las señales luminosas especiales, ¿es obligatorio facilitarle el paso?",
+  "first_answer": "No, si no utiliza también las señales acústicas especiales.",
+  "second_answer": "Sí, porque circula en servicio urgente.",
+  "third_answer": "No, en ningún caso.",
+  "correct_answer": "Sí, porque circula en servicio urgente.",
+  "test": {
+    "$oid": "659e56422d2690f6d6cdd562"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a01bd339d5320856c1c3be"
+  },
+  "image": "imagen34.webp",
+  "question": "¿De qué tipo es la señal vertical de cadenas para nieve?",
+  "first_answer": "Señal de entrada prohibida",
+  "second_answer": "Señal de obligación",
+  "third_answer": "Señal de prioridad",
+  "correct_answer": "Señal de obligación",
+  "test": {
+    "$oid": "659e56422d2690f6d6cdd562"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a01c3739d5320856c1c3bf"
+  },
+  "image": "imagen35.webp",
+  "question": "¿Qué significado tienen las señales circulares de color rojo?",
+  "first_answer": "Prohibición",
+  "second_answer": "Precaución",
+  "third_answer": "Paso permitido",
+  "correct_answer": "Prohibición",
+  "test": {
+    "$oid": "659e56422d2690f6d6cdd562"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a01d9c39d5320856c1c3c0"
+  },
+  "image": "imagen36.webp",
+  "question": "¿Qué prohibe la señal de media vuelta prohibida?",
+  "first_answer": "Dar un giro de 360 grados con el vehículo",
+  "second_answer": "Cambiar el sentido de la marcha",
+  "third_answer": "Girar a la izquierda",
+  "correct_answer": "Cambiar el sentido de la marcha",
+  "test": {
+    "$oid": "659e56422d2690f6d6cdd562"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a01e1139d5320856c1c3c1"
+  },
+  "image": "imagen37.webp",
+  "question": "¿Pueden los agentes inmovilizar un vehículo que supere los límites de humo establecidos?",
+  "first_answer": "No, cuando el vehículo es antiguo.",
+  "second_answer": "Sí.",
+  "third_answer": "No, cuando circula por carreteras.",
+  "correct_answer": "Sí.",
+  "test": {
+    "$oid": "659e56422d2690f6d6cdd562"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a01e9939d5320856c1c3c2"
+  },
+  "image": "imagen38.webp",
+  "question": "¿Cuándo debe llevar un conductor puesto el chaleco reflectante?",
+  "first_answer": "Cuando salga del vehículo y ocupe la calzada en vía únicamente urbana",
+  "second_answer": "Cuando salga del vehículo y ocupe la calzada en todo tipo de vías",
+  "third_answer": "Cuando salga del vehículo y ocupe la calzada en vía interurbana",
+  "correct_answer": "Cuando salga del vehículo y ocupe la calzada en vía interurbana",
+  "test": {
+    "$oid": "659e56422d2690f6d6cdd562"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a01ef039d5320856c1c3c3"
+  },
+  "image": "imagen39.webp",
+  "question": "¿Pueden los ciclistas, ir por el carril de la derecha en una carretera con desnivel y curvas?",
+  "first_answer": "Pueden utilizar el carril entero.",
+  "second_answer": "No, siempre deben utilizar el arcén.",
+  "third_answer": "Sí.",
+  "correct_answer": "Sí.",
+  "test": {
+    "$oid": "659e56422d2690f6d6cdd562"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a01f7139d5320856c1c3c5"
+  },
+  "image": "imagen40.webp",
+  "question": "El vehículo que aparece en la foto está destinado…",
+  "first_answer": "a servicios",
+  "second_answer": "a obras",
+  "third_answer": "a tareas agrícolas",
+  "correct_answer": "a servicios",
+  "test": {
+    "$oid": "659e56422d2690f6d6cdd562"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a01fd039d5320856c1c3c6"
+  },
+  "image": "imagen41.webp",
+  "question": "Circulando por autovía, un vehículo destinado al transporte de mercancías peligrosas sufre una avería, ¿es correcto que un turismo lo remolque?",
+  "first_answer": "Sí, pero solamente hasta el taller más cercano.",
+  "second_answer": "Sí, pero no está permitido remolcar a un vehículo más de 100 kilómetros.",
+  "third_answer": "No, está prohibido.",
+  "correct_answer": "No, está prohibido.",
+  "test": {
+    "$oid": "659e56422d2690f6d6cdd562"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a0208a39d5320856c1c3c7"
+  },
+  "image": "imagen42.webp",
+  "question": "¿Cuál es la función del sistema de refrigeración de un motor?",
+  "first_answer": "Ventilar el habitáculo del vehículo",
+  "second_answer": "Canalizar el aire acondicionado del automóvil",
+  "third_answer": "Retirar parte del calor que se produce en un motor",
+  "correct_answer": "Retirar parte del calor que se produce en un motor",
+  "test": {
+    "$oid": "659e56422d2690f6d6cdd562"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a020ff39d5320856c1c3c8"
+  },
+  "image": "imagen43.webp",
+  "question": "¿Cómo se denomina al espacio en que los usuarios de la vía se pueden desplazar de modo imprevisto?",
+  "first_answer": "Zona de vigilancia",
+  "second_answer": "Zona de incertidumbre",
+  "third_answer": "Zona de mayor observancia",
+  "correct_answer": "Zona de incertidumbre",
+  "test": {
+    "$oid": "659e56422d2690f6d6cdd562"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a0217639d5320856c1c3c9"
+  },
+  "image": "imagen44.webp",
+  "question": "Para hacer la respiración boca-boca a un herido, ¿qué debe hacer primero?",
+  "first_answer": "Limpiar y abrir las vías respiratorias.",
+  "second_answer": "Taparle la nariz.",
+  "third_answer": "Colocar al herido en posición de defensa.",
+  "correct_answer": "Limpiar y abrir las vías respiratorias.",
+  "test": {
+    "$oid": "659e56422d2690f6d6cdd562"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a021df39d5320856c1c3ca"
+  },
+  "image": "imagen45.webp",
+  "question": "¿De qué color es el fondo de las señales que reglamentan las zonas de obras?",
+  "first_answer": "Rojo",
+  "second_answer": "Blanco",
+  "third_answer": "Amarillo",
+  "correct_answer": "Amarillo",
+  "test": {
+    "$oid": "659e56422d2690f6d6cdd562"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a0238b39d5320856c1c3cc"
+  },
+  "image": "imagen46.webp",
+  "question": "¿La no aceptación de una sanción por conducir ebrio, puede suponer la perdida de puntos en el permiso?",
+  "first_answer": "Únicamente conllevará una multa económica pero no la pérdida de puntos",
+  "second_answer": "No, en ningún caso",
+  "third_answer": "Sí.",
+  "correct_answer": "Sí.",
+  "test": {
+    "$oid": "659e56422d2690f6d6cdd562"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a0242539d5320856c1c3cd"
+  },
+  "image": "imagen47.webp",
+  "question": "¿Cómo se puede ahorrar combustible?",
+  "first_answer": "Cambiando a una marcha más baja tan pronto como sea posible.",
+  "second_answer": "Cambiando a una marcha más alta tan pronto como sea posible.",
+  "third_answer": "Revolucionando al máximo el motor.",
+  "correct_answer": "Cambiando a una marcha más alta tan pronto como sea posible.",
+  "test": {
+    "$oid": "659e56422d2690f6d6cdd562"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a025b339d5320856c1c3ce"
+  },
+  "image": "imagen48.webp",
+  "question": "Inmovilizar siempre el vehículo en el arcén.",
+  "first_answer": "Inmovilizar siempre el vehículo en el arcén.",
+  "second_answer": "Circular por el arcén y abandonar la vía por la primera salida.",
+  "third_answer": "Circular por el carril derecho.",
+  "correct_answer": "Circular por el arcén y abandonar la vía por la primera salida.",
+  "test": {
+    "$oid": "659e56422d2690f6d6cdd562"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a0278d39d5320856c1c3cf"
+  },
+  "image": "imagen49.webp",
+  "question": "¿Deben los ciclomotores de dos ruedas llevar luz de corto alcance?",
+  "first_answer": "No",
+  "second_answer": "Únicamente en vías fuera de poblado",
+  "third_answer": "Si, de forma obligatoria",
+  "correct_answer": "Si, de forma obligatoria",
+  "test": {
+    "$oid": "659e56422d2690f6d6cdd562"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a028a639d5320856c1c3d0"
+  },
+  "image": "imagen50.webp",
+  "question": "¿Cómo deben estar los neumáticos cuando se comprueba su presión?",
+  "first_answer": "Calientes",
+  "second_answer": "Deshinchados",
+  "third_answer": "Fríos",
+  "correct_answer": "Fríos",
+  "test": {
+    "$oid": "659e56422d2690f6d6cdd562"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a0290239d5320856c1c3d1"
+  },
+  "image": "imagen51.webp",
+  "question": "¿Cómo debe sentarse un pasajero en una motocicleta?",
+  "first_answer": "A horcajadas y con los pies apoyados en los reposapiés laterales, tanto dentro como fuera de poblado.",
+  "second_answer": "De cualquier maneras siempre que vaya cómodo.",
+  "third_answer": "A horcajadas y con los pies apoyados en los reposapiés laterales, sólo cuando circule por vías urbanas.",
+  "correct_answer": "A horcajadas y con los pies apoyados en los reposapiés laterales, tanto dentro como fuera de poblado.",
+  "test": {
+    "$oid": "659e56422d2690f6d6cdd562"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a0299339d5320856c1c3d2"
+  },
+  "image": "imagen52.webp",
+  "question": "¿Cada cuanto tiempo debe pasar la inspección de I.T,V un turismo privado de más de 10 años?",
+  "first_answer": "Cada 6 meses",
+  "second_answer": "Cada año",
+  "third_answer": "Cada 2 años",
+  "correct_answer": "Cada año",
+  "test": {
+    "$oid": "659e56422d2690f6d6cdd562"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a02a0639d5320856c1c3d3"
+  },
+  "image": "imagen53.webp",
+  "question": "Si por una emergencia queda inmovilizado con su vehículo dentro de un túnel…",
+  "first_answer": "Debe apagar el motor, conectar la señal de emergencia y dejar encendidas las luces de posición.",
+  "second_answer": "Debe conectar la señal de emergencia y tocar el claxon.",
+  "third_answer": "Debe conectar la señal de emergencia y dejar encendidas las luces de cruce.",
+  "correct_answer": "Debe apagar el motor, conectar la señal de emergencia y dejar encendidas las luces de posición.",
+  "test": {
+    "$oid": "659e56422d2690f6d6cdd562"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a02a7f39d5320856c1c3d4"
+  },
+  "image": "imagen54.webp",
+  "question": "Las personas que beben y conducen…",
+  "first_answer": "Son menos agresivas.",
+  "second_answer": "Pueden responder de una manera agresiva y descortés.",
+  "third_answer": "Son menos sensibles a los deslumbramientos.",
+  "correct_answer": "Pueden responder de una manera agresiva y descortés.",
+  "test": {
+    "$oid": "659e56422d2690f6d6cdd562"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a02aef39d5320856c1c3d5"
+  },
+  "image": "imagen55.webp",
+  "question": "El efecto “submarino“ ocurre especialmente...",
+  "first_answer": "Debido a una presión deficiente de los neumáticos.",
+  "second_answer": "A causa del consumo de alcohol y drogas.",
+  "third_answer": "A causa de un mal uso del cinturón de seguridad o del asiento del vehículo.",
+  "correct_answer": "A causa de un mal uso del cinturón de seguridad o del asiento del vehículo.",
+  "test": {
+    "$oid": "659e56422d2690f6d6cdd562"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a02b4c39d5320856c1c3d6"
+  },
+  "image": "imagen56.webp",
+  "question": "Se encuentra en una intersección sin señales de prioridad. ¿A qué vehículos deberá ceder el paso?",
+  "first_answer": "A todos los vehículos que se acerquen de frente.",
+  "second_answer": "A los vehículos que se acerquen por su derecha.",
+  "third_answer": "No se deberá ceder el paso a ningún vehículo.",
+  "correct_answer": "A los vehículos que se acerquen por su derecha.",
+  "test": {
+    "$oid": "659e56422d2690f6d6cdd562"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a02bb439d5320856c1c3d7"
+  },
+  "image": "imagen57.webp",
+  "question": "El uso de teléfonos móviles durante la conducción ¿conduce a un mayor riesgo de accidente?",
+  "first_answer": "Sí.",
+  "second_answer": "Sí pero únicamente cuando se escriben SMS",
+  "third_answer": "Únicamente cuando se esté marcando el número.",
+  "correct_answer": "Sí.",
+  "test": {
+    "$oid": "659e56422d2690f6d6cdd562"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a02c2539d5320856c1c3d8"
+  },
+  "image": "imagen58.webp",
+  "question": "¿Cuál de éstas luces sirven para cumplir la regla de VER en un vehículo?",
+  "first_answer": "Luz de corto alcance o cruce",
+  "second_answer": "Luz de frenado",
+  "third_answer": "Luz de gálibo",
+  "correct_answer": "Luz de corto alcance o cruce",
+  "test": {
+    "$oid": "659e56422d2690f6d6cdd562"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a02c9139d5320856c1c3d9"
+  },
+  "image": "imagen59.webp",
+  "question": "¿Qué tanto por ciento de muertes evita el cinturón de seguridad cuando se circula a gran velocidad?",
+  "first_answer": "Un 1%",
+  "second_answer": "Un 40%",
+  "third_answer": "Un 10%",
+  "correct_answer": "Un 40%",
+  "test": {
+    "$oid": "659e56422d2690f6d6cdd562"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a02ce139d5320856c1c3da"
+  },
+  "image": "imagen60.webp",
+  "question": "¿Qué indica la señal vertical de intervalo aconsejado de velocidades?",
+  "first_answer": "Dos velocidades, la mínima de las cuales nunca deberemos rebasar",
+  "second_answer": "Dos velocidades entre las que está recomendado circular",
+  "third_answer": "Dos velocidades, la mayor de las cuales se debe superar en 20 km/hora",
+  "correct_answer": "Dos velocidades entre las que está recomendado circular",
+  "test": {
+    "$oid": "659e56422d2690f6d6cdd562"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a0fb2b2dde95700baa7c5c"
+  },
+  "image": "imagen61.webp",
+  "question": "¿Qué significa esta señal?",
+  "first_answer": "Peligro por la proximidad de un paso a nivel sin barreras.",
+  "second_answer": "Peligro por la proximidad de un paso a nivel con barreras.",
+  "third_answer": "Dos velocidades, la mayor de las cuales se debe superar en 20 km/hora",
+  "correct_answer": "Peligro por la proximidad de un paso a nivel sin barreras.",
+  "test": {
+    "$oid": "659e59bf44fa4228946c0b93"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a0fbd12dde95700baa7c5d"
+  },
+  "image": "imagen62.webp",
+  "question": "Al llegar a una glorieta encontramos esta señal, ¿qué debemos hacer si pretendemos cambiar de dirección a la izquierda?",
+  "first_answer": "No podemos realizar el cambio de dirección a la izquierda por estar prohibido.",
+  "second_answer": "Giraremos dejando la glorieta a nuestra izquierda.",
+  "third_answer": "Giraremos dejando la glorieta a nuestra derecha.",
+  "correct_answer": "Giraremos dejando la glorieta a nuestra izquierda.",
+  "test": {
+    "$oid": "659e59bf44fa4228946c0b93"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a0fc392dde95700baa7c5e"
+  },
+  "image": "imagen63.webp",
+  "question": "¿Cómo señalizaremos una carga que sobresale por la parte trasera en un turismo?",
+  "first_answer": "En un turismo la carga no puede sobresalir por detrás.",
+  "second_answer": "Con el panel reglamentario para cargas que sobresalen.",
+  "third_answer": "Con un trapo de color vivo.",
+  "correct_answer": "Con el panel reglamentario para cargas que sobresalen.",
+  "test": {
+    "$oid": "659e59bf44fa4228946c0b93"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a0fca82dde95700baa7c5f"
+  },
+  "image": "imagen64.webp",
+  "question": "Esta señal ¿a qué vehículos va dirigida?",
+  "first_answer": "A los vehículos de motor.",
+  "second_answer": "A toda clase de vehículos.",
+  "third_answer": "A los vehículos de motor excepto motocicletas",
+  "correct_answer": "A toda clase de vehículos.",
+  "test": {
+    "$oid": "659e59bf44fa4228946c0b93"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a0fd112dde95700baa7c60"
+  },
+  "image": "imagen65.webp",
+  "question": "Si nos encontramos detenidos en el interior de un túnel por congestión del tráfico, ¿qué luces deberemos mantener encendidas?",
+  "first_answer": "Las de posición y las de corto alcance.",
+  "second_answer": "Las de posición y las de emergencia.",
+  "third_answer": "Sólo las de posición.",
+  "correct_answer": "Las de posición y las de emergencia.",
+  "test": {
+    "$oid": "659e59bf44fa4228946c0b93"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a0fda02dde95700baa7c61"
+  },
+  "image": "imagen66.webp",
+  "question": "Si un vehículo circula por esta vía a 90 km/h, ¿lo está haciendo a una velocidad adecuada?",
+  "first_answer": "Sí, ya que es la máxima permitida.",
+  "second_answer": "No.",
+  "third_answer": "No, ya que es excesiva debido a las circunstancias.",
+  "correct_answer": "No.",
+  "test": {
+    "$oid": "659e59bf44fa4228946c0b93"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a0ff952dde95700baa7c62"
+  },
+  "image": "imagen67.webp",
+  "question": "Si en su vehículo pretende transportar una carga que no cabe en el interior del maletero, ¿podrá circular con el portón abierto?",
+  "first_answer": "Sí.",
+  "second_answer": "No.",
+  "third_answer": "Sí, si la carga no sobresale más de un 10%.",
+  "correct_answer": "No.",
+  "test": {
+    "$oid": "659e59bf44fa4228946c0b93"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a0fffc2dde95700baa7c63"
+  },
+  "image": "imagen68.webp",
+  "question": "¿A qué velocidad máxima podremos circular por una carretera convencional con dos carriles en nuestro sentido?",
+  "first_answer": "100 km/h.",
+  "second_answer": "90 km/h.",
+  "third_answer": "90 km/h más 20 km/h para adelantar.",
+  "correct_answer": "90 km/h.",
+  "test": {
+    "$oid": "659e59bf44fa4228946c0b93"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a1013b2dde95700baa7c65"
+  },
+  "image": "imagen69.webp",
+  "question": "¿Podemos efectuar una parada en un carril BUS con nuestro turismo?",
+  "first_answer": "Sí, siempre que sea inferior a los 2 minutos.",
+  "second_answer": "No.",
+  "third_answer": "Sí, para descargar pasajeros.",
+  "correct_answer": "No.",
+  "test": {
+    "$oid": "659e59bf44fa4228946c0b93"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a101a92dde95700baa7c66"
+  },
+  "image": "imagen70.webp",
+  "question": "Circulando con lluvia muy intensa, ¿es obligatorio utilizar el alumbrado antiniebla posterior?",
+  "first_answer": "No, sólo es opcional.",
+  "second_answer": "Sí.",
+  "third_answer": "Sí, y además también será obligatorio el delantero antiniebla.",
+  "correct_answer": "Sí.",
+  "test": {
+    "$oid": "659e59bf44fa4228946c0b93"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a1020a2dde95700baa7c67"
+  },
+  "image": "imagen71.webp",
+  "question": "¿Podremos utilizar el teléfono móvil sin un dispositivo de manos libres?",
+  "first_answer": "Sí, cuando nos encontremos detenidos.",
+  "second_answer": "Sí, cuando no existan otros vehículos en la vía.",
+  "third_answer": "No.",
+  "correct_answer": "No.",
+  "test": {
+    "$oid": "659e59bf44fa4228946c0b93"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a102562dde95700baa7c68"
+  },
+  "image": "imagen72.webp",
+  "question": "¿Cómo actuaremos si al detenernos ante una línea transversal no tenemos suficiente visibilidad de la circulación transversal debido a unas obras?",
+  "first_answer": "Pasaremos extremando la precaución.",
+  "second_answer": "Nos asomaremos para volver a detenernos en el punto en el que dispongamos de suficiente visibilidad.",
+  "third_answer": "Nos asomaremos lentamente sin tener que realizar otra detención, pasando cuando no venga nadie.",
+  "correct_answer": "Nos asomaremos para volver a detenernos en el punto en el que dispongamos de suficiente visibilidad.",
+  "test": {
+    "$oid": "659e59bf44fa4228946c0b93"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a102f42dde95700baa7c69"
+  },
+  "image": "imagen73.webp",
+  "question": "¿A qué velocidad podremos circular por una autopista urbana?",
+  "first_answer": "120 km/h.",
+  "second_answer": "50 km/h.",
+  "third_answer": "80 km/h.",
+  "correct_answer": "80 km/h.",
+  "test": {
+    "$oid": "659e59bf44fa4228946c0b93"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a1035e2dde95700baa7c6b"
+  },
+  "image": "imagen74.webp",
+  "question": "¿Se pueden transportar a más personas de las autorizadas en el vehículo?",
+  "first_answer": "Sí, si no se sobrepasa la masa máxima del vehículo.",
+  "second_answer": "Sí, si no afecta la visibilidad del conductor.",
+  "third_answer": "No.",
+  "correct_answer": "No.",
+  "test": {
+    "$oid": "659e59bf44fa4228946c0b93"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a103ae2dde95700baa7c6c"
+  },
+  "image": "imagen75.webp",
+  "question": "A la vista de esta señal, ¿qué distancia debemos mantener con el vehículo que nos precede?",
+  "first_answer": "100 metros como mínimo.",
+  "second_answer": "150 metros como mínimo.",
+  "third_answer": "La que permita frenar sin colisionar con el vehículo que nos precede.",
+  "correct_answer": "La que permita frenar sin colisionar con el vehículo que nos precede.",
+  "test": {
+    "$oid": "659e59bf44fa4228946c0b93"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a1041a2dde95700baa7c6d"
+  },
+  "image": "imagen76.webp",
+  "question": "La carga que sobresalga por detrás en un turismo, ¿deberá ser señalizada?",
+  "first_answer": "Sí, y cuando sea necesario también la señalizaremos con una luz roja.",
+  "second_answer": "No, en los turismos no hace falta señalizar la carga.",
+  "third_answer": "No deberá señalizarse si la carga sobresale menos de un 10%.",
+  "correct_answer": "Sí, y cuando sea necesario también la señalizaremos con una luz roja.",
+  "test": {
+    "$oid": "659e59bf44fa4228946c0b93"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a1047e2dde95700baa7c6e"
+  },
+  "image": "imagen77.webp",
+  "question": "¿Es aconsejable comer algo antes de salir de viaje?",
+  "first_answer": "No.",
+  "second_answer": "Sí, comidas que no sean copiosas y sin alcohol.",
+  "third_answer": "Sí, comer mucho para no tener que parar durante el viaje.",
+  "correct_answer": "Sí, comidas que no sean copiosas y sin alcohol.",
+  "test": {
+    "$oid": "659e59bf44fa4228946c0b93"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a104e62dde95700baa7c6f"
+  },
+  "image": "imagen78.webp",
+  "question": "Si con anterioridad hemos encontrado una señal de limitación de velocidad, a partir de esta señal...",
+  "first_answer": "Finaliza la prohibición de velocidad.",
+  "second_answer": "Continúa la prohibición de velocidad.",
+  "third_answer": "Empieza una prohibición nueva.",
+  "correct_answer": "Continúa la prohibición de velocidad.",
+  "test": {
+    "$oid": "659e59bf44fa4228946c0b93"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a105492dde95700baa7c70"
+  },
+  "image": "imagen79.webp",
+  "question": "Un conductor, ¿a qué condiciones estará sujeto durante el primer año después de la obtención de su primer permiso de conducir?",
+  "first_answer": "No circular por autopistas y autovías.",
+  "second_answer": "Deberá llevar la placa 'L' y no exceder la velocidad de 80 km/h.",
+  "third_answer": "Deberá llevar la placa 'L'.",
+  "correct_answer": "Deberá llevar la placa 'L'.",
+  "test": {
+    "$oid": "659e59bf44fa4228946c0b93"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a105f12dde95700baa7c71"
+  },
+  "image": "imagen80.webp",
+  "question": "Al llegar a esta intersección, ¿qué señalización debemos respetar?",
+  "first_answer": "La señal de STOP, porque es la más restrictiva.",
+  "second_answer": "La señal de ceda el paso, porque las señales verticales prevalecen sobre las marcas viales.",
+  "third_answer": "Si cambio de dirección a la derecha respetaré el ceda el paso. Si sigo de frente o giro a la izquierda respetaré el STOP.",
+  "correct_answer": "La señal de ceda el paso, porque las señales verticales prevalecen sobre las marcas viales.",
+  "test": {
+    "$oid": "659e59bf44fa4228946c0b93"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a106682dde95700baa7c72"
+  },
+  "image": "imagen81.webp",
+  "question": "¿Cuándo será más resbaladizo el firme de la calzada?",
+  "first_answer": "Cuando esté lloviendo intensamente durante mucho tiempo.",
+  "second_answer": "Cuando empiece a llover después de mucho tiempo sin hacerlo.",
+  "third_answer": "Cuando la calzada esté situada fuera de poblado.",
+  "correct_answer": "Cuando empiece a llover después de mucho tiempo sin hacerlo.",
+  "test": {
+    "$oid": "659e59bf44fa4228946c0b93"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a106c82dde95700baa7c73"
+  },
+  "image": "imagen82.webp",
+  "question": "¿Puede un conjunto de vehículos que mide más de 7 metros circular por el tercer carril en una vía dentro de poblado?",
+  "first_answer": "Sí, puede ir por el que mejor convenga a su destino.",
+  "second_answer": "No, sólo podrá circular por el primero y el segundo carril.",
+  "third_answer": "Ha de circular obligatoriamente por la derecha.",
+  "correct_answer": "Sí, puede ir por el que mejor convenga a su destino.",
+  "test": {
+    "$oid": "659e59bf44fa4228946c0b93"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a107272dde95700baa7c75"
+  },
+  "image": "imagen83.webp",
+  "question": "Esta señal indica...",
+  "first_answer": "Parada de autobuses.",
+  "second_answer": "Carril reservado para autobuses.",
+  "third_answer": "Estación de autobuses.",
+  "correct_answer": "Carril reservado para autobuses.",
+  "test": {
+    "$oid": "659e59bf44fa4228946c0b93"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a107812dde95700baa7c76"
+  },
+  "image": "imagen84.webp",
+  "question": "Si un herido tiene las vías respiratorias obstruidas, ¿qué haremos?",
+  "first_answer": "Ponerlo en posición semisentado.",
+  "second_answer": "Hacerle la respiración boca a boca.",
+  "third_answer": "Retirarle de la boca lo que provoca la obstrucción.",
+  "correct_answer": "Retirarle de la boca lo que provoca la obstrucción.",
+  "test": {
+    "$oid": "659e59bf44fa4228946c0b93"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a107df2dde95700baa7c77"
+  },
+  "image": "imagen85.webp",
+  "question": "¿Cuál es el tipo de accidente con víctimas mortales más usual dentro de poblado?",
+  "first_answer": "Colisión por alcances traseros.",
+  "second_answer": "Colisiones frontales.",
+  "third_answer": "Atropello a peatones.",
+  "correct_answer": "Atropello a peatones.",
+  "test": {
+    "$oid": "659e59bf44fa4228946c0b93"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a108402dde95700baa7c78"
+  },
+  "image": "imagen86.webp",
+  "question": "Si en la calzada no hay marcas viales longitudinales, ¿cuántos carriles tendrá?",
+  "first_answer": "Uno para cada sentido.",
+  "second_answer": "Tantos como vehículos automóviles que no sean motocicletas quepan en paralelo.",
+  "third_answer": "Los que creamos convenientes.",
+  "correct_answer": "Tantos como vehículos automóviles que no sean motocicletas quepan en paralelo.",
+  "test": {
+    "$oid": "659e59bf44fa4228946c0b93"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a108cb2dde95700baa7c79"
+  },
+  "image": "imagen87.webp",
+  "question": "¿Cuál será la velocidad máxima circulando en esta vía?",
+  "first_answer": "90 km/h.",
+  "second_answer": "100 km/h.",
+  "third_answer": "110 km/h.",
+  "correct_answer": "90 km/h.",
+  "test": {
+    "$oid": "659e59bf44fa4228946c0b93"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a109472dde95700baa7c7a"
+  },
+  "image": "imagen88.webp",
+  "question": "Si aumentamos la velocidad de 55 km/h a 110 km/h, ¿habremos aumentado también la distancia de frenado?",
+  "first_answer": "Sí, en igual proporción.",
+  "second_answer": "Sí, en mayor proporción.",
+  "third_answer": "No, la distancia de frenado no depende de la velocidad.",
+  "correct_answer": "Sí, en mayor proporción.",
+  "test": {
+    "$oid": "659e59bf44fa4228946c0b93"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a109a32dde95700baa7c7b"
+  },
+  "image": "imagen89.webp",
+  "question": "El vehículo azul está efectuando un cambio de sentido, ¿qué trayectoria será la correcta?",
+  "first_answer": "La trayectoria de la flecha amarilla.",
+  "second_answer": "La trayectoria de la flecha roja.",
+  "third_answer": "Las dos trayectorias son correctas.",
+  "correct_answer": "Las dos trayectorias son correctas.",
+  "test": {
+    "$oid": "659e59bf44fa4228946c0b93"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a109fb2dde95700baa7c7c"
+  },
+  "image": "imagen90.webp",
+  "question": "¿Qué significa esta señal?",
+  "first_answer": "Prioridad al sentido contrario.",
+  "second_answer": "Prioridad en mi sentido.",
+  "third_answer": "Circulación en los dos sentidos.",
+  "correct_answer": "Circulación en los dos sentidos.",
+  "test": {
+    "$oid": "659e59bf44fa4228946c0b93"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a10ad82dde95700baa7c7d"
+  },
+  "image": "imagen91.webp",
+  "question": "Si nuestro vehículo no dispone de buena visibilidad trasera porqué el equipaje impide ver a través de la luneta trasera, ¿cuántos espejos llevaremos?",
+  "first_answer": "Dos exteriores.",
+  "second_answer": "Uno interior y el exterior derecho.",
+  "third_answer": "Uno interior y el exterior izquierdo.",
+  "correct_answer": "Dos exteriores.",
+  "test": {
+    "$oid": "659e5bab44fa4228946c0b95"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a10b692dde95700baa7c7e"
+  },
+  "image": "imagen92.webp",
+  "question": "¿Qué indica esta cuadrícula de marcas amarillas?",
+  "first_answer": "Prohíbe parar y estacionar encima de estas marcas viales.",
+  "second_answer": "Recuerda que no se tiene que penetrar en la intersección si previsiblemente podemos quedar detenidos y obstruir la circulación transversal.",
+  "third_answer": "Indican el lugar donde empieza una zona de frenado de emergencia.",
+  "correct_answer": "Recuerda que no se tiene que penetrar en la intersección si previsiblemente podemos quedar detenidos y obstruir la circulación transversal.",
+  "test": {
+    "$oid": "659e5bab44fa4228946c0b95"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a10be42dde95700baa7c7f"
+  },
+  "image": "imagen93.webp",
+  "question": "¿Durante la noche se podrá circular únicamente con el alumbrado de posición?",
+  "first_answer": "Sí, en vías dentro de poblado suficientemente iluminadas.",
+  "second_answer": "No, irá siempre acompañada como mínimo del alumbrado de corto alcance o cruce.",
+  "third_answer": "Sí, ocasionalmente cuando se estropee el alumbrado de corto alcance.",
+  "correct_answer": "No, irá siempre acompañada como mínimo del alumbrado de corto alcance o cruce.",
+  "test": {
+    "$oid": "659e5bab44fa4228946c0b95"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a10c4a2dde95700baa7c80"
+  },
+  "image": "imagen94.webp",
+  "question": "¿Por dónde circulará una bicicleta por una vía urbana?",
+  "first_answer": "Por el arcén, si éste mide más de 4 metros.",
+  "second_answer": "Por el carril bici si lo hubiese.",
+  "third_answer": "Por el arcén.",
+  "correct_answer": "Por el carril bici si lo hubiese.",
+  "test": {
+    "$oid": "659e5bab44fa4228946c0b95"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a10eb5a4dd4a81cdf83815"
+  },
+  "image": "imagen95.webp",
+  "question": "¿Deberán llevar el cinturón de seguridad los pasajeros de los asientos posteriores?",
+  "first_answer": "Sí, fuera de poblado pero no dentro de poblado.",
+  "second_answer": "Sí, en autopistas y autovías, pero no en las demás vías.",
+  "third_answer": "Sí, en todas las vías.",
+  "correct_answer": "Sí, en todas las vías.",
+  "test": {
+    "$oid": "659e5bab44fa4228946c0b95"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a10f9ea4dd4a81cdf83816"
+  },
+  "image": "imagen96.webp",
+  "question": "Si su vehículo se avería en la autopista y tiene que circular a velocidad inferior a 60 km/h, ¿por dónde lo hará?",
+  "first_answer": "Por la calzada puesto que no perturbo gravemente la circulación.",
+  "second_answer": "Por el arcén.",
+  "third_answer": "No podría circular tendría que pararme.",
+  "correct_answer": "Por la calzada puesto que no perturbo gravemente la circulación.",
+  "test": {
+    "$oid": "659e5bab44fa4228946c0b95"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a1100ba4dd4a81cdf83817"
+  },
+  "image": "imagen97.webp",
+  "question": "Si su vehículo dispone de una batería de las denominadas 'sin mantenimiento', ¿deberá tener algún cuidado con ella?",
+  "first_answer": "No, puesto que es sin mantenimiento.",
+  "second_answer": "Sí, limpiar los bornes y protegerlos con grasa.",
+  "third_answer": "Sí, cubrir las placas con agua destilada.",
+  "correct_answer": "Sí, limpiar los bornes y protegerlos con grasa.",
+  "test": {
+    "$oid": "659e5bab44fa4228946c0b95"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a110e8a4dd4a81cdf83818"
+  },
+  "image": "imagen98.webp",
+  "question": "¿Qué función tiene el reposacabezas del asiento de su vehículo?",
+  "first_answer": "Tener mayor comodidad durante los viajes largos y poder estar más tiempo conduciendo sin parar.",
+  "second_answer": "Evitar el latigazo cervical en las colisiones por alcance.",
+  "third_answer": "Evitar que la cabeza se desplace mientras conducimos.",
+  "correct_answer": "Evitar el latigazo cervical en las colisiones por alcance.",
+  "test": {
+    "$oid": "659e5bab44fa4228946c0b95"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a1114fa4dd4a81cdf83819"
+  },
+  "image": "imagen99.webp",
+  "question": "¿Qué le indica esta señal?",
+  "first_answer": "Congestión.",
+  "second_answer": "Visibilidad reducida.",
+  "third_answer": "Pavimento deslizante por hielo o nieve.",
+  "correct_answer": "Visibilidad reducida.",
+  "test": {
+    "$oid": "659e5bab44fa4228946c0b95"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a111aca4dd4a81cdf8381a"
+  },
+  "image": "imagen100.webp",
+  "question": "Con los frenos mojados a consecuencia de una lluvia intensa...",
+  "first_answer": "Disminuirá la distancia de frenado.",
+  "second_answer": "Aumentará la distancia de frenado.",
+  "third_answer": "Que se mojen los frenos no afecta a su eficacia.",
+  "correct_answer": "Aumentará la distancia de frenado.",
+  "test": {
+    "$oid": "659e5bab44fa4228946c0b95"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a11293a4dd4a81cdf8381b"
+  },
+  "image": "imagen101.webp",
+  "question": "¿Circulamos correctamente si lo hacemos a velocidad inferior a 45 km/h por esta carretera?",
+  "first_answer": "Sí, porque es una carretera muy estrecha.",
+  "second_answer": "No, la velocidad mínima es de 45 km/h.",
+  "third_answer": "Sí, porque circulamos a la mínima velocidad permitida.",
+  "correct_answer": "No, la velocidad mínima es de 45 km/h.",
+  "test": {
+    "$oid": "659e5bab44fa4228946c0b95"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a11318a4dd4a81cdf8381c"
+  },
+  "image": "imagen102.webp",
+  "question": "¿Se podrán realizar competiciones en circuito urbano?",
+  "first_answer": "Sí, en el espacio comprendido entre un vehículo de la autoridad con bandera roja y uno de cierre con bandera verde.",
+  "second_answer": "No, en ningún caso se podrán realizar pruebas deportivas en la vía pública.",
+  "third_answer": "Sí, teniendo precaución con los demás usuarios de la vía.",
+  "correct_answer": "Sí, en el espacio comprendido entre un vehículo de la autoridad con bandera roja y uno de cierre con bandera verde.",
+  "test": {
+    "$oid": "659e5bab44fa4228946c0b95"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a113dda4dd4a81cdf8381d"
+  },
+  "image": "imagen103.webp",
+  "question": "Si circulamos durante la noche con un camión en el que sobresale la carga tanto por delante como por detrás, ¿cómo lo señalizaremos?",
+  "first_answer": "Con una luz roja por detrás y una blanca por delante.",
+  "second_answer": "Con una luz roja por detrás, una blanca por delante y un panel reglamentario de 50 centímetros de lado.",
+  "third_answer": "Sólo con la luz roja por la parte posterior, más el panel reglamentario de 50 centímetros de lado.",
+  "correct_answer": "Con una luz roja por detrás, una blanca por delante y un panel reglamentario de 50 centímetros de lado.",
+  "test": {
+    "$oid": "659e5bab44fa4228946c0b95"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a1146aa4dd4a81cdf8381e"
+  },
+  "image": "imagen104.webp",
+  "question": "Si circula con su turismo durante la noche por una vía interurbana insuficientemente iluminada y a menos de 40 km/h, ¿qué alumbrado deberá llevar encendido?",
+  "first_answer": "El de largo alcance.",
+  "second_answer": "El de corto alcance.",
+  "third_answer": "Opcionalmente el de largo o corto alcance.",
+  "correct_answer": "Opcionalmente el de largo o corto alcance.",
+  "test": {
+    "$oid": "659e5bab44fa4228946c0b95"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a114daa4dd4a81cdf8381f"
+  },
+  "image": "imagen105.webp",
+  "question": "Si por necesidades de la circulación su vehículo queda detenido en un paso inferior deberá...",
+  "first_answer": "Apagar el motor, conectar la señal de emergencia y mantener encendidas las luces de posición.",
+  "second_answer": "Abandonar el vehículo dirigiéndome rápidamente al refugio o salida más próxima.",
+  "third_answer": "Apagar todos los sistemas eléctricos.",
+  "correct_answer": "Apagar el motor, conectar la señal de emergencia y mantener encendidas las luces de posición.",
+  "test": {
+    "$oid": "659e5bab44fa4228946c0b95"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a1154ca4dd4a81cdf83820"
+  },
+  "image": "imagen106.webp",
+  "question": "¿Se podrá adelantar en un paso para peatones?",
+  "first_answer": "No, en ningún caso.",
+  "second_answer": "Sí, si la vía es de sentido único.",
+  "third_answer": "Sí, cuando el adelantamiento se realice a velocidad tan suficientemente reducida que permita detenerme a tiempo si surge un peligro.",
+  "correct_answer": "Sí, cuando el adelantamiento se realice a velocidad tan suficientemente reducida que permita detenerme a tiempo si surge un peligro.",
+  "test": {
+    "$oid": "659e5bab44fa4228946c0b95"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a11615a4dd4a81cdf83821"
+  },
+  "image": "imagen107.webp",
+  "question": "¿Qué significa esta señal?",
+  "first_answer": "Proximidad de paso a nivel.",
+  "second_answer": "Proximidad de paso a nivel sin barreras.",
+  "third_answer": "Proximidad de paso a nivel con barreras.",
+  "correct_answer": "Proximidad de paso a nivel.",
+  "test": {
+    "$oid": "659e5bab44fa4228946c0b95"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a11694a4dd4a81cdf83822"
+  },
+  "image": "imagen108.webp",
+  "question": "¿Un conductor novel puede llevar cortinillas oscuras en el cristal posterior del vehículo?",
+  "first_answer": "Sí.",
+  "second_answer": "No.",
+  "third_answer": "Sí, llevando dos retrovisores exteriores, uno a la derecha y otro a la izquierda.",
+  "correct_answer": "Sí, llevando dos retrovisores exteriores, uno a la derecha y otro a la izquierda.",
+  "test": {
+    "$oid": "659e5bab44fa4228946c0b95"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a1477bd6b52905bb4ea744"
+  },
+  "image": "imagen109.webp",
+  "question": "¿La lluvia afecta a la conducción?",
+  "first_answer": "Circulando en una motocicleta sí, circulando en un turismo no.",
+  "second_answer": "Sí, aumenta el tiempo de reacción.",
+  "third_answer": "Sí, aumenta la distancia de frenado.",
+  "correct_answer": "Sí, aumenta la distancia de frenado.",
+  "test": {
+    "$oid": "659e5bab44fa4228946c0b95"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a14859d6b52905bb4ea745"
+  },
+  "image": "imagen110.webp",
+  "question": "¿Qué vehículos podrán usar un carril así señalizado?",
+  "first_answer": "Todos los vehículos.",
+  "second_answer": "Sólo los de transporte colectivo.",
+  "third_answer": "Los autobuses y las motocicletas.",
+  "correct_answer": "Sólo los de transporte colectivo.",
+  "test": {
+    "$oid": "659e5bab44fa4228946c0b95"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a148fed6b52905bb4ea746"
+  },
+  "image": "imagen111.webp",
+  "question": "Esta señal...",
+  "first_answer": "Obliga a encender las luces de corto alcance como mínimo.",
+  "second_answer": "Obliga a encender las luces de corto alcance hasta haber rebasado el túnel.",
+  "third_answer": "Obliga a encender las luces de carretera.",
+  "correct_answer": "Obliga a encender las luces de corto alcance como mínimo.",
+  "test": {
+    "$oid": "659e5bab44fa4228946c0b95"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a1495ed6b52905bb4ea747"
+  },
+  "image": "imagen112.webp",
+  "question": "Dos luces rojas intermitentes antes de un paso a nivel, ¿qué indican?",
+  "first_answer": "Que tengo que pasar rápidamente.",
+  "second_answer": "Prohibición temporal de paso.",
+  "third_answer": "Puedo pasar pero extremando la precaución.",
+  "correct_answer": "Prohibición temporal de paso.",
+  "test": {
+    "$oid": "659e5bab44fa4228946c0b95"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a149bfd6b52905bb4ea748"
+  },
+  "image": "imagen113.webp",
+  "question": "¿Qué indica esta señal?",
+  "first_answer": "Salida por la derecha a 300 metros.",
+  "second_answer": "Salida por la izquierda a 300 metros.",
+  "third_answer": "Salida a 300 metros.",
+  "correct_answer": "Salida por la derecha a 300 metros.",
+  "test": {
+    "$oid": "659e5bab44fa4228946c0b95"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a14a54d6b52905bb4ea749"
+  },
+  "image": "imagen114.webp",
+  "question": "¿Cómo pasarán los peatones por una glorieta?",
+  "first_answer": "Atravesándola por la calzada.",
+  "second_answer": "Perpendicularmente al eje de la calzada.",
+  "third_answer": "La rodearán.",
+  "correct_answer": "La rodearán.",
+  "test": {
+    "$oid": "659e5bab44fa4228946c0b95"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a14aadd6b52905bb4ea74a"
+  },
+  "image": "imagen115.webp",
+  "question": "La luz de matrícula, ¿deberá encenderse conjuntamente con el resto de las luces?",
+  "first_answer": "Sólo con el alumbrado de corto alcance o de cruce.",
+  "second_answer": "Se encenderá simultáneamente con el alumbrado de posición.",
+  "third_answer": "Se encenderá con un interruptor independiente situado en el salpicadero.",
+  "correct_answer": "Se encenderá simultáneamente con el alumbrado de posición.",
+  "test": {
+    "$oid": "659e5bab44fa4228946c0b95"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a14b13d6b52905bb4ea74c"
+  },
+  "image": "imagen116.webp",
+  "question": "Si encontramos un semáforo en rojo a la entrada de un túnel, ¿qué haremos?",
+  "first_answer": "Pasar con precaución.",
+  "second_answer": "Pasar cediendo el paso.",
+  "third_answer": "Detenernos.",
+  "correct_answer": "Detenernos.",
+  "test": {
+    "$oid": "659e5bab44fa4228946c0b95"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a14b7bd6b52905bb4ea74d"
+  },
+  "image": "imagen117.webp",
+  "question": "Si dos vehículos se cruzan en una curva llevando encendido el alumbrado de largo alcance, ¿cuál de los dos cambiará antes a corto alcance?",
+  "first_answer": "El que circula por la parte exterior de la curva.",
+  "second_answer": "El que circula por la parte interior de la curva.",
+  "third_answer": "Ninguno de los dos.",
+  "correct_answer": "El que circula por la parte interior de la curva.",
+  "test": {
+    "$oid": "659e5bab44fa4228946c0b95"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a14be7d6b52905bb4ea74e"
+  },
+  "image": "imagen118.webp",
+  "question": "¿Qué significa esta señal?",
+  "first_answer": "Peligro por la proximidad de niños que tienen preferencia.",
+  "second_answer": "Peligro por la proximidad de un lugar frecuentado por niños.",
+  "third_answer": "Peligro por la proximidad de un paso para peatones.",
+  "correct_answer": "Peligro por la proximidad de un lugar frecuentado por niños.",
+  "test": {
+    "$oid": "659e5bab44fa4228946c0b95"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a14c59d6b52905bb4ea74f"
+  },
+  "image": "imagen119.webp",
+  "question": "Un agente que balancea una luz roja o amarilla, ¿qué nos indica?",
+  "first_answer": "Que conduzcamos con precaución.",
+  "second_answer": "Que existe un peligro.",
+  "third_answer": "Obliga a detenerse a todos los usuarios de la vía hacia los que dirija la luz.",
+  "correct_answer": "Obliga a detenerse a todos los usuarios de la vía hacia los que dirija la luz.",
+  "test": {
+    "$oid": "659e5bab44fa4228946c0b95"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a14cb4d6b52905bb4ea750"
+  },
+  "image": "imagen120.webp",
+  "question": "¿Qué indica la señal?",
+  "first_answer": "Que por el carril derecho se llega a una senda ciclable.",
+  "second_answer": "Que el carril derecho sólo puede ser utilizado por ciclos.",
+  "third_answer": "Que el carril derecho sólo puede ser utilizado por ciclos y ciclomotores.",
+  "correct_answer": "Que el carril derecho sólo puede ser utilizado por ciclos.",
+  "test": {
+    "$oid": "659e5bab44fa4228946c0b95"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a14e5ad6b52905bb4ea751"
+  },
+  "image": "imagen121.webp",
+  "question": "¿Cuándo debe desactivar el airbag frontal de un asiento?",
+  "first_answer": "En ningún caso.",
+  "second_answer": "Cuando en ese asiento viaje una mujer embarazada.",
+  "third_answer": "Cuando en ese asiento instale un dispositivo de retención para niños orientado hacia atrás.",
+  "correct_answer": "Cuando en ese asiento instale un dispositivo de retención para niños orientado hacia atrás.",
+  "test": {
+    "$oid": "659e5bc044fa4228946c0b96"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a14f34d6b52905bb4ea752"
+  },
+  "image": "imagen122.webp",
+  "question": "Entra en esta curva a mucha velocidad. ¿Qué puede pasar?",
+  "first_answer": "Nada, porque está bien señalizada.",
+  "second_answer": "El vehículo se puede ir hacia la izquierda.",
+  "third_answer": "El vehículo se puede ir hacia la derecha.",
+  "correct_answer": "El vehículo se puede ir hacia la derecha.",
+  "test": {
+    "$oid": "659e5bc044fa4228946c0b96"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a14f9bd6b52905bb4ea753"
+  },
+  "image": "imagen123.webp",
+  "question": "Utilizar pinzas para retener el cinturón de seguridad...",
+  "first_answer": "es conveniente, porque reduce la presión del cinturón sobre el pecho.",
+  "second_answer": "es peligroso, porque reduce la eficacia del cinturón.",
+  "third_answer": "es necesario, como complemento del airbag, en los vehículos dotados del mismo.",
+  "correct_answer": "es peligroso, porque reduce la eficacia del cinturón.",
+  "test": {
+    "$oid": "659e5bc044fa4228946c0b96"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a15041d6b52905bb4ea754"
+  },
+  "image": "imagen124.webp",
+  "question": "¿Qué puede hacer para evitar los peligros que causa el uso del teléfono móvil durante la conducción?",
+  "first_answer": "Esperar a detenerse en un semáforo o en un paso de peatones para usarlo.",
+  "second_answer": "Detener el vehículo en un lugar seguro para poder usar el teléfono.",
+  "third_answer": "Colgar las llamadas cuando suenen.",
+  "correct_answer": "Detener el vehículo en un lugar seguro para poder usar el teléfono.",
+  "test": {
+    "$oid": "659e5bc044fa4228946c0b96"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a150a2d6b52905bb4ea755"
+  },
+  "image": "imagen125.webp",
+  "question": "¿Está permitido realizar una parada en una autovía o autopista?",
+  "first_answer": "Sí, pero sólo en el arcén si es transitable.",
+  "second_answer": "Sí, en la mediana o el arcén, indistintamente.",
+  "third_answer": "No, sólo se puede parar en zonas habilitadas, como las áreas de descanso.",
+  "correct_answer": "No, sólo se puede parar en zonas habilitadas, como las áreas de descanso.",
+  "test": {
+    "$oid": "659e5bc044fa4228946c0b96"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a1510cd6b52905bb4ea756"
+  },
+  "image": "imagen126.webp",
+  "question": "¿Cuándo se considera que una vía está insuficientemente iluminada?",
+  "first_answer": "Cuando no puedo leer una placa de matrícula a 10 metros.",
+  "second_answer": "Cuando no se distinga un vehículo oscuro a 100 metros.",
+  "third_answer": "Cuando no puede leer una placa de matrícula a 50 metros.",
+  "correct_answer": "Cuando no puedo leer una placa de matrícula a 10 metros.",
+  "test": {
+    "$oid": "659e5bc044fa4228946c0b96"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a15176d6b52905bb4ea757"
+  },
+  "image": "imagen127.webp",
+  "question": "Como norma general, el pedal de cambio de velocidades de una motocicleta, ¿con qué pie se acciona?",
+  "first_answer": "Con el pie izquierdo.",
+  "second_answer": "Con el pie derecho.",
+  "third_answer": "El cambio de velocidades de una motocicleta no se acciona con el pie.",
+  "correct_answer": "Con el pie izquierdo.",
+  "test": {
+    "$oid": "659e5bc044fa4228946c0b96"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a151d3d6b52905bb4ea758"
+  },
+  "image": "imagen128.webp",
+  "question": "Esta señal indica la proximidad de una intersección...",
+  "first_answer": "sin prioridad de paso.",
+  "second_answer": "con prioridad de paso.",
+  "third_answer": "con prioridad de paso a la derecha.",
+  "correct_answer": "con prioridad de paso a la derecha.",
+  "test": {
+    "$oid": "659e5bc044fa4228946c0b96"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a15230d6b52905bb4ea759"
+  },
+  "image": "imagen129.webp",
+  "question": "El lavaparabrisas del vehículo...",
+  "first_answer": "necesita que se vigile el nivel de agua de su propio depósito.",
+  "second_answer": "necesita que se vigile el nivel del circuito de refrigeración de donde toma el agua.",
+  "third_answer": "no necesita ningún mantenimiento.",
+  "correct_answer": "necesita que se vigile el nivel de agua de su propio depósito.",
+  "test": {
+    "$oid": "659e5bc044fa4228946c0b96"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a153d5d6b52905bb4ea75c"
+  },
+  "image": "imagen130.webp",
+  "question": "Por esta carretera convencional, ¿cuál es la velocidad máxima a la que puede adelantar un vehículo turismo?",
+  "first_answer": "A 90 km/h.",
+  "second_answer": "A 100 km/h.",
+  "third_answer": "A 110 km/h.",
+  "correct_answer": "A 90 km/h.",
+  "test": {
+    "$oid": "659e5bc044fa4228946c0b96"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a15419d6b52905bb4ea75e"
+  },
+  "image": "imagen131.webp",
+  "question": "En los ciclistas, el uso del casco...",
+  "first_answer": "no tiene influencia en las lesiones que puedan sufrir.",
+  "second_answer": "reduce totalmente la probabilidad de sufrir lesiones en la cabeza.",
+  "third_answer": "reduce considerablemente la probabilidad de sufrir lesiones en la cabeza.",
+  "correct_answer": "reduce considerablemente la probabilidad de sufrir lesiones en la cabeza.",
+  "test": {
+    "$oid": "659e5bc044fa4228946c0b96"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a1547cd6b52905bb4ea75f"
+  },
+  "image": "imagen132.webp",
+  "question": "En esta curva de visibilidad reducida, ¿está permitido cambiar de sentido?",
+  "first_answer": "Sí, siempre que no se obstaculice a los vehículos que circulen detrás.",
+  "second_answer": "No, en ningún caso.",
+  "third_answer": "Sí, porque no hay señal que lo prohíba.",
+  "correct_answer": "No, en ningún caso.",
+  "test": {
+    "$oid": "659e5bc044fa4228946c0b96"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a1578ed6b52905bb4ea760"
+  },
+  "image": "imagen133.webp",
+  "question": "¿Está permitido estacionar en doble fila?",
+  "first_answer": "Sí, cuando no haya espacio libre en las proximidades.",
+  "second_answer": "Sí, en las vías urbanas, por un tiempo inferior a dos minutos.",
+  "third_answer": "No está permitido en ningún caso.",
+  "correct_answer": "No está permitido en ningún caso.",
+  "test": {
+    "$oid": "659e5bc044fa4228946c0b96"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a157e4d6b52905bb4ea761"
+  },
+  "image": "imagen134.webp",
+  "question": "No debe entrar en una intersección, aunque el semáforo esté en verde, si...",
+  "first_answer": "se aproximan vehículos por la derecha.",
+  "second_answer": "un agente le ordena detenerse.",
+  "third_answer": "hay una señal de stop o de ceda el paso.",
+  "test": {
+    "$oid": "659e5bc044fa4228946c0b96"
+  },
+  "correct_answer": "un agente le ordena detenerse."
+},
+{
+  "_id": {
+    "$oid": "65a15841d6b52905bb4ea762"
+  },
+  "image": "imagen135.webp",
+  "question": "El consumo de combustible es menor si se circula con marchas...",
+  "first_answer": "largas y el motor muy revolucionado.",
+  "second_answer": "cortas y el motor muy revolucionado.",
+  "third_answer": "largas y el motor poco revolucionado.",
+  "correct_answer": "largas y el motor poco revolucionado.",
+  "test": {
+    "$oid": "659e5bc044fa4228946c0b96"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a158e6d6b52905bb4ea763"
+  },
+  "image": "imagen136.webp",
+  "question": "La señal indica...",
+  "first_answer": "puente móvil.",
+  "second_answer": "peligro por desbordamiento de un río.",
+  "third_answer": "peligro debido a que la vía desemboca en un muelle o en una corriente de agua.",
+  "correct_answer": "peligro debido a que la vía desemboca en un muelle o en una corriente de agua.",
+  "test": {
+    "$oid": "659e5bc044fa4228946c0b96"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a15941d6b52905bb4ea764"
+  },
+  "image": "imagen137.webp",
+  "question": "En una carretera convencional, el conductor de una motocicleta, ¿puede rebasar la velocidad máxima genérica en alguna circunstancia?",
+  "first_answer": "No, sólo la pueden rebasar los turismos para adelantar.",
+  "second_answer": "No, en ningún caso.",
+  "third_answer": "Sí, para adelantar, en 20 km/h",
+  "correct_answer": "No, en ningún caso.",
+  "test": {
+    "$oid": "659e5bc044fa4228946c0b96"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a15993d6b52905bb4ea765"
+  },
+  "image": "imagen138.webp",
+  "question": "En las isletas de canalización del tráfico situadas en la calzada, ¿se puede parar o estacionar?",
+  "first_answer": "Ni parar ni estacionar.",
+  "second_answer": "Sólo parar.",
+  "third_answer": "Sólo estacionar.",
+  "correct_answer": "Ni parar ni estacionar.",
+  "test": {
+    "$oid": "659e5bc044fa4228946c0b96"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a15a04d6b52905bb4ea766"
+  },
+  "image": "imagen139.webp",
+  "question": "Hace 6 meses que tiene el permiso de conducción. ¿A qué velocidad máxima puede conducir por una autovía?",
+  "first_answer": "A 120 km/h.",
+  "second_answer": "A 80 km/h y a 100 km/h para adelantar.",
+  "third_answer": "A 80 km/h",
+  "correct_answer": "A 120 km/h.",
+  "test": {
+    "$oid": "659e5bc044fa4228946c0b96"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a15a56d6b52905bb4ea767"
+  },
+  "image": "imagen140.webp",
+  "question": "En general, ¿a quiénes afecta más el alcohol?",
+  "first_answer": "A los hombres.",
+  "second_answer": "A las mujeres.",
+  "third_answer": "Los efectos del alcohol no dependen del sexo de la persona.",
+  "correct_answer": "A las mujeres.",
+  "test": {
+    "$oid": "659e5bc044fa4228946c0b96"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a15aa8d6b52905bb4ea768"
+  },
+  "image": "imagen141.webp",
+  "question": "Los accidentes debidos al sueño, ¿suceden también durante el día?",
+  "first_answer": "Sí.",
+  "second_answer": "No, sólo suceden por las noches.",
+  "third_answer": "Sí, pero únicamente a las primeras horas de la tarde.",
+  "correct_answer": "Sí.",
+  "test": {
+    "$oid": "659e5bc044fa4228946c0b96"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a15b08d6b52905bb4ea769"
+  },
+  "image": "imagen142.webp",
+  "question": "El vehículo rojo, ¿está obligado a ceder el paso en la intersección?",
+  "first_answer": "Sí, a los vehículos que se aproximen por la derecha.",
+  "second_answer": "Sí, a todos los vehículos.",
+  "third_answer": "No.",
+  "correct_answer": "Sí, a los vehículos que se aproximen por la derecha.",
+  "test": {
+    "$oid": "659e5bc044fa4228946c0b96"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a15b69d6b52905bb4ea76a"
+  },
+  "image": "imagen143.webp",
+  "question": "¿Es necesario revisar el funcionamiento del sistema de alumbrado?",
+  "first_answer": "No es necesario.",
+  "second_answer": "Sí, es parte del mantenimiento preventivo del vehículo.",
+  "third_answer": "No, si tiene instaladas luces de xenón.",
+  "correct_answer": "Sí, es parte del mantenimiento preventivo del vehículo.",
+  "test": {
+    "$oid": "659e5bc044fa4228946c0b96"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a15bbdd6b52905bb4ea76c"
+  },
+  "image": "imagen144.webp",
+  "question": "¿Cuándo colocaremos a un accidentado en posición de defensa?",
+  "first_answer": "Siempre.",
+  "second_answer": "Cuando exista peligro de asfixia.",
+  "third_answer": "Cuando se encuentre en estado de shock.",
+  "correct_answer": "Cuando exista peligro de asfixia.",
+  "test": {
+    "$oid": "659e5bc044fa4228946c0b96"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a171b0d6b52905bb4ea76d"
+  },
+  "image": "imagen145.webp",
+  "question": "¿Qué efectos produce el alcohol en el conductor?",
+  "first_answer": "Un aumento en el tiempo de reacción.",
+  "second_answer": "Una disminución en el tiempo de reacción.",
+  "third_answer": "Un aumento de la capacidad de reacción.",
+  "correct_answer": "Un aumento en el tiempo de reacción.",
+  "test": {
+    "$oid": "659e5bc044fa4228946c0b96"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a1721fd6b52905bb4ea76e"
+  },
+  "image": "imagen146.webp",
+  "question": "¿Cuál será la velocidad máxima en esta vía?",
+  "first_answer": "100 km/h.",
+  "second_answer": "90 km/h.",
+  "third_answer": "120 km/h.",
+  "correct_answer": "90 km/h.",
+  "test": {
+    "$oid": "659e5bc044fa4228946c0b96"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a17286d6b52905bb4ea76f"
+  },
+  "image": "imagen147.webp",
+  "question": "¿A qué puede ser debido que se produzca un fallo de los frenos?",
+  "first_answer": "A las escobillas gastadas.",
+  "second_answer": "Pérdida de líquido de frenos.",
+  "third_answer": "Generador en mal estado.",
+  "correct_answer": "Pérdida de líquido de frenos.",
+  "test": {
+    "$oid": "659e5bc044fa4228946c0b96"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a172ead6b52905bb4ea770"
+  },
+  "image": "imagen148.webp",
+  "question": "Una autocaravana de 3500 kg de MMA, ¿a qué velocidad máxima puede circular por esta carretera convencional?",
+  "first_answer": "90 km/h.",
+  "second_answer": "80 km/h.",
+  "third_answer": "100 km/h.",
+  "correct_answer": "90 km/h.",
+  "test": {
+    "$oid": "659e5bc044fa4228946c0b96"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a17357d6b52905bb4ea771"
+  },
+  "image": "imagen149.webp",
+  "question": "¿Podrá usted efectuar un cambio de dirección hacia la izquierda en esta curva de visibilidad reducida?",
+  "first_answer": "Sí, porque no existe línea discontinua que me lo impida.",
+  "second_answer": "No, por no disponer de suficiente visibilidad.",
+  "third_answer": "Sí, si no veo vehículos en sentido contrario.",
+  "correct_answer": "No, por no disponer de suficiente visibilidad.",
+  "test": {
+    "$oid": "659e5bc044fa4228946c0b96"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a173b5d6b52905bb4ea772"
+  },
+  "image": "imagen150.webp",
+  "question": "¿Podemos taponar una hemorragia?",
+  "first_answer": "No, en ningún caso.",
+  "second_answer": "Sí, si la hemorragia fuese externa.",
+  "third_answer": "Sí, si es hemorragia exteriorizada.",
+  "correct_answer": "Sí, si la hemorragia fuese externa.",
+  "test": {
+    "$oid": "659e5bc044fa4228946c0b96"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a17424d6b52905bb4ea773"
+  },
+  "image": "imagen151.webp",
+  "question": "¿En qué caso de los citados usaremos el alumbrado de largo alcance o carretera?",
+  "first_answer": "En travesías insuficientemente iluminadas.",
+  "second_answer": "En autopistas suficientemente iluminadas.",
+  "third_answer": "En vías para automóviles insuficientemente iluminadas.",
+  "correct_answer": "En vías para automóviles insuficientemente iluminadas.",
+  "test": {
+    "$oid": "659e5be344fa4228946c0b97"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a1748ed6b52905bb4ea774"
+  },
+  "image": "imagen152.webp",
+  "question": "¿Podrá usted adelantar en un túnel?",
+  "first_answer": "No, en ningún caso.",
+  "second_answer": "Sí, a vehículos de dos ruedas.",
+  "third_answer": "Sí, cuando se disponga de más de un carril en el mismo sentido de circulación del vehículo al que se pretende adelantar.",
+  "correct_answer": "Sí, cuando se disponga de más de un carril en el mismo sentido de circulación del vehículo al que se pretende adelantar.",
+  "test": {
+    "$oid": "659e5be344fa4228946c0b97"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a174f0d6b52905bb4ea775"
+  },
+  "image": "imagen153.webp",
+  "question": "Circulando con hielo en la calzada la distancia de frenado...",
+  "first_answer": "Podría ser como máximo el doble de la distancia que en seco.",
+  "second_answer": "Podría llegar a ser 10 veces mayor a la normal.",
+  "third_answer": "Sería inferior a la recorrida en condiciones normales.",
+  "correct_answer": "Podría llegar a ser 10 veces mayor a la normal.",
+  "test": {
+    "$oid": "659e5be344fa4228946c0b97"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a1755ad6b52905bb4ea776"
+  },
+  "image": "imagen154.webp",
+  "question": "Al adelantar al camión de la imagen tendrá en cuenta...",
+  "first_answer": "Que su masa autorizada es superior a 3.500 kg.",
+  "second_answer": "Que mide más de 2,50 metros de altura.",
+  "third_answer": "Que mide más de 12 metros de longitud.",
+  "correct_answer": "Que mide más de 12 metros de longitud.",
+  "test": {
+    "$oid": "659e5be344fa4228946c0b97"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a175b5d6b52905bb4ea777"
+  },
+  "image": "imagen155.webp",
+  "question": "Esta señal le advierte del peligro de la presencia inmediata de un...",
+  "first_answer": "Paso a nivel con barreras.",
+  "second_answer": "Paso a nivel sin barreras y dos vías férreas.",
+  "third_answer": "Paso a nivel sin barreras y con más de una vía férrea.",
+  "test": {
+    "$oid": "659e5be344fa4228946c0b97"
+  },
+  "correct_answer": "Paso a nivel sin barreras y con más de una vía férrea."
+},
+{
+  "_id": {
+    "$oid": "65a1765ad6b52905bb4ea778"
+  },
+  "image": "imagen156.webp",
+  "question": "Esta señal...",
+  "first_answer": "Aconseja el uso de la luz de corto alcance.",
+  "second_answer": "Indica el final de un tramo en el que es obligatorio el alumbrado de corto alcance.",
+  "third_answer": "Indica que se puede usar el alumbrado de largo alcance o carretera.",
+  "correct_answer": "Indica el final de un tramo en el que es obligatorio el alumbrado de corto alcance.",
+  "test": {
+    "$oid": "659e5be344fa4228946c0b97"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a177bdd6b52905bb4ea77a"
+  },
+  "image": "imagen157.webp",
+  "question": "Llevar los neumáticos con poca presión, ¿afectará al consumo de combustible?",
+  "first_answer": "No, el consumo no se verá afectado.",
+  "second_answer": "Sí, el vehículo consumirá menos combustible.",
+  "third_answer": "Sí, el vehículo consumirá más combustible.",
+  "correct_answer": "Sí, el vehículo consumirá más combustible.",
+  "test": {
+    "$oid": "659e5be344fa4228946c0b97"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a1781cd6b52905bb4ea77b"
+  },
+  "image": "imagen158.webp",
+  "question": "Esta señal indica...",
+  "first_answer": "Peligro por obstrucción en la calzada.",
+  "second_answer": "Peligro por pavimento deslizante.",
+  "third_answer": "Peligro por escalón lateral hacia la derecha.",
+  "correct_answer": "Peligro por pavimento deslizante.",
+  "test": {
+    "$oid": "659e5be344fa4228946c0b97"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a17879d6b52905bb4ea77c"
+  },
+  "image": "imagen149.webp",
+  "question": "El vehículo que se encuentra la señal, ¿a quién tendrá que ceder el paso?",
+  "first_answer": "A todos los vehículos que se acerquen por la vía transversal.",
+  "second_answer": "Sólo al vehículo que se le acerca por la derecha.",
+  "third_answer": "A ningún vehículo, tiene prioridad de paso.",
+  "correct_answer": "Sólo al vehículo que se le acerca por la derecha.",
+  "test": {
+    "$oid": "659e5be344fa4228946c0b97"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a178f9d6b52905bb4ea77d"
+  },
+  "image": "imagen160.webp",
+  "question": "Si no hay señalización expresa, ¿cuál es la velocidad máxima que tendremos en esta vía?",
+  "first_answer": "30 km/h.",
+  "second_answer": "20 km/h.",
+  "third_answer": "50 km/h.",
+  "correct_answer": "30 km/h.",
+  "test": {
+    "$oid": "659e5be344fa4228946c0b97"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a17985d6b52905bb4ea77e"
+  },
+  "image": "imagen161.webp",
+  "question": "¿Qué le indica el agente?",
+  "first_answer": "Obliga a detenerse a todos los usuarios de la vía.",
+  "second_answer": "Obliga a detenerse a los vehículos que se acerquen de frente al agente.",
+  "third_answer": "Obliga a detenerse a todos los usuarios de la vía que se acerquen al agente.",
+  "correct_answer": "Obliga a detenerse a todos los usuarios de la vía que se acerquen al agente.",
+  "test": {
+    "$oid": "659e5be344fa4228946c0b97"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a179e4d6b52905bb4ea77f"
+  },
+  "image": "imagen162.webp",
+  "question": "¿Podremos estacionar sobre esta línea amarilla en zigzag?",
+  "first_answer": "No, no puede estacionar ningún vehículo.",
+  "second_answer": "No, sólo pueden estacionar los vehículos de transporte colectivo.",
+  "third_answer": "No podremos estacionar ni parar.",
+  "correct_answer": "No, no puede estacionar ningún vehículo.",
+  "test": {
+    "$oid": "659e5be344fa4228946c0b97"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a17a4dd6b52905bb4ea780"
+  },
+  "image": "imagen163.webp",
+  "question": "¿A qué velocidad circularemos como máximo en un carril reversible?",
+  "first_answer": ";80 km/h.",
+  "second_answer": "60 km/h.",
+  "third_answer": "A la genérica de la vía.",
+  "correct_answer": "A la genérica de la vía.",
+  "test": {
+    "$oid": "659e5be344fa4228946c0b97"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a17aa4d6b52905bb4ea781"
+  },
+  "image": "imagen164.webp",
+  "question": "¿En un túnel podremos realizar un cambio de sentido?",
+  "first_answer": "No, porque está prohibido.",
+  "second_answer": "Sí, si no tengo que maniobrar.",
+  "third_answer": "Sí, teniendo suficiente visibilidad.",
+  "correct_answer": "No, porque está prohibido.",
+  "test": {
+    "$oid": "659e5be344fa4228946c0b97"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a17b05d6b52905bb4ea782"
+  },
+  "image": "imagen165.webp",
+  "question": "Este panel, ¿qué indica?",
+  "first_answer": "La distancia desde el lugar donde está la señal a aquél en que comienza el peligro.",
+  "second_answer": "La longitud en que existe pavimento en mal estado.",
+  "third_answer": "La longitud en que existe el peligro.",
+  "test": {
+    "$oid": "659e5be344fa4228946c0b97"
+  },
+  "correct_answer": "La longitud en que existe el peligro."
+},
+{
+  "_id": {
+    "$oid": "65a17b57d6b52905bb4ea783"
+  },
+  "image": "imagen166.webp",
+  "question": "¿Qué indica la señal?",
+  "first_answer": "Peligro, paso frecuentado por animales en libertad.",
+  "second_answer": "Peligro, coto de caza.",
+  "third_answer": "Parque nacional.",
+  "correct_answer": "Peligro, paso frecuentado por animales en libertad.",
+  "test": {
+    "$oid": "659e5be344fa4228946c0b97"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a17bc3d6b52905bb4ea784"
+  },
+  "image": "imagen167.webp",
+  "question": "Hay hielo en la vía. ¿Qué debe hacer?",
+  "first_answer": "Circular pisando el freno intermitentemente.",
+  "second_answer": "Circular a poca velocidad para no tener que frenar.",
+  "third_answer": "Circular con el pie en el embrague.",
+  "correct_answer": "Circular a poca velocidad para no tener que frenar.",
+  "test": {
+    "$oid": "659e5be344fa4228946c0b97"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a17dbdd6b52905bb4ea785"
+  },
+  "image": "imagen168.webp",
+  "question": "Esta señal, ¿qué indica?",
+  "first_answer": "La velocidad máxima aconsejada.",
+  "second_answer": "La velocidad máxima permitida.",
+  "third_answer": "La velocidad mínima aconsejada.",
+  "correct_answer": "La velocidad máxima permitida.",
+  "test": {
+    "$oid": "659e5be344fa4228946c0b97"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a266d2b74672e6848df2d7"
+  },
+  "image": "imagen169.webp",
+  "question": "¿Cómo debe realizarse un cambio de carril en una vía saturada?",
+  "first_answer": "Utilizando el arcén.",
+  "second_answer": "Realizando la maniobra rápidamente para no estorbar.",
+  "third_answer": "Advirtiéndolo con suficiente antelación.",
+  "correct_answer": "Advirtiéndolo con suficiente antelación.",
+  "test": {
+    "$oid": "659e5be344fa4228946c0b97"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a26729b74672e6848df2d8"
+  },
+  "image": "imagen170.webp",
+  "question": "Al incorporarse a la autopista por el carril de aceleración, debe...",
+  "first_answer": "acelerar hasta alcanzar la velocidad adecuada al final del carril.",
+  "second_answer": "disminuir la velocidad y detenerse al final del carril, obligatoriamente.",
+  "third_answer": "acelerar hasta alcanzar obligatoriamente 120 km/h al final del carril.",
+  "correct_answer": "acelerar hasta alcanzar la velocidad adecuada al final del carril.",
+  "test": {
+    "$oid": "659e5be344fa4228946c0b97"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a267a1b74672e6848df2d9"
+  },
+  "image": "imagen171.webp",
+  "question": "Si la luz del semáforo pasa a verde y el agente mantiene el brazo en alto, ¿puede pasar?",
+  "first_answer": "Sí, porque la luz verde me lo permite.",
+  "second_answer": "No, porque la señal del agente tiene prioridad respecto a las otras dos señales.",
+  "third_answer": "Sí, siempre que antes de cruzar deje pasar a todos los vehículos.",
+  "correct_answer": "No, porque la señal del agente tiene prioridad respecto a las otras dos señales.",
+  "test": {
+    "$oid": "659e5be344fa4228946c0b97"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a26807b74672e6848df2db"
+  },
+  "image": "imagen172.webp",
+  "question": "Su vehículo queda detenido por una avería en el arcén, ¿debe señalizarlo?",
+  "first_answer": "Sí, con la señal de emergencia y el dispositivo de preseñalización de peligro.",
+  "second_answer": "No, en el arcén no es necesario.",
+  "third_answer": "Sí, únicamente con el dispositivo de preseñalización de peligro.",
+  "correct_answer": "Sí, con la señal de emergencia y el dispositivo de preseñalización de peligro.",
+  "test": {
+    "$oid": "659e5be344fa4228946c0b97"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a2685fb74672e6848df2dc"
+  },
+  "image": "imagen173.webp",
+  "question": "Mientras se reposta carburante en una motocicleta, ¿es obligatorio apagar el alumbrado?",
+  "first_answer": "Sí.",
+  "second_answer": "No, se debe dejar encendida la luz de cruce.",
+  "third_answer": "No, se debe dejar encendida la luz de posición.",
+  "correct_answer": "Sí.",
+  "test": {
+    "$oid": "659e5be344fa4228946c0b97"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a268b3b74672e6848df2dd"
+  },
+  "image": "imagen174.webp",
+  "question": "¿Cuál de los siguientes factores hace que aumente la fatiga cuando se conduce?",
+  "first_answer": "Las congestiones y retenciones de tráfico.",
+  "second_answer": "Los asientos demasiado blandos.",
+  "third_answer": "La luz solar.",
+  "correct_answer": "Las congestiones y retenciones de tráfico.",
+  "test": {
+    "$oid": "659e5be344fa4228946c0b97"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a2691bb74672e6848df2de"
+  },
+  "image": "imagen175.webp",
+  "question": "¿Qué debe hacer si durante la marcha su vehículo no puede alcanzar la velocidad mínima exigida y existe peligro de alcance?",
+  "first_answer": "Utilizar la señal de emergencia.",
+  "second_answer": "Pisar de forma intermitente el freno para advertir con las luces de frenado que va a reducir la marcha.",
+  "third_answer": "Realizar destellos con las luces de largo alcance.",
+  "correct_answer": "Utilizar la señal de emergencia.",
+  "test": {
+    "$oid": "659e5be344fa4228946c0b97"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a2697ab74672e6848df2df"
+  },
+  "image": "imagen176.webp",
+  "question": "En caso de un accidente donde la ayuda ya está organizada, ¿debe detenerse a prestar auxilio?",
+  "first_answer": "Sí, en vías interurbanas o donde no exista poste SOS",
+  "second_answer": "No, si no está implicado debe continuar la marcha.",
+  "third_answer": "Sí, debe detenerse y colaborar siempre.",
+  "correct_answer": "No, si no está implicado debe continuar la marcha.",
+  "test": {
+    "$oid": "659e5be344fa4228946c0b97"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a269e7b74672e6848df2e0"
+  },
+  "image": "imagen177.webp",
+  "question": "¿Es obligatorio llevar un extintor de incendios en un turismo destinado al servicio privado?",
+  "first_answer": "Sí.",
+  "second_answer": "No.",
+  "third_answer": "Sí, cuando transporte a más de 5 personas incluido el conductor.",
+  "correct_answer": "No.",
+  "test": {
+    "$oid": "659e5be344fa4228946c0b97"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a26a5fb74672e6848df2e1"
+  },
+  "image": "imagen178.webp",
+  "question": "Los ciclistas, ¿pueden quitarse el casco en vías interurbanas?",
+  "first_answer": "No.",
+  "second_answer": "En caso de rampas ascendentes prolongadas, en condiciones extremas de calor o por razones médicas.",
+  "third_answer": "Sólo en rampas ascendentes prolongadas.",
+  "correct_answer": "En caso de rampas ascendentes prolongadas, en condiciones extremas de calor o por razones médicas.",
+  "test": {
+    "$oid": "659e5be344fa4228946c0b97"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a26acdb74672e6848df2e2"
+  },
+  "image": "imagen179.webp",
+  "question": "Ante un semáforo circular de color amarillo fijo, ¿hay que detenerse?",
+  "first_answer": "No, pero sí obliga a pasar con precaución.",
+  "second_answer": "Sí, a no ser que no pueda hacerse en condiciones de seguridad.",
+  "third_answer": "No, porque únicamente avisa que va a cambiar a color rojo.",
+  "correct_answer": "Sí, a no ser que no pueda hacerse en condiciones de seguridad.",
+  "test": {
+    "$oid": "659e5be344fa4228946c0b97"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a26b36b74672e6848df2e3"
+  },
+  "image": "imagen180.webp",
+  "question": "¿Qué vehículos tienen permitido circular por un carril habilitado, por razones de fluidez, en sentido contrario al habitual?",
+  "first_answer": "Automóviles y vehículos con remolque hasta 750 kg de M.M.A.",
+  "second_answer": "Automóviles que superen los 3.500 kg de M.M.A. y motocicletas.",
+  "third_answer": "Sólo turismos y motocicletas.",
+  "correct_answer": "Sólo turismos y motocicletas.",
+  "test": {
+    "$oid": "659e5be344fa4228946c0b97"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a26b9ab74672e6848df2e4"
+  },
+  "image": "imagen181.webp",
+  "question": "¿Qué le permiten los espejos retrovisores?",
+  "first_answer": "Observar únicamente lo que está detrás del vehículo.",
+  "second_answer": "Evitar los ángulos muertos.",
+  "third_answer": "Observar en todo momento lo que rodea al vehículo.",
+  "correct_answer": "Observar en todo momento lo que rodea al vehículo.",
+  "test": {
+    "$oid": "659e5bf244fa4228946c0b98"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a26c75b74672e6848df2e6"
+  },
+  "image": "imagen181.webp",
+  "question": "A la vista de la señal, ¿qué vehículos tendrán prioridad de paso?",
+  "first_answer": "Los que se aproximen en sentido contrario.",
+  "second_answer": "Los que se encuentren la señal.",
+  "third_answer": "Los camiones.",
+  "correct_answer": "Los que se encuentren la señal.",
+  "test": {
+    "$oid": "659e5bf244fa4228946c0b98"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a26d0db74672e6848df2e7"
+  },
+  "image": "imagen183.webp",
+  "question": "¿En qué documento debemos consultar la fecha de la siguiente revisión en la ITV?",
+  "first_answer": "En el permiso de conducir.",
+  "second_answer": "En la tarjeta de inspección técnica.",
+  "third_answer": "En la carta verde.",
+  "correct_answer": "En la tarjeta de inspección técnica.",
+  "test": {
+    "$oid": "659e5bf244fa4228946c0b98"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a26d9bb74672e6848df2e9"
+  },
+  "image": "imagen184.webp",
+  "question": "Para adelantar al ciclista de la imagen, ¿podemos rebasar la línea continua?",
+  "first_answer": "No, porque puedo dejar 1,50 metros de separación lateral sin tener que rebasarla.",
+  "second_answer": "Sí.",
+  "third_answer": "No, tendré que esperar a encontrar discontinua.",
+  "correct_answer": "Sí.",
+  "test": {
+    "$oid": "659e5bf244fa4228946c0b98"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a26df8b74672e6848df2ea"
+  },
+  "image": "imagen185.webp",
+  "question": "Si por necesidades de la circulación su vehículo queda detenido en un paso inferior deberá...",
+  "first_answer": "Apagar el motor, conectar la señal de emergencia y mantener encendidas las luces de posición.",
+  "second_answer": "Abandonar el vehículo dirigiéndome rápidamente al refugio o salida más próxima.",
+  "third_answer": "Apagar todos los sistemas eléctricos.",
+  "correct_answer": "Apagar el motor, conectar la señal de emergencia y mantener encendidas las luces de posición.",
+  "test": {
+    "$oid": "659e5bf244fa4228946c0b98"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a26e5cb74672e6848df2eb"
+  },
+  "image": "imagen186.webp",
+  "question": "En un paso a nivel, ¿qué debe hacer si la barrera está subiendo?",
+  "first_answer": "Pasar cuando lo hagan el resto de vehículos, se mueva o no la barrera.",
+  "second_answer": "Pasar cuando, por la altura, la barrera lo permita.",
+  "third_answer": "Detenerse detrás de los demás vehículos, hasta que la barrera suba totalmente y permita el paso.",
+  "correct_answer": "Detenerse detrás de los demás vehículos, hasta que la barrera suba totalmente y permita el paso.",
+  "test": {
+    "$oid": "659e5bf244fa4228946c0b98"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a26f5cb74672e6848df2ec"
+  },
+  "image": "imagen187.webp",
+  "question": "¿Está permitido conducir un camión con el permiso de la clase B?",
+  "first_answer": "Sí, cualquiera que sea la M.M.A del camión.",
+  "second_answer": "Sí, cuando su M.M.A no sea superior a 3.500 kg.",
+  "third_answer": "No, en ningún caso.",
+  "correct_answer": "Sí, cuando su M.M.A no sea superior a 3.500 kg.",
+  "test": {
+    "$oid": "659e5bf244fa4228946c0b98"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a26fd9b74672e6848df2ed"
+  },
+  "image": "imagen188.webp",
+  "question": "Estas marcas viales indican que...",
+  "first_answer": "es una vía de servicio.",
+  "second_answer": "es una vía de atención preferente.",
+  "third_answer": "es una zona que está en obras.",
+  "correct_answer": "es una zona que está en obras.",
+  "test": {
+    "$oid": "659e5bf244fa4228946c0b98"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a27045b74672e6848df2ee"
+  },
+  "image": "imagen189.webp",
+  "question": "¿Cuándo está prohibido adelantar en los túneles?",
+  "first_answer": "Cuando el túnel no está iluminado.",
+  "second_answer": "Cuando solo existe un carril para cada sentido.",
+  "third_answer": "Cuando existe más de un carril para cada sentido.",
+  "correct_answer": "Cuando solo existe un carril para cada sentido.",
+  "test": {
+    "$oid": "659e5bf244fa4228946c0b98"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a27096b74672e6848df2ef"
+  },
+  "image": "imagen190.webp",
+  "question": "En una calzada con dos sentidos hay un refugio en el centro. ¿Por qué lado está permitido circular?",
+  "first_answer": "Por el lado derecho del refugio.",
+  "second_answer": "Por cualquiera de ellos, indistintamente.",
+  "third_answer": "Por el lado izquierdo del refugio.",
+  "correct_answer": "Por el lado derecho del refugio.",
+  "test": {
+    "$oid": "659e5bf244fa4228946c0b98"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a27113b74672e6848df2f0"
+  },
+  "image": "imagen191.webp",
+  "question": "En este tramo de vía, ¿cuál es la velocidad máxima?",
+  "first_answer": "La que indica la señalización.",
+  "second_answer": "La que indica la señalización, más 20 km/h para adelantar.",
+  "third_answer": "La máxima genérica de 90 km/h, para adelantar.",
+  "correct_answer": "La que indica la señalización.",
+  "test": {
+    "$oid": "659e5bf244fa4228946c0b98"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a293fb85b9e26133ba3010"
+  },
+  "image": "imagen192.webp",
+  "question": "Advertir a otros usuarios de que se va a realizar una maniobra, ¿es obligatorio?",
+  "first_answer": "No, sólo es obligatorio advertir a los conductores.",
+  "second_answer": "No, pero es siempre muy aconsejable.",
+  "third_answer": "Sí, siempre.",
+  "correct_answer": "Sí, siempre.",
+  "test": {
+    "$oid": "659e5bf244fa4228946c0b98"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a2944e85b9e26133ba3011"
+  },
+  "image": "imagen193.webp",
+  "question": "Esta línea discontinua, ¿qué indica?",
+  "first_answer": "Un carril especial.",
+  "second_answer": "La cercanía a una línea longitudinal continua.",
+  "third_answer": "Un carril reversible.",
+  "correct_answer": "Un carril especial.",
+  "test": {
+    "$oid": "659e5bf244fa4228946c0b98"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a294b885b9e26133ba3012"
+  },
+  "image": "imagen194.webp",
+  "question": "¿Puede circular por este cebreado conduciendo un ciclomotor?",
+  "first_answer": "Sí, porque está obligado a circular por el arcén, por esa zona.",
+  "second_answer": "No, ningún vehículo puede circular.",
+  "third_answer": "Sí, cuando lo tenga que utilizar para realizar un giro a la izquierda.",
+  "correct_answer": "Sí, porque está obligado a circular por el arcén, por esa zona.",
+  "test": {
+    "$oid": "659e5bf244fa4228946c0b98"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a2951785b9e26133ba3013"
+  },
+  "image": "imagen195.webp",
+  "question": "Aunque esté prohibido el adelantamiento, un turismo podrá rebasar, incluso invadiendo el sentido contrario, a...",
+  "first_answer": "cualquier camión.",
+  "second_answer": "conductores de bicicletas.",
+  "third_answer": "cualquier autobús o camión que circule lentamente.",
+  "correct_answer": "conductores de bicicletas.",
+  "test": {
+    "$oid": "659e5bf244fa4228946c0b98"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a2959285b9e26133ba3014"
+  },
+  "image": "imagen196.webp",
+  "question": "La luz verde de un semáforo circular para vehículos, indica que...",
+  "first_answer": "está permitido el paso y con preferencia de paso.",
+  "second_answer": "debe ceder el paso a los demás vehículos.",
+  "third_answer": "puede pasar, cediendo el paso a los peatones",
+  "correct_answer": "está permitido el paso y con preferencia de paso.",
+  "test": {
+    "$oid": "659e5bf244fa4228946c0b98"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a295f085b9e26133ba3015"
+  },
+  "image": "imagen197.webp",
+  "question": "¿Está permitido advertir con el brazo que va a efectuar una maniobra?",
+  "first_answer": "No, porque no se deben sacar los brazos fuera del turismo.",
+  "second_answer": "No, debe advertirlo también con los intermitentes.",
+  "third_answer": "Sí, cuando la señal sea perceptible para los demás usuarios.",
+  "correct_answer": "Sí, cuando la señal sea perceptible para los demás usuarios.",
+  "test": {
+    "$oid": "659e5bf244fa4228946c0b98"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a2964f85b9e26133ba3016"
+  },
+  "image": "imagen198.webp",
+  "question": "La señal afecta a...",
+  "first_answer": "todos los vehículos cuya masa máxima en carga supere la indicada.",
+  "second_answer": "los vehículos de transporte de mercancías, exclusivamente.",
+  "third_answer": "los vehículos automóviles, exclusivamente.",
+  "correct_answer": "todos los vehículos cuya masa máxima en carga supere la indicada.",
+  "test": {
+    "$oid": "659e5bf244fa4228946c0b98"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a296a485b9e26133ba3017"
+  },
+  "image": "imagen199.webp",
+  "question": "En esta vía de poblado, ¿a qué velocidad como máximo podremos circular en ausencia de señalización específica?",
+  "first_answer": "A 20 km/h.",
+  "second_answer": "A 50 km/h.",
+  "third_answer": "A 30 km/h.",
+  "correct_answer": "A 30 km/h.",
+  "test": {
+    "$oid": "659e5bf244fa4228946c0b98"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a296ff85b9e26133ba3018"
+  },
+  "image": "imagen200.webp",
+  "question": "Por causa de avería y durante el día, ¿qué deberá hacer en caso de una inmovilización del vehículo en una autopista?",
+  "first_answer": "Colocar 2 triángulos de preseñalización de peligro a 50 metros y visibles a 100 metros.",
+  "second_answer": "Colocar el dispositivo de preseñalización de peligro en la parte más alta posible del vehículo inmovilizado garantizado su máxima visibilidad, y encender el alumbrado de emergencia.",
+  "third_answer": "Avisar lo antes posible mediante un poste de SOS.",
+  "correct_answer": "Colocar el dispositivo de preseñalización de peligro en la parte más alta posible del vehículo inmovilizado garantizado su máxima visibilidad, y encender el alumbrado de emergencia.",
+  "test": {
+    "$oid": "659e5bf244fa4228946c0b98"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a2979185b9e26133ba301a"
+  },
+  "image": "imagen201.webp",
+  "question": "¿Debemos tapar a un herido?",
+  "first_answer": "Sí, si te lo pide.",
+  "second_answer": "Sólo en invierno si las temperaturas son muy bajas.",
+  "third_answer": "Sí, siempre.",
+  "correct_answer": "Sí, siempre.",
+  "test": {
+    "$oid": "659e5bf244fa4228946c0b98"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a2981d2cfccfc0bb7431bb"
+  },
+  "image": "imagen202.webp",
+  "question": "¿Cuál será la tasa máxima de alcohol en sangre durante los 2 años siguientes a la obtención del primer permiso de conducción?",
+  "first_answer": "0,5 gramos de alcohol por litro de sangre.",
+  "second_answer": "0,3 gramos de alcohol por litro de sangre.",
+  "third_answer": "0,25 gramos de alcohol por litro de sangre.",
+  "correct_answer": "0,3 gramos de alcohol por litro de sangre.",
+  "test": {
+    "$oid": "659e5bf244fa4228946c0b98"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a298772cfccfc0bb7431bc"
+  },
+  "image": "imagen203.webp",
+  "question": "¿Los medicamentos para el resfriado pueden afectar la conducción?",
+  "first_answer": "Sí, pueden dar somnolencia.",
+  "second_answer": "No afectan.",
+  "third_answer": "Sí, sólo si los tomamos en grandes dosis.",
+  "correct_answer": "Sí, pueden dar somnolencia.",
+  "test": {
+    "$oid": "659e5bf244fa4228946c0b98"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a298ca2cfccfc0bb7431bd"
+  },
+  "image": "imagen204.webp",
+  "question": "¿Cómo procederemos en caso de derrape?",
+  "first_answer": "Frenaremos fuertemente para detener el vehículo lo antes posible.",
+  "second_answer": "No frenaremos.",
+  "third_answer": "Pisaremos el embrague para desconectar la fuerza de retención del motor.",
+  "correct_answer": "No frenaremos.",
+  "test": {
+    "$oid": "659e5bf244fa4228946c0b98"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a2991a2cfccfc0bb7431be"
+  },
+  "image": "imagen205.webp",
+  "question": "Dos vehículos del mismo tipo se encuentran en un estrechamiento y no se sabe cuál tiene preferencia, ¿cuál de ellos tiene prioridad?",
+  "first_answer": "El vehículo que tenga que dar marcha atrás mayor distancia.",
+  "second_answer": "El vehículo que tenga que dar marcha atrás una menor distancia.",
+  "third_answer": "El vehículo que tenga mayor anchura o longitud.",
+  "correct_answer": "El vehículo que tenga que dar marcha atrás mayor distancia.",
+  "test": {
+    "$oid": "659e5bf244fa4228946c0b98"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a299922cfccfc0bb7431bf"
+  },
+  "image": "imagen206.webp",
+  "question": "¿Qué indica la señal?",
+  "first_answer": "Precaución, túnel o tramo de escasa visibilidad.",
+  "second_answer": "Fin de obligación de alumbrado de corto alcance.",
+  "third_answer": "Alumbrado de corto alcance obligatorio.",
+  "correct_answer": "Fin de obligación de alumbrado de corto alcance.",
+  "test": {
+    "$oid": "659e5bf244fa4228946c0b98"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a29a012cfccfc0bb7431c0"
+  },
+  "image": "imagen207.webp",
+  "question": "Las motocicletas, ciclomotores o vehículos de tres ruedas, ¿pueden arrastrar un remolque o semirremolque?",
+  "first_answer": "No.",
+  "second_answer": "Sí, siempre que, entre otros requisitos, sea de día y en condiciones que no disminuyan la visibilidad.",
+  "third_answer": "Sí, y además pueden transportar personas en el remolque",
+  "correct_answer": "Sí, siempre que, entre otros requisitos, sea de día y en condiciones que no disminuyan la visibilidad.",
+  "test": {
+    "$oid": "659e5bf244fa4228946c0b98"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a29a592cfccfc0bb7431c1"
+  },
+  "image": "imagen208.webp",
+  "question": "En esta vía, ¿por dónde debe circular un ciclomotor?",
+  "first_answer": "Por el centro del carril derecho para que los demás usuarios de la vía puedan verle.",
+  "second_answer": "Como no tiene arcén, los ciclomotores no pueden circular.",
+  "third_answer": "Por la calzada, lo más cerca posible del borde derecho.",
+  "correct_answer": "Por la calzada, lo más cerca posible del borde derecho.",
+  "test": {
+    "$oid": "659e5bf244fa4228946c0b98"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a29ac22cfccfc0bb7431c2"
+  },
+  "image": "imagen209.webp",
+  "question": "Un conductor que gira para entrar en otra vía, ¿debe ceder el paso a un peatón que esté cruzándola?",
+  "first_answer": "Sólo cuando exista un paso para peatones señalizado.",
+  "second_answer": "Sí.",
+  "third_answer": "No.",
+  "correct_answer": "Sí.",
+  "test": {
+    "$oid": "659e5bf244fa4228946c0b98"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a29b082cfccfc0bb7431c3"
+  },
+  "image": "imagen210.webp",
+  "question": "Un carril delimitado por marcas longitudinales dobles discontinuas es un carril...",
+  "first_answer": "reversible.",
+  "second_answer": "adicional de circulación.",
+  "third_answer": "de utilización en sentido contrario al habitual.",
+  "correct_answer": "reversible.",
+  "test": {
+    "$oid": "659e5bf244fa4228946c0b98"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a29b6f2cfccfc0bb7431c4"
+  },
+  "image": "imagen211.webp",
+  "question": "¿Un turismo podrá circular por el carril situado más a la derecha?",
+  "first_answer": "Sí, los turismos podrán circular opcionalmente mientras que las bicicletas deberán usarlo obligatoriamente.",
+  "second_answer": "No.",
+  "third_answer": "Sí, si no hay ningún ciclo usando dicho carril.",
+  "correct_answer": "No.",
+  "test": {
+    "$oid": "659e5c0444fa4228946c0b99"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a29bdd2cfccfc0bb7431c5"
+  },
+  "image": "imagen212.webp",
+  "question": "¿Podremos estacionar en un carril reservado para autobuses?",
+  "first_answer": "No.",
+  "second_answer": "Sí, podremos parar pero no estacionar.",
+  "third_answer": "Podremos parar pero menos de 2 minutos.",
+  "correct_answer": "No.",
+  "test": {
+    "$oid": "659e5c0444fa4228946c0b99"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a29c302cfccfc0bb7431c6"
+  },
+  "image": "imagen213.webp",
+  "question": "¿En un túnel podemos efectuar un adelantamiento?",
+  "first_answer": "No, en ningún caso.",
+  "second_answer": "Sí, si no invadimos el sentido contrario y disponemos de más de un carril en nuestro sentido.",
+  "third_answer": "Sí, si las circunstancias de la circulación lo permiten.",
+  "correct_answer": "Sí, si no invadimos el sentido contrario y disponemos de más de un carril en nuestro sentido.",
+  "test": {
+    "$oid": "659e5c0444fa4228946c0b99"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a29c852cfccfc0bb7431c7"
+  },
+  "image": "imagen214.webp",
+  "question": "Las cargas que sobresalen por detrás del vehículo, ¿se señalizarán con este panel?",
+  "first_answer": "Sí, y además con una luz de color rojo tanto de día como de noche.",
+  "second_answer": "Sí, y además con un trapo de color rojo vivo.",
+  "third_answer": "Sí, y además si es de noche con una luz de color rojo.",
+  "correct_answer": "Sí, y además si es de noche con una luz de color rojo.",
+  "test": {
+    "$oid": "659e5c0444fa4228946c0b99"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a29cdd2cfccfc0bb7431c8"
+  },
+  "image": "imagen215.webp",
+  "question": "Si al accionar los frenos aparecen chirridos o ruidos metálicos será debido a que...",
+  "first_answer": "El nivel de líquido de frenos está por debajo del mínimo.",
+  "second_answer": "Ha entrado aire en el circuito de frenado.",
+  "third_answer": "Las pastillas de freno se han gastado y requieren su sustitución.",
+  "correct_answer": "Las pastillas de freno se han gastado y requieren su sustitución.",
+  "test": {
+    "$oid": "659e5c0444fa4228946c0b99"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a29d332cfccfc0bb7431c9"
+  },
+  "image": "imagen216.webp",
+  "question": "Si por causa de una avería circulamos por una autopista a velocidad inferior a 60 km/h, ¿por dónde lo haremos?",
+  "first_answer": "Por el arcén, abandonando la autopista en la salida más próxima.",
+  "second_answer": "Por la calzada si no perturbamos gravemente la circulación, abandonando la autopista en la salida más próxima.",
+  "third_answer": "Pararemos en el arcén y esperaremos la llegada de la grúa.",
+  "correct_answer": "Por la calzada si no perturbamos gravemente la circulación, abandonando la autopista en la salida más próxima.",
+  "test": {
+    "$oid": "659e5c0444fa4228946c0b99"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a29da22cfccfc0bb7431ca"
+  },
+  "image": "imagen217.webp",
+  "question": "Los efectos del alcohol en nuestro organismo serán mayores...",
+  "first_answer": "Una hora después de tomar la última copa.",
+  "second_answer": "Media hora después de tomar la última copa.",
+  "third_answer": "Cuatro horas después de tomar la última copa.",
+  "correct_answer": "Una hora después de tomar la última copa.",
+  "test": {
+    "$oid": "659e5c0444fa4228946c0b99"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a29e142cfccfc0bb7431cb"
+  },
+  "image": "imagen218.webp",
+  "question": "¿Circula correctamente el vehículo que lo hace por el carril adicional?",
+  "first_answer": "Sí.",
+  "second_answer": "No, porque no lleva el alumbrado de cruce encendido.",
+  "third_answer": "No, porque pisa la línea del arcén.",
+  "correct_answer": "Sí.",
+  "test": {
+    "$oid": "659e5c0444fa4228946c0b99"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a29e6c2cfccfc0bb7431cd"
+  },
+  "image": "imagen219.webp",
+  "question": "Un neumático con más presión que la recomendada por el fabricante provocará...",
+  "first_answer": "Un mayor desgaste debido al calentamiento.",
+  "second_answer": "Falta de adherencia al asfalto.",
+  "third_answer": "Mayor agarre del dibujo al pavimento.",
+  "correct_answer": "Falta de adherencia al asfalto.",
+  "test": {
+    "$oid": "659e5c0444fa4228946c0b99"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a29ebd2cfccfc0bb7431ce"
+  },
+  "image": "imagen220.webp",
+  "question": "¿Qué indica esta señal?",
+  "first_answer": "Prohibida la circulación.",
+  "second_answer": "Fin de prohibiciones.",
+  "third_answer": "Que tenemos prioridad en todas las intersecciones.",
+  "correct_answer": "Fin de prohibiciones.",
+  "test": {
+    "$oid": "659e5c0444fa4228946c0b99"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a29f092cfccfc0bb7431cf"
+  },
+  "image": "imagen221.webp",
+  "question": "¿Cuando finalizará la prohibición de circular como máximo a 30 km/h?",
+  "first_answer": "Cuando encuentre la señal de fin de prohibiciones.",
+  "second_answer": "Cuando finalice el peligro indicado en el mismo panel.",
+  "third_answer": "Cuando encuentre otra señal distinta de limitación de velocidad.",
+  "correct_answer": "Cuando finalice el peligro indicado en el mismo panel.",
+  "test": {
+    "$oid": "659e5c0444fa4228946c0b99"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a29f652cfccfc0bb7431d0"
+  },
+  "image": "imagen222.webp",
+  "question": "Si quiero incorporarme a la circulación efectuando marcha atrás, ¿qué precauciones debo tomar?",
+  "first_answer": "No recorrer una distancia mayor de 15 metros.",
+  "second_answer": "Incorporarme aunque invada un cruce de vías.",
+  "third_answer": "No recorrer más de 40 metros.",
+  "correct_answer": "No recorrer una distancia mayor de 15 metros.",
+  "test": {
+    "$oid": "659e5c0444fa4228946c0b99"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a29fcf2cfccfc0bb7431d1"
+  },
+  "image": "imagen223.webp",
+  "question": "Si su intención es adelantar al vehículo de la imagen tendrá en cuenta que...",
+  "first_answer": "Mide más de 12 metros.",
+  "second_answer": "Transporta mercancías peligrosas.",
+  "third_answer": "Se trata de un vehículo especial.",
+  "correct_answer": "Mide más de 12 metros.",
+  "test": {
+    "$oid": "659e5c0444fa4228946c0b99"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a2a0272cfccfc0bb7431d2"
+  },
+  "image": "imagen224.webp",
+  "question": "En una autopista urbana en la que no se indica límite de velocidad, ¿a qué velocidad circularemos como máximo?",
+  "first_answer": "50 km/h.",
+  "second_answer": "120 km/h.",
+  "third_answer": "80 km/h.",
+  "correct_answer": "80 km/h.",
+  "test": {
+    "$oid": "659e5c0444fa4228946c0b99"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a2a5bd2cfccfc0bb7431d3"
+  },
+  "image": "imagen225.webp",
+  "question": "Circulando en un túnel, ¿qué distancia de seguridad debemos mantener con el vehículo que nos precede?",
+  "first_answer": "150 metros como mínimo.",
+  "second_answer": "100 metros como mínimo.",
+  "third_answer": "50 metros como mínimo.",
+  "correct_answer": "100 metros como mínimo.",
+  "test": {
+    "$oid": "659e5c0444fa4228946c0b99"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a2a6162cfccfc0bb7431d4"
+  },
+  "image": "imagen226.webp",
+  "question": "¿Qué indica esta señal?",
+  "first_answer": "Zona de circulación especialmente acondicionada que está destinada en primer lugar a los peatones.",
+  "second_answer": "Calle residencial.",
+  "third_answer": "Indica que la velocidad máxima de los vehículos está fijada en 30 km/h y la prioridad entre vehículos y peatones se regirá por la norma general.",
+  "correct_answer": "Zona de circulación especialmente acondicionada que está destinada en primer lugar a los peatones.",
+  "test": {
+    "$oid": "659e5c0444fa4228946c0b99"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a2a6812cfccfc0bb7431d5"
+  },
+  "image": "imagen227.webp",
+  "question": "Si al circular observamos que el semáforo cambia de verde a amarillo, ¿cómo actuaremos?",
+  "first_answer": "Nos detendremos en las mismas condiciones como si de una luz roja se tratase, siempre.",
+  "second_answer": "Continuaremos si no podemos detenernos en condiciones de seguridad suficientes, por estar el vehículo muy cerca del lugar de detención.",
+  "third_answer": "Pasaremos si circulamos a mucha velocidad.",
+  "correct_answer": "Continuaremos si no podemos detenernos en condiciones de seguridad suficientes, por estar el vehículo muy cerca del lugar de detención.",
+  "test": {
+    "$oid": "659e5c0444fa4228946c0b99"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a2a6eb2cfccfc0bb7431d6"
+  },
+  "image": "imagen228.webp",
+  "question": "Circulando por una vía frecuentada por peatones, especialmente niños o ancianos, ¿qué haremos?",
+  "first_answer": "Reducir la velocidad, incluso llegando a detenerme.",
+  "second_answer": "Adoptaré las medidas necesarias para su seguridad, sin tener que moderar obligatoriamente la velocidad.",
+  "third_answer": "Reducir la velocidad, sin necesidad de detenerme.",
+  "correct_answer": "Reducir la velocidad, incluso llegando a detenerme.",
+  "test": {
+    "$oid": "659e5c0444fa4228946c0b99"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a2a7472cfccfc0bb7431d7"
+  },
+  "image": "imagen229.webp",
+  "question": "¿Cómo comprobaremos la presión de los neumáticos?",
+  "first_answer": "Con los neumáticos fríos.",
+  "second_answer": "Con los neumáticos calientes.",
+  "third_answer": "Los neumáticos modernos no requieren mantenimiento.",
+  "correct_answer": "Con los neumáticos fríos.",
+  "test": {
+    "$oid": "659e5c0444fa4228946c0b99"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a2a7a42cfccfc0bb7431d8"
+  },
+  "image": "imagen230.webp",
+  "question": "¿Las bicicletas pueden llevar remolque?",
+  "first_answer": "Sí, con unas condiciones específicas.",
+  "second_answer": "Sí, siempre.",
+  "third_answer": "No.",
+  "correct_answer": "Sí, con unas condiciones específicas.",
+  "test": {
+    "$oid": "659e5c0444fa4228946c0b99"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a3ae6023e74c6d48832880"
+  },
+  "image": "imagen231.webp",
+  "question": "¿Qué le indica esta señal?",
+  "first_answer": "Principio de autovía.",
+  "second_answer": "Principio de autopista o autovía.",
+  "third_answer": "Principio de autopista.",
+  "correct_answer": "Principio de autopista.",
+  "test": {
+    "$oid": "659e5c0444fa4228946c0b99"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a3aeda23e74c6d48832881"
+  },
+  "image": "imagen232.webp",
+  "question": "¿Podremos realizar un cambio de dirección a la vista de esta señal?",
+  "first_answer": "No, sólo podemos continuar de frente.",
+  "second_answer": "Sí, tanto a la derecha como a la izquierda.",
+  "third_answer": "Sí, además de un cambio de sentido.",
+  "correct_answer": "Sí, tanto a la derecha como a la izquierda.",
+  "test": {
+    "$oid": "659e5c0444fa4228946c0b99"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a3af2923e74c6d48832882"
+  },
+  "image": "imagen233.webp",
+  "question": "¿Qué significa esta señal?",
+  "first_answer": "Prohibido estacionar por vado.",
+  "second_answer": "Estacionamiento limitado en tiempo.",
+  "third_answer": "Estacionamiento prohibido.",
+  "correct_answer": "Estacionamiento limitado en tiempo.",
+  "test": {
+    "$oid": "659e5c0444fa4228946c0b99"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a3af7a23e74c6d48832883"
+  },
+  "image": "imagen234.webp",
+  "question": "Si realizamos una frenada utilizando el freno motor, ¿qué sucederá?",
+  "first_answer": "Se desgastará el cambio de marchas.",
+  "second_answer": "Consumiremos menos combustible.",
+  "third_answer": "Se bloquearán las ruedas directrices.",
+  "correct_answer": "Consumiremos menos combustible.",
+  "test": {
+    "$oid": "659e5c0444fa4228946c0b99"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a3afda23e74c6d48832884"
+  },
+  "image": "imagen235.webp",
+  "question": "¿El pasajero de una moto debe llevar abrochado el casco?",
+  "first_answer": "Sí, y además el conductor es responsable de que lo lleve abrochado.",
+  "second_answer": "Sí, siendo el pasajero el único responsable.",
+  "third_answer": "No es obligatorio, pero si aconsejable.",
+  "correct_answer": "Sí, y además el conductor es responsable de que lo lleve abrochado.",
+  "test": {
+    "$oid": "659e5c0444fa4228946c0b99"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a3b03823e74c6d48832885"
+  },
+  "image": "imagen236.webp",
+  "question": "¿Cuántos chalecos reflectantes, como mínimo, se deben llevar en el vehículo?",
+  "first_answer": "Uno.",
+  "second_answer": "Dos.",
+  "third_answer": "Tantos como plazas tenga el vehículo.",
+  "correct_answer": "Uno.",
+  "test": {
+    "$oid": "659e5c0444fa4228946c0b99"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a3b08723e74c6d48832886"
+  },
+  "image": "imagen237.webp",
+  "question": "¿A cuántos metros tendrán que ser visibles los elementos reflectantes de los peatones?",
+  "first_answer": "A 150 metros.",
+  "second_answer": "A 100 metros.",
+  "third_answer": "A 50 metros.",
+  "correct_answer": "A 150 metros.",
+  "test": {
+    "$oid": "659e5c0444fa4228946c0b99"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a3b0d623e74c6d48832887"
+  },
+  "image": "imagen238.webp",
+  "question": "¿Qué significa esta señal?",
+  "first_answer": "Recuerda que encendamos las luces de corto alcance.",
+  "second_answer": "Obliga a encender alguna luz.",
+  "third_answer": "Obliga a encender la luz de corto alcance, como mínimo.",
+  "correct_answer": "Obliga a encender la luz de corto alcance, como mínimo.",
+  "test": {
+    "$oid": "659e5c0444fa4228946c0b99"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a3b12c23e74c6d48832888"
+  },
+  "image": "imagen239.webp",
+  "question": "¿Qué significa está señal?",
+  "first_answer": "Calzada de 2 carriles con bifurcación hacia la izquierda.",
+  "second_answer": "Calzada de 3 carriles con bifurcación hacia la izquierda.",
+  "third_answer": "Calzada de 3 carriles con bifurcación hacia la derecha.",
+  "correct_answer": "Calzada de 3 carriles con bifurcación hacia la izquierda.",
+  "test": {
+    "$oid": "659e5c0444fa4228946c0b99"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a3b18023e74c6d48832889"
+  },
+  "image": "imagen240.webp",
+  "question": "¿Qué significa una luz amarilla fija?",
+  "first_answer": "Extremar la precaución.",
+  "second_answer": "Igual que una luz roja, detenerse en condiciones de seguridad.",
+  "third_answer": "Ceder el paso.",
+  "correct_answer": "Igual que una luz roja, detenerse en condiciones de seguridad.",
+  "test": {
+    "$oid": "659e5c0444fa4228946c0b99"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a3b1d323e74c6d4883288a"
+  },
+  "image": "imagen241.webp",
+  "question": "¿Qué indica el agente?",
+  "first_answer": "Obliga a detenerse a todos los usuarios de la vía que se le acerquen de frente.",
+  "second_answer": "Obliga a detenerse a todos los usuarios de la vía que se le acerquen.",
+  "third_answer": "Obliga a detenerse sólo a los conductores que se le acerquen.",
+  "correct_answer": "Obliga a detenerse a todos los usuarios de la vía que se le acerquen.",
+  "test": {
+    "$oid": "659e5c1444fa4228946c0b9a"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a3b23923e74c6d4883288b"
+  },
+  "image": "imagen242.webp",
+  "question": "Si nuestro vehículo patina por la parte posterior, ¿qué deberemos hacer?",
+  "first_answer": "Girar el volante hacia el mismo lado que patina el vehículo.",
+  "second_answer": "Girar el volante hacia el lado contrario al que patina el vehículo.",
+  "third_answer": "Mantener las ruedas rectas y frenar a fondo.",
+  "correct_answer": "Girar el volante hacia el lado contrario al que patina el vehículo.",
+  "test": {
+    "$oid": "659e5c1444fa4228946c0b9a"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a3b29023e74c6d4883288d"
+  },
+  "image": "imagen243.webp",
+  "question": "Cuando conduciendo su turismo adelante a un peatón por una vía fuera de poblado, ¿qué separación lateral de seguridad deberá dejar?",
+  "first_answer": "1,50 metros como máximo.",
+  "second_answer": "Un margen de seguridad proporcional a la anchura y características de la vía.",
+  "third_answer": "1,50 metros como mínimo, ocupando de forma parcial o total el carril contiguo y siempre que existan las condiciones precisas.",
+  "correct_answer": "1,50 metros como mínimo, ocupando de forma parcial o total el carril contiguo y siempre que existan las condiciones precisas.",
+  "test": {
+    "$oid": "659e5c1444fa4228946c0b9a"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a3b2fc23e74c6d4883288e"
+  },
+  "image": "imagen244.webp",
+  "question": "¿Qué efectos produce el alcohol en el conductor?",
+  "first_answer": "Un aumento en el tiempo de reacción.",
+  "second_answer": "Una disminución en el tiempo de reacción.",
+  "third_answer": "Un aumento de la capacidad de reacción.",
+  "correct_answer": "Un aumento en el tiempo de reacción.",
+  "test": {
+    "$oid": "659e5c1444fa4228946c0b9a"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a3b34e23e74c6d4883288f"
+  },
+  "image": "imagen245.webp",
+  "question": "¿Cuando finaliza la prohibición de circular como máximo a 40 km/h?",
+  "first_answer": "Cuando termine el peligro indicado.",
+  "second_answer": "Hasta que encuentre una señal de fin de prohibición.",
+  "third_answer": "Hasta que encuentra una señal de fin de obligación.",
+  "correct_answer": "Cuando termine el peligro indicado.",
+  "test": {
+    "$oid": "659e5c1444fa4228946c0b9a"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a3b39f23e74c6d48832890"
+  },
+  "image": "imagen246.webp",
+  "question": "Circulando durante el día con niebla y sin disponer de alumbrado antiniebla delantero, ¿qué alumbrado utilizaremos?",
+  "first_answer": "Usaremos la luz de corto o largo alcance.",
+  "second_answer": "Usaremos solamente la luz de corto alcance.",
+  "third_answer": "Usaremos el alumbrado posterior antiniebla.",
+  "correct_answer": "Usaremos la luz de corto o largo alcance.",
+  "test": {
+    "$oid": "659e5c1444fa4228946c0b9a"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a3b3fb23e74c6d48832891"
+  },
+  "image": "imagen247.webp",
+  "question": "Si circulamos detrás de un camión de más 3.500 kg de MMA, ¿qué es lo que puede ocurrir a partir de esta señal?",
+  "first_answer": "Que el camión acelere y aumente su velocidad.",
+  "second_answer": "Que el camión salpique gravilla.",
+  "third_answer": "Que el camión ralentice considerablemente su marcha.",
+  "correct_answer": "Que el camión ralentice considerablemente su marcha.",
+  "test": {
+    "$oid": "659e5c1444fa4228946c0b9a"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a3b47723e74c6d48832892"
+  },
+  "image": "imagen248.webp",
+  "question": "¿Qué indica un agente que balancea una luz amarilla?",
+  "first_answer": "Obliga a detenerse a los usuarios de la vía a los que el agente dirija la luz.",
+  "second_answer": "Obliga a disminuir la velocidad a los conductores que se acerquen al agente.",
+  "third_answer": "Obliga a pasar por el lado que indica la luz.",
+  "correct_answer": "Obliga a detenerse a los usuarios de la vía a los que el agente dirija la luz.",
+  "test": {
+    "$oid": "659e5c1444fa4228946c0b9a"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a3b4fc23e74c6d48832894"
+  },
+  "image": "imagen249.webp",
+  "question": "¿Cuál es la velocidad mínima en una autovía?",
+  "first_answer": "120 km/h.",
+  "second_answer": "60 km/h.",
+  "third_answer": "90 km/h.",
+  "correct_answer": "60 km/h.",
+  "test": {
+    "$oid": "659e5c1444fa4228946c0b9a"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a3b54a23e74c6d48832895"
+  },
+  "image": "imagen250.webp",
+  "question": "Un ciclomotor, ¿puede llevar equipaje que sobresalga lateralmente?",
+  "first_answer": "No.",
+  "second_answer": "Sí, 50 centímetros por cada lado de su eje longitudinal.",
+  "third_answer": "Sí, 40 centímetros por cada lado.",
+  "correct_answer": "Sí, 50 centímetros por cada lado de su eje longitudinal.",
+  "test": {
+    "$oid": "659e5c1444fa4228946c0b9a"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a3b5a923e74c6d48832896"
+  },
+  "image": "imagen251.webp",
+  "question": "Si circulamos a velocidad anormalmente reducida por una autopista, ¿qué debemos hacer?",
+  "first_answer": "Salir por la próxima salida.",
+  "second_answer": "Llegar hasta nuestro destino con precaución.",
+  "third_answer": "Seguir circulando sin cambiarnos de carril.",
+  "correct_answer": "Salir por la próxima salida.",
+  "test": {
+    "$oid": "659e5c1444fa4228946c0b9a"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a3b5f723e74c6d48832897"
+  },
+  "image": "imagen252.webp",
+  "question": "¿Cómo subiremos una pendiente ascendente que esté nevada?",
+  "first_answer": "De la forma más rápida posible, porque si el vehículo se cala patinará hacia atrás.",
+  "second_answer": "Con la marcha más corta posible acelerando al máximo.",
+  "third_answer": "Con suavidad y con una velocidad sostenida.",
+  "correct_answer": "Con suavidad y con una velocidad sostenida.",
+  "test": {
+    "$oid": "659e5c1444fa4228946c0b9a"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a3b64b23e74c6d48832898"
+  },
+  "image": "imagen253.webp",
+  "question": "Si observamos el conductor de un vehículo con la palma de la mano hacia atrás, ¿qué nos indica?",
+  "first_answer": "Que va a girar a la izquierda.",
+  "second_answer": "Que va a girar a la derecha.",
+  "third_answer": "Que va a dar marcha atrás.",
+  "correct_answer": "Que va a dar marcha atrás.",
+  "test": {
+    "$oid": "659e5c1444fa4228946c0b9a"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a3b69a23e74c6d48832899"
+  },
+  "image": "imagen254.webp",
+  "question": "¿Cómo actuaremos ante un herido?",
+  "first_answer": "Le proporcionaremos zumo de fruta muy azucarado para prevenir una posible hipoglucemia.",
+  "second_answer": "Le proporcionaremos los medicamentos necesarios.",
+  "third_answer": "Le inmovilizaremos el cuello.",
+  "correct_answer": "Le inmovilizaremos el cuello.",
+  "test": {
+    "$oid": "659e5c1444fa4228946c0b9a"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a3b6ec23e74c6d4883289a"
+  },
+  "image": "imagen255.webp",
+  "question": "¿Qué nos indica este panel?",
+  "first_answer": "Nos indica una información que podemos o no atender.",
+  "second_answer": "Nos indica un peligro y la obligación de llevar cadenas.",
+  "third_answer": "Nos indica una obligación.",
+  "correct_answer": "Nos indica un peligro y la obligación de llevar cadenas.",
+  "test": {
+    "$oid": "659e5c1444fa4228946c0b9a"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a3b73a23e74c6d4883289b"
+  },
+  "image": "imagen256.webp",
+  "question": "En el caso de la imagen, ¿quién tiene prioridad?",
+  "first_answer": "El vehículo amarillo porque circula por la vía principal.",
+  "second_answer": "El vehículo azul, se aproxima por la derecha del amarillo.",
+  "third_answer": "El vehículo amarillo porque sigue de frente mientras que el azul tiene que cambiar de dirección.",
+  "correct_answer": "El vehículo azul, se aproxima por la derecha del amarillo.",
+  "test": {
+    "$oid": "659e5c1444fa4228946c0b9a"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a3b88023e74c6d4883289c"
+  },
+  "image": "imagen257.webp",
+  "question": "¿A qué velocidad máxima podremos circular en esta vía?",
+  "first_answer": "90 km/h, mas 20 k/h al adelantar",
+  "second_answer": "90 km/h.",
+  "third_answer": "100 km/h.",
+  "correct_answer": "90 km/h.",
+  "test": {
+    "$oid": "659e5c1444fa4228946c0b9a"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a3b8e423e74c6d4883289d"
+  },
+  "image": "imagen258.webp",
+  "question": "¿Se puede estacionar en doble fila?",
+  "first_answer": "No.",
+  "second_answer": "Sí, siempre y cuando lo hagamos por un tiempo inferior a dos minutos.",
+  "third_answer": "Sí.",
+  "correct_answer": "No.",
+  "test": {
+    "$oid": "659e5c1444fa4228946c0b9a"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a3b97223e74c6d4883289e"
+  },
+  "image": "imagen259.webp",
+  "question": "En una detención prolongada, ¿cuál de estas acciones es una medida de ahorro?",
+  "first_answer": "Poner punto muerto y accionar el freno de mano.",
+  "second_answer": "Accionar el freno de mano y apagar el motor.",
+  "third_answer": "Presionar el embrague y poner la primera marcha.",
+  "correct_answer": "Accionar el freno de mano y apagar el motor.",
+  "test": {
+    "$oid": "659e5c1444fa4228946c0b9a"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a3b9c423e74c6d4883289f"
+  },
+  "image": "imagen260.webp",
+  "question": "En una vía urbana con plataforma única de calzada y acera, ¿cuál será la velocidad máxima a la que podremos circular?",
+  "first_answer": "30 km/h.",
+  "second_answer": "20 km/h.",
+  "third_answer": "50 km/h.",
+  "correct_answer": "20 km/h.",
+  "test": {
+    "$oid": "659e5c1444fa4228946c0b9a"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a3bc5023e74c6d488328a1"
+  },
+  "image": "imagen261.webp",
+  "question": "¿Cómo deberá ser la distancia de detención en relación a la distancia a la que se encuentra un obstáculo?",
+  "first_answer": "Menor que la distancia a la que se encuentra el obstáculo.",
+  "second_answer": "Igual que la distancia a la que se encuentra el obstáculo.",
+  "third_answer": "Mayor que la distancia a la que se encuentra el obstáculo.",
+  "correct_answer": "Menor que la distancia a la que se encuentra el obstáculo.",
+  "test": {
+    "$oid": "659e5c1444fa4228946c0b9a"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a3bcd423e74c6d488328a2"
+  },
+  "image": "imagen262.webp",
+  "question": "¿Qué luces antiniebla es obligatorio llevar con niebla densa durante el día?",
+  "first_answer": "Luz antiniebla trasera.",
+  "second_answer": "Luz antiniebla delantera.",
+  "third_answer": "Luz antiniebla delantera y trasera.",
+  "correct_answer": "Luz antiniebla trasera.",
+  "test": {
+    "$oid": "659e5c1444fa4228946c0b9a"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a3bd3823e74c6d488328a3"
+  },
+  "image": "imagen263.webp",
+  "question": "¿Qué debemos hacer si al encontrarnos un accidente de tráfico no sabemos cómo auxiliar a los heridos?",
+  "first_answer": "Continuar la marcha.",
+  "second_answer": "Trasladar a los heridos con nuestro vehículo al hospital.",
+  "third_answer": "Llamar al teléfono de urgencias.",
+  "correct_answer": "Llamar al teléfono de urgencias.",
+  "test": {
+    "$oid": "659e5c1444fa4228946c0b9a"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a3bd9d23e74c6d488328a4"
+  },
+  "image": "imagen264.webp",
+  "question": "¿Cuándo es más peligrosa la lluvia?",
+  "first_answer": "Cuando empieza a llover.",
+  "second_answer": "Cuando llueve intensamente.",
+  "third_answer": "Cuando llueve después de haber nevado.",
+  "correct_answer": "Cuando empieza a llover.",
+  "test": {
+    "$oid": "659e5c1444fa4228946c0b9a"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a3be0223e74c6d488328a5"
+  },
+  "image": "imagen265.webp",
+  "question": "¿Qué significa esta señal?",
+  "first_answer": "Obstrucción en la calzada debido a avería accidente u otras causas.",
+  "second_answer": "Que la circulación se encuentra dificultada por congestión de tráfico.",
+  "third_answer": "Proximidad de una zona de la calzada cuyo pavimento puede resultar deslizante.",
+  "correct_answer": "Obstrucción en la calzada debido a avería accidente u otras causas.",
+  "test": {
+    "$oid": "659e5c1444fa4228946c0b9a"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a3be6023e74c6d488328a6"
+  },
+  "image": "imagen266.webp",
+  "question": "El uso del cinturón de seguridad es obligatorio...",
+  "first_answer": "Para todos los ocupantes del vehículo y en todas las vías.",
+  "second_answer": "Sólo al circular por vías interurbanas.",
+  "third_answer": "En todo caso, pero sólo para el conductor y el acompañante.",
+  "correct_answer": "Para todos los ocupantes del vehículo y en todas las vías.",
+  "test": {
+    "$oid": "659e5c1444fa4228946c0b9a"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a3bec723e74c6d488328a7"
+  },
+  "image": "imagen267.webp",
+  "question": "Las luces de cruce, ¿en algún caso podrán resultar deslumbrantes para los demás usuarios de la vía?",
+  "first_answer": "Sí, si están mal regladas.",
+  "second_answer": "No, sólo deslumbran las de carretera.",
+  "third_answer": "No, sólo deslumbran las de carretera y las antiniebla posteriores.",
+  "correct_answer": "Sí, si están mal regladas.",
+  "test": {
+    "$oid": "659e5c1444fa4228946c0b9a"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a3bf2223e74c6d488328a8"
+  },
+  "image": "imagen268.webp",
+  "question": "Cuando al accionar la llave de contacto el motor de arranque no gira y las luces tienden a extinguirse, ¿a qué puede ser debido?",
+  "first_answer": "La batería tiene poca carga.",
+  "second_answer": "La correa del ventilador está destensada.",
+  "third_answer": "Falta de líquido de refrigeración.",
+  "correct_answer": "La batería tiene poca carga.",
+  "test": {
+    "$oid": "659e5c1444fa4228946c0b9a"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a3bf9523e74c6d488328a9"
+  },
+  "image": "imagen269.webp",
+  "question": "La presión de inflado de la rueda de repuesto será...",
+  "first_answer": "La que recomiende el fabricante.",
+  "second_answer": "La más alta de las recomendadas por el fabricante.",
+  "third_answer": "La más baja de las recomendadas por el fabricante.",
+  "correct_answer": "La más alta de las recomendadas por el fabricante.",
+  "test": {
+    "$oid": "659e5c1444fa4228946c0b9a"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a3bfec23e74c6d488328aa"
+  },
+  "image": "imagen270.webp",
+  "question": "Para adelantar al ciclista de la imagen, ¿podemos rebasar la línea continua?",
+  "first_answer": "No, porque puedo dejar 1,50 metros de separación lateral sin tener que rebasarla.",
+  "second_answer": "Sí.",
+  "third_answer": "No, tendré que esperar a encontrar discontinua.",
+  "correct_answer": "Sí.",
+  "test": {
+    "$oid": "659e5c1444fa4228946c0b9a"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a3c0cc23e74c6d488328ab"
+  },
+  "image": "imagen271.webp",
+  "question": "Este vehículo se está incorporando a la circulación, ¿lo hace correctamente?",
+  "first_answer": "Sí, porque no recorre más de 15 metros.",
+  "second_answer": "No, porque invade un cruce de vías.",
+  "third_answer": "No, la marcha atrás siempre está prohibida.",
+  "correct_answer": "No, porque invade un cruce de vías.",
+  "test": {
+    "$oid": "659e5c3b44fa4228946c0b9b"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a3c13e23e74c6d488328ac"
+  },
+  "image": "imagen272.webp",
+  "question": "¿Qué significa la marca vial amarilla de la imagen?",
+  "first_answer": "Prohíbe detenerse y pararse encima de ella.",
+  "second_answer": "Recuerda la prohibición de no penetrar con el vehículo en una intersección si previsiblemente pueda quedar detenido, impidiendo la circulación transversal.",
+  "third_answer": "Prohíbe estacionar pero permite parar.",
+  "correct_answer": "Recuerda la prohibición de no penetrar con el vehículo en una intersección si previsiblemente pueda quedar detenido, impidiendo la circulación transversal.",
+  "test": {
+    "$oid": "659e5c3b44fa4228946c0b9b"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a3c1b123e74c6d488328ad"
+  },
+  "image": "imagen273.webp",
+  "question": "¿Cuál es la velocidad máxima en esta vía?",
+  "first_answer": "100 km/h.",
+  "second_answer": "100 km/h en el sentido en el que existen los dos carriles y 90 km/h en el sentido contrario.",
+  "third_answer": "90 km/h.",
+  "correct_answer": "90 km/h.",
+  "test": {
+    "$oid": "659e5c3b44fa4228946c0b9b"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a3cb197370eff8a811cac5"
+  },
+  "image": "imagen274.webp",
+  "question": "¿A qué velocidad como máximo podremos circular en el preciso instante en el que observamos esta señal?",
+  "first_answer": "50 km/h.",
+  "second_answer": "90 km/h.",
+  "third_answer": "110 km/h.",
+  "correct_answer": "50 km/h.",
+  "test": {
+    "$oid": "659e5c3b44fa4228946c0b9b"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a3cb787370eff8a811cac6"
+  },
+  "image": "imagen275.webp",
+  "question": "Para realizar un viaje, ¿es recomendable tener en cuenta la hora de salida en función del sol?",
+  "first_answer": "No, es indiferente.",
+  "second_answer": "Sí, mejor circular durante la noche porque es más descansado.",
+  "third_answer": "Sí, para evitar el deslumbramiento del sol.",
+  "correct_answer": "Sí, para evitar el deslumbramiento del sol.",
+  "test": {
+    "$oid": "659e5c3b44fa4228946c0b9b"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a3cbc77370eff8a811cac7"
+  },
+  "image": "imagen276.webp",
+  "question": "En caso de niebla, ¿se podrá usar la luz de largo alcance?",
+  "first_answer": "Sí, fuera de poblado y si no hay peligro de deslumbramiento.",
+  "second_answer": "No.",
+  "third_answer": "Sí, siempre que sea entre el ocaso y la salida del sol.",
+  "correct_answer": "Sí, fuera de poblado y si no hay peligro de deslumbramiento.",
+  "test": {
+    "$oid": "659e5c3b44fa4228946c0b9b"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a3cc177370eff8a811cac8"
+  },
+  "image": "imagen277.webp",
+  "question": "Colocar a los heridos en posición lateral de seguridad o defensa sirve para...",
+  "first_answer": "Estar más cómodo.",
+  "second_answer": "Evitar que se asfixien si comienzan a vomitar.",
+  "third_answer": "Poder hacerles la respiración artificial.",
+  "correct_answer": "Evitar que se asfixien si comienzan a vomitar.",
+  "test": {
+    "$oid": "659e5c3b44fa4228946c0b9b"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a3cc607370eff8a811cac9"
+  },
+  "image": "imagen278.webp",
+  "question": "¿Cuál es la velocidad máxima a la que se podrá circular en una autovía dentro de poblado?",
+  "first_answer": "120 km/h.",
+  "second_answer": "80 km/h.",
+  "third_answer": "90 km/h.",
+  "correct_answer": "90 km/h.",
+  "test": {
+    "$oid": "659e5c3b44fa4228946c0b9b"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a3ccea7370eff8a811cacb"
+  },
+  "image": "imagen279.webp",
+  "question": "¿Qué distancia mantendremos con el vehículo que nos precede al circular por un túnel?",
+  "first_answer": "150 metros como mínimo.",
+  "second_answer": "100 metros como mínimo.",
+  "third_answer": "50 metros como mínimo.",
+  "correct_answer": "100 metros como mínimo.",
+  "test": {
+    "$oid": "659e5c3b44fa4228946c0b9b"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a3cd387370eff8a811cacc"
+  },
+  "image": "imagen280.webp",
+  "question": "¿Qué indican estas señales?",
+  "first_answer": "Paso a nivel con barreras a la derecha.",
+  "second_answer": "Proximidad de paso a nivel sin barreras a la derecha.",
+  "third_answer": "Proximidad de paso a nivel sin barreras a la izquierda.",
+  "correct_answer": "Proximidad de paso a nivel sin barreras a la derecha.",
+  "test": {
+    "$oid": "659e5c3b44fa4228946c0b9b"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a3cd957370eff8a811cacd"
+  },
+  "image": "imagen281.webp",
+  "question": "¿A qué velocidad podremos circular por esta vía?",
+  "first_answer": "90 km/h.",
+  "second_answer": "80 km/h.",
+  "third_answer": "100 km/h.",
+  "correct_answer": "90 km/h.",
+  "test": {
+    "$oid": "659e5c3b44fa4228946c0b9b"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a3cdda7370eff8a811cace"
+  },
+  "image": "imagen282.webp",
+  "question": "El vehículo rojo está parado en el arcén transitable de esta vía, ¿lo hace de forma correcta?",
+  "first_answer": "Sí, porque está parado. No sería correcto si estuviese estacionado.",
+  "second_answer": "No, en la parte transitable del arcén no se puede parar ni estacionar.",
+  "third_answer": "Sí, en el arcén se puede parar y estacionar siempre que no estorbemos.",
+  "correct_answer": "No, en la parte transitable del arcén no se puede parar ni estacionar.",
+  "test": {
+    "$oid": "659e5c3b44fa4228946c0b9b"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a3ce647370eff8a811cacf"
+  },
+  "image": "imagen283.webp",
+  "question": "En caso de que la batería de nuestro vehículo precise mantenimiento...",
+  "first_answer": "Comprobaremos el nivel de líquido de los vasos y que los bornes estén limpios y secos.",
+  "second_answer": "Comprobaremos que los bornes estén limpios y untados de grasa antiácido.",
+  "third_answer": "La sustituiremos cada año o cada 10.000 km.",
+  "correct_answer": "Comprobaremos el nivel de líquido de los vasos y que los bornes estén limpios y secos.",
+  "test": {
+    "$oid": "659e5c3b44fa4228946c0b9b"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a3cec67370eff8a811cad0"
+  },
+  "image": "imagen284.webp",
+  "question": "Los efectos del alcohol...",
+  "first_answer": "Disminuyen el campo de visión.",
+  "second_answer": "Disminuyen la distancia de reacción.",
+  "third_answer": "Aumentan la capacidad de reacción.",
+  "correct_answer": "Disminuyen el campo de visión.",
+  "test": {
+    "$oid": "659e5c3b44fa4228946c0b9b"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a3cf137370eff8a811cad1"
+  },
+  "image": "imagen285.webp",
+  "question": "La señal indica el paso de dos a tres carriles de circulación y además...",
+  "first_answer": "La velocidad máxima en cada uno de ellos.",
+  "second_answer": "La velocidad mínima en cada uno de ellos.",
+  "third_answer": "La velocidad máxima aconsejada en cada uno de ellos.",
+  "correct_answer": "La velocidad máxima en cada uno de ellos.",
+  "test": {
+    "$oid": "659e5c3b44fa4228946c0b9b"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a3cf607370eff8a811cad2"
+  },
+  "image": "imagen286.webp",
+  "question": "En una autopista urbana, ¿por dónde circularemos?",
+  "first_answer": "Por el carril que mejor convenga a nuestro destino.",
+  "second_answer": "Por el carril de la derecha, normalmente.",
+  "third_answer": "Por el carril central, normalmente.",
+  "correct_answer": "Por el carril de la derecha, normalmente.",
+  "test": {
+    "$oid": "659e5c3b44fa4228946c0b9b"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a3cfa97370eff8a811cad3"
+  },
+  "image": "imagen287.webp",
+  "question": "¿Cuál será la velocidad máxima para un vehículo mixto adaptable en una carretera convencional?",
+  "first_answer": "60 km/h.",
+  "second_answer": "90 km/h.",
+  "third_answer": "80 km/h.",
+  "correct_answer": "90 km/h.",
+  "test": {
+    "$oid": "659e5c3b44fa4228946c0b9b"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a3d0647370eff8a811cad4"
+  },
+  "image": "imagen288.webp",
+  "question": "¿Cuándo usaremos la luz de emergencia?",
+  "first_answer": "Sólo cuando el vehículo esté detenido por una avería o accidente.",
+  "second_answer": "Cuando el vehículo no pueda alcanzar la velocidad mínima exigida y exista peligro de colisión por alcance.",
+  "third_answer": "Sólo cuando sea de noche.",
+  "correct_answer": "Cuando el vehículo no pueda alcanzar la velocidad mínima exigida y exista peligro de colisión por alcance.",
+  "test": {
+    "$oid": "659e5c3b44fa4228946c0b9b"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a3d0c17370eff8a811cad5"
+  },
+  "image": "imagen289.webp",
+  "question": "En esta intersección, ¿qué vehículo pasará en último lugar si el vehículo rojo gira hacia la izquierda?",
+  "first_answer": "El vehículo verde.",
+  "second_answer": "El vehículo rojo.",
+  "third_answer": "El vehículo azul.",
+  "correct_answer": "El vehículo verde.",
+  "test": {
+    "$oid": "659e5c3b44fa4228946c0b9b"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a3d1187370eff8a811cad6"
+  },
+  "image": "imagen290.webp",
+  "question": "¿Podremos desconectar el airbag delantero del acompañante en algún caso?",
+  "first_answer": "No, es obligatorio llevarlo siempre conectado.",
+  "second_answer": "Sí.",
+  "third_answer": "Sólo en el caso de que no llevemos pasajeros.",
+  "correct_answer": "Sí.",
+  "test": {
+    "$oid": "659e5c3b44fa4228946c0b9b"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a3d1657370eff8a811cad7"
+  },
+  "image": "imagen291.webp",
+  "question": "¿Qué separación lateral mantendremos al adelantar una bicicleta dentro de poblado?",
+  "first_answer": "1,5 metros como mínimo",
+  "second_answer": "1.5 metros como máximo.",
+  "third_answer": "Una separación lateral, suficiente para realizar la maniobra con seguridad, que deberá ser proporcional, a la anchura de la vía y a la velocidad a la que se adelante",
+  "correct_answer": "1,5 metros como mínimo",
+  "test": {
+    "$oid": "659e5c3b44fa4228946c0b9b"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a3d1c47370eff8a811cad8"
+  },
+  "image": "imagen292.webp",
+  "question": "¿Cuál será la tasa máxima de alcohol en sangre durante los 2 años siguientes a la obtención del primer permiso de conducción?",
+  "first_answer": "0,5 gramos de alcohol por litro de sangre.",
+  "second_answer": "0,3 gramos de alcohol por litro de sangre.",
+  "third_answer": "0,25 gramos de alcohol por litro de sangre.",
+  "correct_answer": "0,3 gramos de alcohol por litro de sangre.",
+  "test": {
+    "$oid": "659e5c3b44fa4228946c0b9b"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a3d20e7370eff8a811cad9"
+  },
+  "image": "imagen293.webp",
+  "question": "Para circular de forma segura la profundidad mínima de las ranuras del dibujo de los neumáticos será de...",
+  "first_answer": "1,6 milímetros.",
+  "second_answer": "1,5 milímetros.",
+  "third_answer": "1,2 milímetros.",
+  "correct_answer": "1,6 milímetros.",
+  "test": {
+    "$oid": "659e5c3b44fa4228946c0b9b"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a3d2527370eff8a811cada"
+  },
+  "image": "imagen294.webp",
+  "question": "Si presenciamos un accidente en el que no estamos implicados, ¿debemos parar y prestar auxilio?",
+  "first_answer": "Sí, tenemos la obligación de prestar auxilio.",
+  "second_answer": "No, sólo prestaremos auxilio cuando estemos directamente implicados en el accidente.",
+  "third_answer": "No.",
+  "correct_answer": "Sí, tenemos la obligación de prestar auxilio.",
+  "test": {
+    "$oid": "659e5c3b44fa4228946c0b9b"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a3d2b07370eff8a811cadb"
+  },
+  "image": "imagen295.webp",
+  "question": "¿Circularemos correctamente por la calzada de una autopista a 60 km/h?",
+  "first_answer": "No, deberemos circular por el arcén.",
+  "second_answer": "Sí, siempre que no perturbemos la marcha de otros vehículos.",
+  "third_answer": "Sí.",
+  "correct_answer": "Sí.",
+  "test": {
+    "$oid": "659e5c3b44fa4228946c0b9b"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a3d30f7370eff8a811cadc"
+  },
+  "image": "imagen296.webp",
+  "question": "¿El consumo de combustible del vehículo tiene relación con la contaminación producida por éste?",
+  "first_answer": "No, un vehículo que realice las revisiones correspondientes no contamina.",
+  "second_answer": "Sí, a mayor consumo mayor contaminación.",
+  "third_answer": "Sí, a mayor consumo menor contaminación.",
+  "correct_answer": "Sí, a mayor consumo mayor contaminación.",
+  "test": {
+    "$oid": "659e5c3b44fa4228946c0b9b"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a3d35a7370eff8a811cadd"
+  },
+  "image": "imagen297.webp",
+  "question": "¿Cómo actuaremos al observar un semáforo con una luz amarilla no intermitente?",
+  "first_answer": "Pasaremos con precaución, cediendo el paso a derecha e izquierda.",
+  "second_answer": "Nos detendremos como si de rojo fijo se tratase.",
+  "third_answer": "Extremaremos las precauciones.",
+  "correct_answer": "Nos detendremos como si de rojo fijo se tratase.",
+  "test": {
+    "$oid": "659e5c3b44fa4228946c0b9b"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a3d39e7370eff8a811cade"
+  },
+  "image": "imagen298.webp",
+  "question": "¿Qué indica un agente que mueve el brazo de arriba abajo alternativamente?",
+  "first_answer": "Que debemos detener la marcha.",
+  "second_answer": "Que debemos reducir la velocidad.",
+  "third_answer": "Que debemos girar a la derecha.",
+  "correct_answer": "Que debemos reducir la velocidad.",
+  "test": {
+    "$oid": "659e5c3b44fa4228946c0b9b"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a3d4487370eff8a811cae0"
+  },
+  "image": "imagen299.webp",
+  "question": "¿Cuál de estas medidas supondrá un ahorro de combustible?",
+  "first_answer": "Utilizar combustible de octanaje inferior al recomendado por el fabricante.",
+  "second_answer": "Parar el motor durante detenciones prolongadas.",
+  "third_answer": "Poner el cambio de velocidades en punto muerto antes de detenernos totalmente.",
+  "correct_answer": "Parar el motor durante detenciones prolongadas.",
+  "test": {
+    "$oid": "659e5c3b44fa4228946c0b9b"
+  }
+},
+{
+  "_id": {
+    "$oid": "65a3d49b7370eff8a811cae1"
+  },
+  "image": "imagen300.webp",
+  "question": "Esta señal, ¿qué indica?",
+  "first_answer": "Área de descanso.",
+  "second_answer": "Merendero",
+  "third_answer": "Área de servicio.",
+  "correct_answer": "Área de descanso.",
+  "test": {
+    "$oid": "659e5c3b44fa4228946c0b9b"
+  }
+}]
