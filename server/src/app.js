@@ -16,10 +16,9 @@ import workRoutes from "./routes/work.routes.js";
 const app = express();
 
 app.use(cors({
-    origin: "https://autoescuela-fast.vercel.app",
+    origin: "https://autoescuela-fast.vercel.appj",
     credentials: true,
 }));
-
 
 app.use(morgan('dev'));
 app.use(express.json());
