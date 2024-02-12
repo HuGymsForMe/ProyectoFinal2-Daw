@@ -1,5 +1,5 @@
 export default function App(){
     return (
-    <h1>Hola a todos</h1>
+    <h1 className="text-sky-300">Hola a todos</h1>
     )
 }
