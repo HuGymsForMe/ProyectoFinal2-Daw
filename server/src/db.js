@@ -1,5 +1,4 @@
 import mongoose from "mongoose";
-//import { user, password, database } from "./config.js";
 
 // ******* CONEXIÓN A LA DB DE MONGO ******* //
 export const connectDB = async () => {

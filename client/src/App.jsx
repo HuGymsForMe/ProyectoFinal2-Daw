@@ -25,7 +25,7 @@ return (
     <BrowserRouter>
         <Suspense fallback={<LoadingPage/>}>
           <Routes>
-            <Route path="/" element={<LoadingPage />}></Route>
+            <Route path="/" element={<HomePage />}></Route>
             {/* <Route path="/contact" element={<ContactPage />}></Route>
             <Route path="/login" element={<LoginPage />}></Route>
             <Route path="/register" element={<RegisterPage />}></Route>
