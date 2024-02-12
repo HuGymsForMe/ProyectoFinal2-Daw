@@ -5,7 +5,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { UserProvider } from "./context/UserContext";
 
 import LoadingPage from "./pages/LoadingPage";
-const ProtectedRoute = lazy(() => import("./pages/private/ProtectedRoute"))
+//const ProtectedRoute = lazy(() => import("./pages/private/ProtectedRoute"))
 
 // ******* PLANTILLAS QUE COMPONEN LA APLICACIÓN ******* //
 const HomePage = lazy(() => import("./pages/HomePage"));
@@ -17,7 +17,6 @@ const LoginPage = lazy(() => import("./pages/LoginPage"));
 const RegisterPage = lazy(() => import("./pages/RegisterPage"));
 const ProfilePage = lazy(() => import("./pages/ProfilePage"));
 const WorkPage = lazy(() => import("./pages/WorkPage"));
-const InputCV = lazy(() => import("./components/WorkPage/InputCV"))
 
 function App() {
 
