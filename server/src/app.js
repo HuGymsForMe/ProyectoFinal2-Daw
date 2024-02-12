@@ -12,19 +12,10 @@ import gamesRoutes from "./routes/game.routes.js";
 import newsRoutes from "./routes/news.routes.js";
 import workRoutes from "./routes/work.routes.js";
 
-
 const app = express();
 
-// app.use((req, res, next) => {
-//     res.setHeader('Access-Control-Allow-Origin', 'https://autoescuela-fast.vercel.app');
-//     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
-//     res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
-//     res.setHeader('Access-Control-Allow-Credentials', 'true');
-//     next();
-// });
-
 app.use(cors({
-    origin: "https://autoescuela-fast-api.onrender.com/",
+    origin: "https://autoescuela-fast.vercel.app",
     credentials: true,
 }));
 
