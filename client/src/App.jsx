@@ -31,11 +31,11 @@ return (
             <Route path="/login" element={<LoginPage />}></Route>
             <Route path="/register" element={<RegisterPage />}></Route>
             <Route path="/work" element={<WorkPage />}></Route>
-            <Route element={<ProtectedRoute />}>
+            {/*<Route element={<ProtectedRoute />}>*/}
               <Route path="/test/:idTest" element={<TestPage />}></Route>
               <Route path="/profile/:idUser" element={<ProfilePage />}></Route>
               <Route path="/tests/:idUser" element={<TestsPage />}></Route>
-            </Route>
+            {/*</Route>*/}
           </Routes> 
         </Suspense>
     </BrowserRouter>
