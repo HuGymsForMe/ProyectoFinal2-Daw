@@ -57,7 +57,7 @@ function ContactPage(){
             <section className=" bg-white p-8 flex flex-col gap-y-8 rounded-xl shadow-slate-500 shadow-lg z-10 sm:w-auto w-[90%]">
                 <div className="flex gap-x-10 justify-center sm:flex-row flex-col items-center gap-y-4">
                     <h1 className="text-4xl text-[#C21D30]">Contáctanos</h1>
-                    <img className="sm:w-56 w-40"  src={LogoAutoescuelaFast} alt="..." />
+                    <img className="sm:w-56 w-40"  src={LogoAutoescuelaFast} alt="Autoescuela Fast" />
                 </div>
                 <form className="flex flex-col gap-y-4" onSubmit={handleSubmit(onSubmit)}>
                     <div className="flex flex-col">
