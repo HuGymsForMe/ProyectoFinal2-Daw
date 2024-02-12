@@ -9,7 +9,7 @@ import LoadingPage from "./pages/LoadingPage";
 
 // ******* PLANTILLAS QUE COMPONEN LA APLICACIÓN ******* //
 const HomePage = lazy(() => import("./pages/HomePage"));
-// const TestsPage = lazy(() => import("./pages/TestsPage"));
+const TestsPage = lazy(() => import("./pages/TestsPage"));
 // //const NewsPage = lazy(() => import("./pages/NewsPage"));
 // const ContactPage = lazy(() => import("./pages/ContactPage"));
 // const TestPage = lazy(() => import("./pages/TestPage"));
@@ -26,6 +26,7 @@ return (
         <Suspense fallback={<LoadingPage/>}>
           <Routes>
             <Route path="/" element={<HomePage />}></Route>
+            <Route path="/tests/:idUser" element={<TestsPage />}></Route>
             {/* <Route path="/contact" element={<ContactPage />}></Route>
             <Route path="/login" element={<LoginPage />}></Route>
             <Route path="/register" element={<RegisterPage />}></Route>
