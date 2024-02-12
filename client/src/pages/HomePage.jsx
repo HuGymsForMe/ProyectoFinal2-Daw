@@ -42,9 +42,9 @@ function HomePage() {
                         <p className="">En AutoescuelaFast, entendemos lo importante que es para ti obtener tu permiso teórico de conducir de manera conveniente y eficiente. Por eso, hemos desarrollado un programa completo y accesible que te permitirá estudiar y prepararte para el examen teórico desde la comodidad de tu hogar, en tu propio ritmo.</p>
                         <p className="text-lg font-bold">¿Por qué elegir Autoescuela Fast?</p>
                         <ul>
-                            <li><span className="italic font-semibold">Flexibilidad Horaria:</span> Olvídate de los horarios fijos. Accede a nuestras lecciones en línea en cualquier momento del día o de la noche. Adaptamos la formación a tu agenda.</li><br />
-                            <li><span className="italic font-semibold">Soporte Profesional:</span> Contamos con instructores expertos disponibles para resolver tus dudas. A través de chat en vivo o correo electrónico, recibirás la ayuda que necesitas para comprender cualquier concepto.</li><br />
-                            <li><span className="italic font-semibold">Simulacros de Examen:</span> Practica con nuestros simulacros de examen para evaluar tu progreso. Identifica tus áreas de mejora y fortalece tus conocimientos antes de enfrentarte al examen teórico oficial.</li><br />
+                            <li><span className="italic font-semibold">Flexibilidad Horaria:</span> Olvídate de los horarios fijos. Accede a nuestras lecciones en línea en cualquier momento del día o de la noche. Adaptamos la formación a tu agenda.</li>
+                            <li><span className="italic font-semibold">Soporte Profesional:</span> Contamos con instructores expertos disponibles para resolver tus dudas. A través de chat en vivo o correo electrónico, recibirás la ayuda que necesitas para comprender cualquier concepto.</li>
+                            <li><span className="italic font-semibold">Simulacros de Examen:</span> Practica con nuestros simulacros de examen para evaluar tu progreso. Identifica tus áreas de mejora y fortalece tus conocimientos antes de enfrentarte al examen teórico oficial.</li>
                         </ul>
                     </div>
                     <img src={carLicense} alt="Coche Autoescuela" className="rounded-lg xl:w-[33%] xl:h-[17%] sm:w-[66%] sm:h-[33%] w-[90%] h-[45%]" />

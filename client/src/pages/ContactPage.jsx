@@ -13,7 +13,8 @@ import { questionsSchema } from "../schemas/contact.schema";
 
 const Navbar = lazy(() => import("../components/Navbar"));
 const Footer = lazy(() => import("../components/Footer"));
-const ToastErrors = lazy(() => import("../components/ToastErrors"));
+import ToastErrors from "../components/ToastErrors";
+//const ToastErrors = lazy(() => import("../components/ToastErrors"));
 
 // ******* PÁGINA DE CONTACTO ******* //
 function ContactPage(){
