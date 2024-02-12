@@ -23,10 +23,10 @@ app.use((req, res, next) => {
     next();
 });
 
-app.use(cors({
-    origin: "https://autoescuela-fast-api.onrender.com/",
-    credentials: true,
-}));
+// app.use(cors({
+//     origin: "https://autoescuela-fast-api.onrender.com/",
+//     credentials: true,
+// }));
 
 app.use(morgan('dev'));
 app.use(express.json());
