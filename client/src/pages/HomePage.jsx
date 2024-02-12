@@ -21,13 +21,13 @@ function HomePage() {
 
     const [data, setData] = useState(null);
 
-    // useEffect(() => {
-    //     axios.get(API).then((response) => {
-    //         setData(response.data);
-    //     });
-    // }, []);
+    useEffect(() => {
+        axios.get(API).then((response) => {
+            setData(response.data);
+        });
+    }, []);
 
-    // if (!data) return null;
+    if (!data) return null;
 
     return (
         <>
@@ -69,9 +69,9 @@ function HomePage() {
                     <h2 className="text-3xl text-bold">Preguntas frecuentes</h2>
                 </section>
                 <section className="flex flex-col items-center w-[83.5%]">
-                    {/* {data.map((faq) => (
+                    {data.map((faq) => (
                         <FAQAccordion key={faq._id} question={faq.question} answer={faq.answer} />
-                    ))} */}
+                    ))}
                 </section>
             </main>
             <Footer />
