@@ -9,12 +9,12 @@ import LoadingPage from "./pages/LoadingPage";
 
 // ******* PLANTILLAS QUE COMPONEN LA APLICACIÓN ******* //
 const HomePage = lazy(() => import("./pages/HomePage"));
-const TestsPage = lazy(() => import("./pages/TestsPage"));
+// const TestsPage = lazy(() => import("./pages/TestsPage"));
 //const NewsPage = lazy(() => import("./pages/NewsPage"));
 const ContactPage = lazy(() => import("./pages/ContactPage"));
 // const TestPage = lazy(() => import("./pages/TestPage"));
-const LoginPage = lazy(() => import("./pages/LoginPage"));
-const RegisterPage = lazy(() => import("./pages/RegisterPage"));
+// const LoginPage = lazy(() => import("./pages/LoginPage"));
+// const RegisterPage = lazy(() => import("./pages/RegisterPage"));
 // const ProfilePage = lazy(() => import("./pages/ProfilePage"));
 const WorkPage = lazy(() => import("./pages/WorkPage"));
 
