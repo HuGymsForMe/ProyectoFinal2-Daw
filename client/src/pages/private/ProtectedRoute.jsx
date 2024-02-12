@@ -1,8 +1,8 @@
 import { Navigate, Outlet, useParams } from "react-router-dom";
 
-import { TestsAutoescuelaFast } from "../../../../../TFG-2-DAW/client/src/config/config";
+import { TestsAutoescuelaFast } from "../../config/config";
 
-import { useAuth } from "../../../../../TFG-2-DAW/client/src/context/UserContext";
+import { useAuth } from "../../context/UserContext";
 
 // ******* PLANTILLA PARA EVITAR ACCESO A RUTAS CONCRETAS ******* //
 const ProtectedRoute = () => {
