@@ -16,14 +16,14 @@ function Navbar() {
     };
 
     return (
-      <header className=" bg-slate-200 z-30">
+      <header className="bg-slate-200 z-30">
         <nav className="flex justify-between items-center w-[92%] mx-auto p-3 z-30">
             <div>
                 <Link to={"/"}>
                     <img className="sm:w-64 w-32 cursor-pointer"  src={LogoAutoescuelaFast} alt="Logo AutoescuelaFast" />
                 </Link>
             </div>
-            <div className={`nav-links duration-500 lg:static absolute bg-slate-200 lg:min-h-fit min-h-[100vh] left-0 ${menuToggle ? 'top-[7%]' : ''} top-[-100%] lg:w-auto w-full flex items-center justify-center px-5 z-40`}>
+            <div className={`nav-links duration-500 lg:static absolute bg-slate-200 lg:min-h-fit min-h-[100vh] left-0 ${menuToggle ? 'top-[7%]' : ''} top-[-400%] lg:w-auto w-full flex items-center justify-center px-5 z-20`}>
                 <ul className='flex lg:flex-row flex-col lg:items-center md:gap-[4vw] gap-8'>
                     <li className='text-center hover:scale-110 duration-500'>
                         <Link className={`hover:text-[#C21D30] cursor-pointer`} to={`/`} onClick={() => {setMenuToggle(false)}}>Inicio</Link>
