@@ -26,10 +26,10 @@ return (
         <Suspense fallback={<LoadingPage/>}>
           <Routes>
             <Route path="/" element={<HomePage />}></Route>
-            <Route path="/tests/:idUser" element={<TestsPage />}></Route>
+            {/* <Route path="/tests/:idUser" element={<TestsPage />}></Route> */}
             <Route path="/contact" element={<ContactPage />}></Route>
-            <Route path="/login" element={<LoginPage />}></Route>
-            <Route path="/register" element={<RegisterPage />}></Route>
+            {/* <Route path="/login" element={<LoginPage />}></Route>
+            <Route path="/register" element={<RegisterPage />}></Route> */}
             <Route path="/work" element={<WorkPage />}></Route>
             {/* <Route element={<ProtectedRoute />}>
               <Route path="/test/:idTest" element={<TestPage />}></Route>
