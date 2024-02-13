@@ -27,7 +27,7 @@ function DiagramLastTest() {
       margin={{
         top: 5,
         right: 10,
-        left: -40,
+        left: -32,
         bottom: 5
     }}>
         <XAxis />
