@@ -78,7 +78,7 @@ function RegisterPage() {
         <>
         <Navbar />
         <main className="flex justify-center items-center h-screen">
-            <section className="bg-white p-8 flex flex-col gap-y-8 rounded-xl shadow-slate-500 shadow-lg z-10 sm:w-auto w-[90%] md:mt-0 mt-64">
+            <section className="bg-white p-8 flex flex-col gap-y-8 rounded-xl shadow-slate-500 shadow-lg z-10 sm:w-auto w-[90%] md:mt-0 my-64">
                 <div className="flex gap-x-10 gap-y-4 md:flex-row flex-col justify-center items-center">
                     <h1 className={`text-4xl text-[#C21D30]`}>Regístrate</h1>
                     <img className="sm:w-56 w-40" src={LogoAutoescuelaFast} alt="Logo AutoescuelaFast" />
