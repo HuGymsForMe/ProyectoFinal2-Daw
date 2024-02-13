@@ -76,21 +76,21 @@ function ProfilePage() {
                     </article>
                     <div className="flex flex-col gap-4 xl:w-[90%] w-[95%]">
                         <article className="flex justify-center items-center flex-col gap-y-8 bg-slate-200 shadow-lg shadow-slate-500 p-8 rounded-xl min-h-[420px]">
-                            <p className="text-xl">ESTADÍSTICAS POR TEST</p>
+                            <p className="text-xl text-center">ESTADÍSTICAS POR TEST</p>
                             <DiagramResultsByTest />
                         </article>
                         <article className="flex justify-center items-center flex-col gap-y-8 bg-slate-200 shadow-lg shadow-slate-500 p-8 rounded-xl min-h-[350px]">
-                            <p className="text-xl">BAREMO DE TEST APROBADOS (%)</p>
+                            <p className="text-xl text-center">BAREMO DE TEST APROBADOS (%)</p>
                             <DiagramPercentageSuccess />
                         </article>
                     </div>
                     <div className="flex flex-col gap-4 xl:w-[90%] w-[95%]">
                         <article className="flex justify-center items-center flex-col gap-y-8 bg-slate-200 shadow-lg shadow-slate-500 p-8 rounded-xl min-h-[420px]">
-                            <p className="text-xl">PORCENTAJE TEST APTOS</p>
+                            <p className="text-xl text-center">PORCENTAJE TEST APTOS</p>
                             <DiagramSuccess />
                         </article>
                         <article className="flex justify-center items-center flex-col gap-y-8 bg-slate-200 shadow-lg shadow-slate-500 p-8 rounded-xl min-h-[350px]">
-                            <p className="text-xl">ÚLTIMOS TEST REALIZADOS</p>
+                            <p className="text-xl text-center">ÚLTIMOS TEST REALIZADOS</p>
                             <DiagramLastTest />
                         </article>
                     </div>

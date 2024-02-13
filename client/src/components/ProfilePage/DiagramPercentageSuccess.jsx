@@ -25,7 +25,13 @@ function DiagramPercentageSuccess() {
 
     return(
     <ResponsiveContainer width="100%" height={200}>
-      <LineChart data={data}>
+      <LineChart data={data}
+      margin={{
+        top: 5,
+        right: 10,
+        left: -40,
+        bottom: 5
+    }}>
         <XAxis />
         <YAxis />
         <CartesianGrid stroke="#eee" strokeDasharray="5 5" />

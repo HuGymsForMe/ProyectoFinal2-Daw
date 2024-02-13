@@ -29,16 +29,15 @@ function DiagramResultsByTest() {
                 data={data}
                 margin={{
                     top: 5,
-                    right: 30,
-                    left: 20,
+                    right: 10,
+                    left: -40,
                     bottom: 5
-                }}
+                }}                
             >
                 <CartesianGrid strokeDasharray="4 1 2" />
                 <XAxis dataKey="name" />
                 <YAxis />
                 <Tooltip />
-                <Legend />
                 <Bar dataKey="Aprobados" fill={firstGreen} />
                 <Bar dataKey="Suspensos" fill={firstRed} />
             </BarChart>
