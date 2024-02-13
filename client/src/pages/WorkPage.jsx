@@ -76,8 +76,8 @@ function WorkPage() {
     return(    
         <>
         <Navbar />
-        <main className="flex justify-center items-center h-screen flex-col">
-        <section className=" bg-white p-8 flex flex-col gap-y-8 rounded-xl shadow-slate-500 shadow-lg z-10 sm:w-auto w-[90%]">
+        <main className="flex justify-center items-center h-screen flex-col min-h-screen">
+        <section className=" bg-white p-8 flex flex-col gap-y-8 rounded-xl shadow-slate-500 shadow-lg z-10 sm:w-auto w-[90%] md:my-auto my-16">
             <div className="flex gap-x-10 justify-center sm:flex-row flex-col items-center gap-y-4">
                 <h1 className="text-3xl text-[#C21D30]">Trabaja con Nosotros</h1>
                 <img className="sm:w-48 w-40"  src={LogoAutoescuelaFast} alt="Autoescuela Fast" />
