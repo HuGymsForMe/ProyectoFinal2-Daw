@@ -27,7 +27,6 @@ function LoginPage() {
     const [seePassword, setSeePassword] = useState(false);
     const [errorHTTP, setErrorHTTP] = useState(false); //Comprueba si hay errores a la hora de hacer peticiones HTTP
     const [showToast, setShowToast] = useState(false); //Hace desaparecer y aparecer el toast
-    const [passwordValue, setPasswordValue] = useState("");
 
     // ******* VISUALIZAR CONTRASEÑAS *******//
     const toggleSeePassword = () => {
@@ -47,7 +46,8 @@ function LoginPage() {
 
     const onSubmit = async (data) => {
         // ******* POSIBLE RESPUESTA 400 ******* //
-        if (!await signin(data)) {
+
+        if (!signin(data)) {
             setErrorHTTP(true);
             setShowToast(true);
             setTimeout(() => {

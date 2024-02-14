@@ -52,7 +52,6 @@ function DiagramSuccess() {
         setChartCx(newCx);
     };
 
-    // Llamar a la función de actualización cuando se carga la página y cuando cambia el tamaño de la ventana
     updateChartCx();
     window.addEventListener('resize', updateChartCx);
     return () => window.removeEventListener('resize', updateChartCx);
