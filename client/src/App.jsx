@@ -4,7 +4,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 // ******* CONTEXTOS DE LA APLICACIÓN ******* //
 import { UserProvider } from "./context/UserContext";
 
-import LoadingPage from "./pages/LoadingPage";
+
+//import LoadingPage from "./pages/LoadingPage";
+const LoadingPage = lazy(() => import("./pages/LoadingPage"))
 const ProtectedRoute = lazy(() => import("./pages/private/ProtectedRoute"))
 
 // ******* PLANTILLAS QUE COMPONEN LA APLICACIÓN ******* //

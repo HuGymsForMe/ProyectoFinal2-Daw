@@ -42,7 +42,7 @@ function Navbar() {
                     </li>
                 </ul>
             </div>
-            <div className='flex items-center gap-6'>
+            <div className='flex items-center gap-4'>
                 {isAuthenticated ? (
                     <Link to={`/profile/${user.id}`} onClick={() => {setMenuToggle(false)}}>
                         <button type='button' className={`bg-[#C21D30] text-white px-4 py-2 rounded-full hover:bg-[#B30519] sm:text-base text-xs focus:border-slate-800 border-2 flex gap-x-[.25rem]`}>
