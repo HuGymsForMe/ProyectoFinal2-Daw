@@ -377,3 +377,4 @@ export const secondRed = "#E13347";
 export const thirdRed = "#B30519";
 export const firstGreen = "#1ED760";
 export const secondGreen = "#149A44";
+export const thirdGreen = "#318950";

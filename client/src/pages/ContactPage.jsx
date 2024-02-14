@@ -31,19 +31,22 @@ function ContactPage(){
     });
 
     const onSubmit = async (data) => {
-        axios.post(`${API}/contact`, {
-            name: data.name, 
-            email: data.email, 
-            message: data.message})
-            .then((response) => {
-            setMessage(response.data);
-        })
+        try {
+            await axios.post(`${API}/contact`, {
+                name: data.name, 
+                email: data.email, 
+                message: data.message
+            });
+            setMessage("El mensaje se envió correctamente.");
+        } catch (error) {
+            console.log(error);
+        }
         setShowToast(true);
         setTimeout(() => {
             setShowToast(false);
         }, 3000);
-        return;
     }
+    
 
     // ******* PROP PARA EL TOAST ******* //
     const closeToast = () => {
@@ -92,8 +95,8 @@ function ContactPage(){
                     </div>
                 </form>
             </section>
-            {showToast && message && (<ToastErrors onClose={closeToast} error={false}>Se produjo el envío correctamente</ToastErrors>)}
-            {showToast && !message && (<ToastErrors onClose={closeToast} error={true}>No se pudo hacer el envío correctamente</ToastErrors>)}
+                {showToast && message && (<ToastErrors onClose={closeToast} error={false}>Se produjo el envío correctamente</ToastErrors>)}
+                {showToast && !message && (<ToastErrors onClose={closeToast} error={true}>No se pudo hacer el envío correctamente</ToastErrors>)}
         </main>
         <Footer />
         </>

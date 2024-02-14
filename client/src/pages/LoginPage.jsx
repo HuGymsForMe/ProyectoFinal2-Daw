@@ -47,7 +47,7 @@ function LoginPage() {
     const onSubmit = async (data) => {
         // ******* POSIBLE RESPUESTA 400 ******* //
 
-        if (!signin(data)) {
+        if (!await signin(data)) {
             setErrorHTTP(true);
             setShowToast(true);
             setTimeout(() => {
