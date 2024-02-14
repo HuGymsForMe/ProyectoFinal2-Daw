@@ -36,7 +36,7 @@ function HomePage() {
                 <section className="flex justify-center">
                     <h1 className="text-4xl text-bold text-center">Bienvenido a Autoescuela Fast</h1>
                 </section>
-                <section className="flex justify-center w-[75%] items-center gap-6 bg-white text-[#C21D30] rounded-lg p-8 xl:flex-row flex-col">
+                <section className="flex justify-center w-[75%] items-center gap-6 bg-white text-[#C21D30] rounded-lg p-8 xl:flex-row flex-col md:my-auto my-16">
                     <div className="flex flex-col gap-y-2 xl:order-1 order-2">
                         <p className="text-xl text-pretty">¡Bienvenido a nuestra AutoescuelaFast, tu camino hacia la libertad en la carretera comienza aquí!</p>
                         <p className="">En AutoescuelaFast, entendemos lo importante que es para ti obtener tu permiso teórico de conducir de manera conveniente y eficiente. Por eso, hemos desarrollado un programa completo y accesible que te permitirá estudiar y prepararte para el examen teórico desde la comodidad de tu hogar, en tu propio ritmo.</p>
