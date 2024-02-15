@@ -23,7 +23,6 @@ function App() {
 return (
   <UserProvider>
     <BrowserRouter>
-        <Suspense fallback={<LoadingPage/>}>
           <Routes>
             <Route path="/" element={<HomePage />}></Route>
             <Route path="/tests/:idUser" element={<TestsPage />}></Route>
@@ -37,7 +36,6 @@ return (
               <Route path="/tests/:idUser" element={<TestsPage />}></Route>
             </Route>
           </Routes> 
-        </Suspense>
     </BrowserRouter>
   </UserProvider>
 
