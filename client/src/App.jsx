@@ -1,5 +1,5 @@
 import { Suspense, lazy } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 
 // ******* CONTEXTOS DE LA APLICACIÓN ******* //
 import { UserProvider } from "./context/UserContext";
@@ -19,6 +19,16 @@ const ProfilePage = lazy(() => import("./pages/ProfilePage"));
 const WorkPage = lazy(() => import("./pages/WorkPage"));
 
 function App() {
+
+  // Manejar el cambio de pestaña
+  const handleTabChange = () => {
+    setIsChangingTab(true);
+
+    // Simular un pequeño retraso antes de actualizar el estado
+    setTimeout(() => {
+      setIsChangingTab(false);
+    }, 100);
+  };
 
 return (
   <UserProvider>
