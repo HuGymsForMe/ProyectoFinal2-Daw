@@ -85,8 +85,8 @@ function LoginPage() {
                         {/* <ion-icon name="key-outline"></ion-icon> */}
                         <input type={seePassword ? "text" : "password"} placeholder="Contraseña" className="rounded-md p-2 bg-slate-200"
                             {...register("password", { required: true, minLength: 6, maxLength: 18 })} />
-                        <button type="button" className="-mt-[1.82rem] sm:ml-[20rem] ml-[12rem] relative md:right-[6px] text-end pr-1" onClick={toggleSeePassword}>
-                            <ion-icon name={seePassword ? "eye-off-outline" : "eye-outline"}></ion-icon>
+                        <button type="button" className="-mt-[1.82rem] sm:ml-[20rem] ml-[12rem] relative md:right-[6px] text-end pr-1" onClick={toggleSeePassword} aria-label="buttonSeePassword">
+                            <ion-icon name={seePassword ? "eye-off-outline" : "eye-outline"} aria-label="iconSeePassword"></ion-icon>
                         </button>
                         {errors.password?.message && (
                             <p className="text-red-500 text-sm w-[90%] mt-4">{errors.password?.message}</p>

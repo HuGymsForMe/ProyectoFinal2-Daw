@@ -124,8 +124,8 @@ function RegisterPage() {
                                 <label className="text-xl">Contraseña:</label>
                                 <input type={seePassword ? "text" : "password"} placeholder="Contraseña" className="rounded-md p-2 bg-slate-200"
                                     {...register("password", { required: true })} />
-                                <button type="button" className="-mt-[1.82rem] sm:ml-[20rem] ml-[12rem] relative md:right-[6px] text-end pr-1" onClick={toggleSeePassword}>
-                                    <ion-icon name={seePassword ? "eye-off-outline" : "eye-outline"}></ion-icon>
+                                <button type="button" className="-mt-[1.82rem] sm:ml-[20rem] ml-[12rem] relative md:right-[6px] text-end pr-1" onClick={toggleSeePassword} aria-label="buttonSeePassword">
+                                    <ion-icon name={seePassword ? "eye-off-outline" : "eye-outline"} aria-label="iconSeePassword"></ion-icon>
                                 </button>
                                 {errors.password?.message && (
                                     <p className="text-red-500 text-sm w-[90%] mt-2">{errors.password?.message}</p>
@@ -135,8 +135,8 @@ function RegisterPage() {
                                 <label className="text-xl">Confirmar Contraseña:</label>
                                 <input type={seePasswordConfirm ? "text" : "password"} placeholder="Confirmar Contraseña" className="rounded-md p-2 bg-slate-200"
                                     {...register("confirm_password", { required: true })} />
-                                <button type="button" className="-mt-[1.82rem] sm:ml-[20rem] ml-[12rem] relative md:right-[6px] text-end pr-1" onClick={toggleSeePasswordConfirm}>
-                                    <ion-icon name={seePasswordConfirm ? "eye-off-outline" : "eye-outline"}></ion-icon>
+                                <button type="button" className="-mt-[1.82rem] sm:ml-[20rem] ml-[12rem] relative md:right-[6px] text-end pr-1" onClick={toggleSeePasswordConfirm} aria-label="buttonSeePasswordConfirm">
+                                    <ion-icon name={seePasswordConfirm ? "eye-off-outline" : "eye-outline"} aria-label="iconSeePasswordConfirm"></ion-icon>
                                 </button>
                                 {errors.confirm_password?.message && (
                                     <p className="text-red-500 text-sm w-[90%] mt-2">{errors.confirm_password?.message}</p>

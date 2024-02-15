@@ -23,7 +23,7 @@ function Navbar() {
                     <img className="sm:w-64 w-32 cursor-pointer"  src={LogoAutoescuelaFast} alt="Logo AutoescuelaFast" />
                 </Link>
             </div>
-            <div className={`nav-links duration-500 lg:static absolute bg-slate-200 lg:min-h-fit min-h-[100vh] left-0 ${menuToggle ? 'top-[7%]' : ''} top-[-400%] lg:w-auto w-full flex items-center justify-center px-5 z-20`}>
+            <div className={`nav-links duration-500 lg:static absolute bg-slate-200 lg:min-h-fit min-h-[100vh] left-0 ${menuToggle ? 'top-[6%] sm:top-[7%] lg:top-[9%]' : ''} top-[-400%] lg:w-auto w-full flex items-center justify-center px-5 z-20`}>
                 <ul className='flex lg:flex-row flex-col lg:items-center md:gap-[4vw] gap-8'>
                     <li className='text-center hover:scale-110 duration-500'>
                         <Link className={`hover:text-[#C21D30] cursor-pointer`} to={`/`} onClick={() => {setMenuToggle(false)}}>Inicio</Link>
@@ -56,7 +56,7 @@ function Navbar() {
                     </Link>
                 )}
                 <button className="text-3xl cursor-pointer lg:hidden flex justify-center items-center" onClick={toggleMenu} role='presentation' aria-label='toggleButton'>
-                    <ion-icon name={menuToggle ? "close" : "menu-outline"}></ion-icon>
+                    <ion-icon name={menuToggle ? "close" : "menu-outline"} aria-label='toggleIcon'></ion-icon>
                 </button>
             </div>
         </nav>
