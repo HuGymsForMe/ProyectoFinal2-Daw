@@ -20,24 +20,11 @@ const WorkPage = lazy(() => import("./pages/WorkPage"));
 
 function App() {
 
-  const [isChangingTab, setIsChangingTab] = useState(false);
-  const location = useLocation();
-
-  // Manejar el cambio de pestaña
-  const handleTabChange = () => {
-    setIsChangingTab(true);
-
-    // Simular un pequeño retraso antes de actualizar el estado
-    setTimeout(() => {
-      setIsChangingTab(false);
-    }, 100);
-  };
-
 return (
   <UserProvider>
     <BrowserRouter>
         <Suspense fallback={<LoadingPage/>}>
-          <Routes location={location} onChange={handleTabChange}>
+          <Routes>
             <Route path="/" element={<HomePage />}></Route>
             <Route path="/tests/:idUser" element={<TestsPage />}></Route>
             <Route path="/contact" element={<ContactPage />}></Route>
