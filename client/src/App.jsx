@@ -2,7 +2,9 @@ import { Suspense, lazy } from "react";
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 
 // ******* CONTEXTOS DE LA APLICACIÓN ******* //
-import { UserProvider } from "./context/UserContext";
+//import { UserProvider } from "./context/UserContext";
+
+const UserProvider = lazy(() => import("./context/UserContext"));
 
 const LoadingPage = lazy(() => import("./pages/LoadingPage"))
 const ProtectedRoute = lazy(() => import("./pages/private/ProtectedRoute"))
