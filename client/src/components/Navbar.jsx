@@ -55,7 +55,7 @@ function Navbar() {
                         <button type='button' className={`bg-[#C21D30] text-white px-5 py-2 rounded-full hover:bg-[#B30519] sm:text-base text-xs focus:border-slate-800 border-2`}>Iniciar Sesión</button>
                     </Link>
                 )}
-                <button className="text-3xl cursor-pointer lg:hidden flex justify-center items-center" onClick={toggleMenu}>
+                <button className="text-3xl cursor-pointer lg:hidden flex justify-center items-center" onClick={toggleMenu} role='presentation' aria-label='toggleButton'>
                     <ion-icon name={menuToggle ? "close" : "menu-outline"}></ion-icon>
                 </button>
             </div>
