@@ -47,7 +47,7 @@ function Navbar() {
                     <Link to={`/profile/${user.id}`} onClick={() => {setMenuToggle(false)}}>
                         <button type='button' className={`bg-[#C21D30] text-white px-4 py-2 rounded-full hover:bg-[#B30519] sm:text-base text-xs focus:border-slate-800 border-2 flex gap-x-[.25rem]`}>
                             <p className="flex justify-center items-center">{user.username}</p>
-                            <p className="flex justify-center items-center p-[.25rem]"><ion-icon name="person"></ion-icon></p>
+                            <p className="flex justify-center items-center p-[.25rem]"><ion-icon name="person" aria-label="iconUser"></ion-icon></p>
                         </button>
                     </Link>
                 ) : (

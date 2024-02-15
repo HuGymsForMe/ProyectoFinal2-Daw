@@ -15,7 +15,7 @@ function Footer() {
                 <p className="text-center text-xs">Todos los derechos reservados</p>
             </section>
             <section className="flex md:flex-row flex-col items-center gap-y-8">
-                <section className="md:w-[50%] w-[80%] flex flex-col justify-center items-center">
+                <ul className="md:w-[50%] w-[80%] flex flex-col justify-center items-center">
                     <li className="flex justify-center text-lg hover:scale-105 duration-300">
                         <Link className={`hover:text-[#C21D30] cursor-pointer`}>Sobre Nosotros</Link>
                     </li>
@@ -34,18 +34,18 @@ function Footer() {
                     <li className="flex justify-center text-lg hover:scale-105 duration-300">
                         <Link className={`hover:text-[#C21D30] cursor-pointer`}>Política de redes sociales</Link>
                     </li>
-                </section>
+                </ul>
                 <section className="flex flex-col justify-center items-center md:w-[50%] w-[80%]">
                     <p className="text-center text-2xl font-semibold uppercase flex">Únete al club de aprobados de Autoescuela Fast</p>
                     <p className="text-center text-xl flex">Muchos alumnos han confiado en nuestros servicios para poder sacar su exámen teórico adelante</p>
                 </section>
             </section>
             <section className="flex gap-x-2 justify-center items-end">
-                <p className="hover:text-[#24A3F2] text-3xl duration-300"><ion-icon name="logo-twitter"></ion-icon></p>
-                <p className="hover:text-[#0866FF] text-3xl duration-300"><ion-icon name="logo-facebook"></ion-icon></p>
-                <p className="hover:text-[#FE08AC] text-3xl duration-300"><ion-icon name="logo-instagram"></ion-icon></p>
-                <p className="hover:text-[#FF0000] text-3xl duration-300"><ion-icon name="logo-youtube"></ion-icon></p>
-                <p className="hover:text-[#0C67C2] text-3xl duration-300"><ion-icon name="logo-linkedin"></ion-icon></p>
+                <p className="hover:text-[#24A3F2] text-3xl duration-300"><ion-icon name="logo-twitter" aria-label="iconTwitter"></ion-icon></p>
+                <p className="hover:text-[#0866FF] text-3xl duration-300"><ion-icon name="logo-facebook" aria-label="iconFacebook"></ion-icon></p>
+                <p className="hover:text-[#FE08AC] text-3xl duration-300"><ion-icon name="logo-instagram" aria-label="iconInstagram"></ion-icon></p>
+                <p className="hover:text-[#FF0000] text-3xl duration-300"><ion-icon name="logo-youtube" aria-label="iconYoutube"></ion-icon></p>
+                <p className="hover:text-[#0C67C2] text-3xl duration-300"><ion-icon name="logo-linkedin" aria-label="iconLinkedin"></ion-icon></p>
             </section>
         </footer>
     )
