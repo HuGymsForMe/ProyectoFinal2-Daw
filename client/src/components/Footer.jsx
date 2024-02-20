@@ -12,7 +12,7 @@ function Footer() {
             <section className="flex justify-center items-center flex-col">
                 <img className="w-72" src={LogoAutoescuelaFast} alt="Logo AutoescuelaFast" />
                 <p className="text-center text-xs">&copy; {currentYear} Autoescuela Fast.</p>
-                <p className="text-center text-xs">Todos los derechos reservados</p>
+                <p className="text-center text-xs">Todos los derechos reservados.</p>
             </section>
             <section className="flex md:flex-row flex-col items-center gap-y-8">
                 <ul className="md:w-[50%] w-[80%] flex flex-col justify-center items-center">

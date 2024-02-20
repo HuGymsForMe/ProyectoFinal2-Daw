@@ -26,7 +26,7 @@ function ContactPage(){
     const [showToast, setShowToast] = useState(false); //Para mostrar un toast al usuario de información del envío
     const [message, setMessage] = useState(null);
 
-    const { register, handleSubmit, formState: { errors }} = useForm({
+    const { register, handleSubmit, reset, formState: { errors }} = useForm({
         resolver: zodResolver(questionsSchema),
     });
 
@@ -38,6 +38,7 @@ function ContactPage(){
                 message: data.message
             });
             setMessage("El mensaje se envió correctamente.");
+            reset();
         } catch (error) {
             console.log(error);
         }

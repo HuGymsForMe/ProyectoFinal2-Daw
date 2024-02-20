@@ -38,7 +38,7 @@ function LoginPage() {
         setShowToast(false);
     }
 
-    const { register, handleSubmit, formState: { errors } } = useForm({
+    const { register, handleSubmit, reset, formState: { errors } } = useForm({
         resolver: zodResolver(loginSchema),
     });
     const { signin, errors: loginErrors, isAuthenticated } = useAuth();
@@ -50,6 +50,7 @@ function LoginPage() {
         if (!await signin(data)) {
             setErrorHTTP(true);
             setShowToast(true);
+            //reset();
             setTimeout(() => {
                 setShowToast(false);
             }, 3000);
