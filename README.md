@@ -9,7 +9,7 @@
     <p>En AutoescuelaFast, entendemos lo importante que es para ti obtener tu permiso teórico de conducir de manera conveniente y eficiente. Por eso, hemos desarrollado un programa completo y accesible que te permitirá estudiar y prepararte para el examen teórico desde la comodidad de tu hogar, en tu propio ritmo.</p>
 </div>
 
-## 📂 How to clone this repository?
+## 📂 ¿Cómo clonar este repositorio?
 ```bash
 git clone https://github.com/HuGymsForMe/ProyectoFinal2-Daw
 ```
