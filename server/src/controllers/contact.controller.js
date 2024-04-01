@@ -61,9 +61,9 @@ export const updateQuestion = async(req, res) => {
 
 export const getQuestion = async(req,res) => {
     try {
-        const question = await Contact.findById(req.params.id);
-        if(!question) return res.status(404).json({ message: "Pregunta de contacto no encontrada"});
-        return res.json(question);
+        const showQuestion = await Contact.findById(req.params.id);
+        if(!showQuestion) return res.status(404).json({ message: "Pregunta de contacto no encontrada"});
+        return res.json(showQuestion);
     } catch (error) {
         return res.status(500).json({message: "Se produjo un error al buscar esta pregunta de contacto por su ID"})
     }
