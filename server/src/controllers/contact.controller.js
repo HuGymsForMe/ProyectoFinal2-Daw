@@ -35,3 +35,36 @@ export const getQuestions = async(req, res) => {
     }
 }
 
+export const deleteQuestion = async(req,res) => {
+    try {
+        const deletedQuestion = await Contact.findByIdAndDelete(req.params.id);
+        if(!deletedQuestion) return res.status(404).json({message: "Pregunta de contacto no encontrada"});
+        return res.sendStatus(204);
+    } catch (error) {
+        res.status(500).json({ message: "Se produjo un error al intentar borrar la pregunta"})
+    }
+}
+
+export const updateQuestion = async(req, res) => {
+    try {
+        const {name, email, message} = req.body;
+        const questionUpdated = await Contact.findOneAndUpdate(
+            {_id: req.params.id},
+            {name, email, message},
+            {new: true}
+        );
+        return res.json(questionUpdated);
+    } catch (error) {
+        return res.status(500).json({ message: "No se pudo editar la pregunta de contacto"});
+    }
+}
+
+export const getQuestion = async(req,res) => {
+    try {
+        const question = await Contact.findById(req.params.id);
+        if(!question) return res.status(404).json({ message: "Pregunta de contacto no encontrada"});
+        return res.json(question);
+    } catch (error) {
+        return res.status(500).json({message: "Se produjo un error al buscar esta pregunta de contacto por su ID"})
+    }
+}
