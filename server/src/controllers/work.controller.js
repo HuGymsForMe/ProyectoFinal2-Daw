@@ -4,26 +4,8 @@ import { uploadImage } from "../libs/cloudinary.js";
 
 // ******* CONTROLADOR PARA QUE EL USUARIO SUBA SUS DATOS (PÁGINA DE TRABAJA CON NOSOTROS) ******* //
 export const sendWork = async (req, res) => {
+    const { name, surnames, email, telephone, files } = req.body;
     try {
-        const { name, surnames, email, telephone } = req.body;
-        let files = [];
-
-        if (req.files && req.files.file) {
-            // Si estás usando multer para manejar la carga de archivos, req.files.file sería un array
-            const filesArray = Array.isArray(req.files.file) ? req.files.file : [req.files.file];
-
-            // Procesar cada archivo
-            for (const file of filesArray) {
-                const result = await uploadImage(file.tempFilePath);
-                await fs.remove(file.tempFilePath);
-
-                files.push({
-                    url: result.secure_url,
-                    public_id: result.public_id,
-                });
-            }
-        }
-
         const newWork = new Work({
             name,
             surnames,

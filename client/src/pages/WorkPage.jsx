@@ -1,4 +1,4 @@
-import { lazy, useState } from "react";
+import { lazy, useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import axios from "axios";
 
@@ -26,37 +26,34 @@ function WorkPage() {
     const [message, setMessage] = useState(null);
     const [filesCV, setFilesCV] = useState(null);
 
-    const {register, handleSubmit} = useForm();
+    const {register, handleSubmit, reset} = useForm();
 
     const onSubmit = async (data) => {
         try {
-            const formData = new FormData();
-            formData.append("name", data.name);
-            formData.append("surnames", data.surnames);
-            formData.append("email", data.email);
-            formData.append("telephone", data.telephone);
 
-            if (filesCV) {
-                for (let i = 0; i < filesCV.length; i++) {
-                    formData.append("files", filesCV[i]);
-                }
-            }
+            const formData = {
+                name: data.name,
+                surnames: data.surnames,
+                email: data.email,
+                telephone: data.telephone,
+                files: filesCV.map(file => ({
+                    name: file.name,
+                    data: file.data // Suponiendo que `data` contiene el contenido del archivo
+                }))
+            };
 
-            const response = await axios.post(`${API}/work`, formData, {
-                headers: {
-                    "Content-Type": "multipart/form-data",
-                },
-            });
-
-            setMessage(response.data);
-            setShowToast(true);
-            setTimeout(() => {
-                setShowToast(false);
-            }, 3000);
+            console.log(formData.files)
+            
+            await axios.post(`${API}/work`, formData);
+            setMessage("El mensaje se envió correctamente.");
+            reset();
         } catch (error) {
-            console.error("Error submitting data:", error);
-            setShowToast(true);
+            console.log(error);
         }
+        setShowToast(true);
+        setTimeout(() => {
+            setShowToast(false);
+        }, 3000);
     };
 
     const closeModal = () => {
@@ -82,7 +79,7 @@ function WorkPage() {
                 <h1 className="text-3xl text-[#C21D30] text-center">Trabaja con Nosotros</h1>
                 <img className="sm:w-48 w-40"  src={LogoAutoescuelaFast} alt="Autoescuela Fast" />
             </div>
-            <form className="flex flex-col gap-y-4" onSubmit={handleSubmit(onSubmit)}>
+            <form className="flex flex-col gap-y-4" onSubmit={handleSubmit(onSubmit)} encType="multipart/form-data">
                 <div className="flex flex-col">
                     <label>Nombre:</label>
                     <input type="text" placeholder="Su nombre" className="rounded-md p-2 bg-slate-200"
@@ -101,7 +98,7 @@ function WorkPage() {
                 <div className="flex flex-col">
                     <label>Teléfono Móvil:</label>
                     <input type="tel" placeholder="Su teléfono" className="rounded-md p-2 bg-slate-200"
-                    {...register("telefono", {required: true})} />
+                    {...register("telephone", {required: true})} />
                 </div>
                 <div className="flex mt-4 md:flex-row justify-around items-center gap-x-2 gap-y-4 flex-col">
                     <button type="button" className="bg-[#C21D30] text-white py-2 px-4 rounded-md cursor-pointer hover:shadow-xl hover:bg-[#B30519]" onClick={() => setShowModal(true)}>Subir CV</button>

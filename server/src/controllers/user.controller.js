@@ -13,7 +13,7 @@ export const register = async (req, res) => {
 
         const passwordHash = await bcryptjs.hash(password, 10);
 
-        const newUsuario = new User({
+        const newUser = new User({
             name,
             surnames,
             username,
@@ -23,7 +23,7 @@ export const register = async (req, res) => {
             premium_user,
         });
 
-        const userSaved = await newUsuario.save();
+        const userSaved = await newUser.save();
         const token = await createAccessToken({id: userSaved._id});
         
         res.cookie("token", token, {
@@ -96,4 +96,14 @@ export const logout = async (req, res) => {
     })
 
     return res.sendStatus(200);
+}
+
+export const getUsers = async(req, res) => {
+    try {
+        const showUsers = await User.find();
+        res.json(showUsers);
+    } catch (error) {
+        console.log(error);
+        res.status(500).json({message: "No se han podido visualizar los usuarios del sistema"})
+    }
 }

@@ -361,8 +361,8 @@ export const imagesQuestions = [
                 ];
 
 // ******* API REST ******* //
-//export const API = "http://localhost:4000/api";
-export const API = "https://autoescuela-fast-api.onrender.com/api/";
+export const API = "http://localhost:4000/api";
+//export const API = "https://autoescuela-fast-api.onrender.com/api/";
 
 // ******* ID DE LOS TESTS ******* //
 export const TestsAutoescuelaFast = ["659e56222d2690f6d6cdd561", "659e56422d2690f6d6cdd562",

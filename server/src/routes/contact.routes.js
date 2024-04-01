@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { sendQuestions } from "../controllers/contact.controller.js";
+import { getQuestions, sendQuestions } from "../controllers/contact.controller.js";
 import { validateSchema } from "../middlewares/validator.middleware.js";
 import { questionsSchema } from "../schemas/contact.schema.js";
 
@@ -7,5 +7,6 @@ import { questionsSchema } from "../schemas/contact.schema.js";
 const router = Router();
 
 router.post("/contact", validateSchema(questionsSchema), sendQuestions);
+router.get("/contact", getQuestions);
 
 export default router;

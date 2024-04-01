@@ -25,3 +25,13 @@ export const sendQuestions = async(req, res) => {
     }
 }
 
+export const getQuestions = async(req, res) => {
+    try {                                                                              
+        const showQuestions = await Contact.find();
+        res.json(showQuestions);
+    } catch (error) {
+        console.log(error)
+        res.status(500).json({message: "Se ha producido un error al mostrar las preguntas y respuestas de los usuarios"});
+    }
+}
+

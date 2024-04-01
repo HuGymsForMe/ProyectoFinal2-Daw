@@ -1,6 +1,8 @@
 import { useRef, useState } from "react";
 import PropTypes from "prop-types";
 
+import { useForm } from "react-hook-form";
+
 import uploadImg from "../../assets/fileinput/cloud-upload-regular-240.png";
 
 import "../../styles/InputCV.css";
@@ -10,20 +12,25 @@ const inputCV = ({onFileChange, onClose})  => {
 
     const wrapperRef = useRef(null);
     const [fileList, setFileList] = useState([]);
+    const {register} = useForm();
 
     const onDragEnter = () => wrapperRef.current.classList.add("dragover");
     const onDragLeave = () => wrapperRef.current.classList.remove("dragover");
     const onDrop = () => wrapperRef.current.classList.remove("dragover");
 
     const onFileDrop = (e) => {
-        const newFile = e.target.files[0];
-        if (newFile) {
-            const updatedList = [...fileList, newFile];
-            setFileList(updatedList);
-            onFileChange(updatedList);
+        const selectedFile = e.target.files[0];
+        if (selectedFile) {
+            const reader = new FileReader();
+            reader.onload = (event) => {
+                const fileData = event.target.result;
+                setFileList([{ data: fileData, name: selectedFile.name }]);
+                onFileChange([{ data: fileData, name: selectedFile.name }]);
+            };
+            reader.readAsDataURL(selectedFile);
         }
-    }
-
+    };
+    
     const fileRemove = (file) => {
         const updatedList = [...fileList];
         updatedList.splice(fileList.indexOf(file), 1);
@@ -48,7 +55,7 @@ const inputCV = ({onFileChange, onClose})  => {
                         <img src={uploadImg} alt="..." />
                         <p className="text-center text-[#B30519]">Sube tus ficheros aquí</p>
                     </div>
-                    <input type="file" onChange={onFileDrop} />
+                    <input type="file" onChange={onFileDrop} multiple />
                 </div>
                 {
                     fileList.length > 0 ? (
