@@ -10,7 +10,6 @@ const ProtectedRoute = lazy(() => import("./pages/private/ProtectedRoute"))
 // ******* PLANTILLAS QUE COMPONEN LA APLICACIÓN ******* //
 const HomePage = lazy(() => import("./pages/HomePage"));
 const TestsPage = lazy(() => import("./pages/TestsPage"));
-//const NewsPage = lazy(() => import("./pages/NewsPage"));
 const ContactPage = lazy(() => import("./pages/ContactPage"));
 const TestPage = lazy(() => import("./pages/TestPage"));
 const LoginPage = lazy(() => import("./pages/LoginPage"));

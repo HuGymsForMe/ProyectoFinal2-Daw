@@ -25,7 +25,7 @@ function HomePage() {
     const { isAuthenticated, user } = useAuth();
 
     useEffect(() => {
-        axios.get(API).then((response) => {
+        axios.get(`${API}/faqs`).then((response) => {
             setData(response.data);
         });
     }, []);
