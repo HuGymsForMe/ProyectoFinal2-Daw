@@ -1,8 +1,12 @@
 import { Router } from "express";
-import { getFaQs } from "../controllers/faq.controller.js";
+import { deleteFaQ, getFaQ, getFaQs, sendFaQ, updateFaQ } from "../controllers/faq.controller.js";
 
 const router = Router();
 
-router.get("/", getFaQs);
+router.get("/faqs", getFaQs);
+router.get("/faqs/:id", getFaQ);
+router.delete("/faqs/:id", deleteFaQ);
+router.put("/faqs/:id", updateFaQ);
+router.post("/faqs", sendFaQ);
 
 export default router;
