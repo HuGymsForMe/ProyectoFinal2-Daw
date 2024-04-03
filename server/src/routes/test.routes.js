@@ -1,8 +1,12 @@
 import { Router } from "express";
-import { getTests } from "../controllers/test.controller.js";
+import { deleteTest, getTest, getTests, sendTest, updateTest } from "../controllers/test.controller.js";
 
 const router = Router();
 
-router.get("/tests/:id", getTests);
+router.get("/tests", getTests);
+router.get("/tests/:id", getTest);
+router.post("/tests", sendTest);
+router.put("/tests/:id", updateTest);
+router.delete("/tests/:id", deleteTest);
 
 export default router;

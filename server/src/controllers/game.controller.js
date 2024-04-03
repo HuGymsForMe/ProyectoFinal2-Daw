@@ -28,7 +28,55 @@ export const sendGames = async(req,res) => {
         });
         
     } catch (error) {
-        res.status(500).json({message: "Se ha producido un error al guardar la partida"});
+        res.status(500).json({message: "Se ha producido un error al guardar la partida."});
+    }
+}
+
+// ******* CONTROLADOR PARA VISUALIZAR LAS PARTIDAS DEL SISTEMA ******* //
+export const getGames = async(req, res) => {
+    try {
+        const showGames = await Game.find();
+        res.json(showGames);
+    } catch (error) {
+        console.log(error);
+        res.status(500).json({message: "Se ha producido un error al visualizar las partidas del sistema."})
+    }
+}
+
+// ******* CONTROLADOR PARA BORRAR UNA PARTIDA DEL SISTEMA ******* //
+export const deleteGame = async(req, res) => {
+    try {
+        const deletedGame = await Game.findByIdAndDelete(req.params.id);
+        if(!deletedGame) return res.status(404).json({message: "Partida no encontrada"});
+        return res.sendStatus(204);
+    } catch (error) {
+        res.status(500).json({message: "Se ha producido un error al borrar la partida."});
+    }
+}
+
+// ******* CONTROLADOR PARA ACTUALIZAR UNA PARTIDA DEL SISTEMA ******* //
+export const updateGame = async(req, res) => {
+    try {
+        const {time, misses, successes, pass, user, test} = req.body;
+        const gameUpdated = Game.findOneAndUpdate(
+            {_id: req.params.id},
+            {time, misses, successes, pass, user, test},
+            {new: true}
+        )
+        return res.json(gameUpdated);
+    } catch (error) {
+        res.status(500).json({message: "Se ha producido un error al actualizar la partida."});
+    }
+}
+
+// ******* CONTROLADOR PARA VISUALIZAR UNA PARTIDA MEDIANTE SU ID ******* //
+export const getGame = async(req, res) => {
+    try {
+        const showGame = await Game.findById(req.params.id);
+        if(!showGame) return res.status(404).json({message: "Partida no encontrada en el sistema."});
+        return res.sendStatus(204);
+    } catch (error) {
+        res.status(500).json({message: "Se produjo un error al buscar esta partida por su ID"})
     }
 }
 

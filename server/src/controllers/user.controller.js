@@ -98,6 +98,7 @@ export const logout = async (req, res) => {
     return res.sendStatus(200);
 }
 
+// ******* CONTROLADOR PARA VISUALIZAR TODOS LOS USUARIOS DEL SISTEMA ******* //
 export const getUsers = async(req, res) => {
     try {
         const showUsers = await User.find();
@@ -105,5 +106,44 @@ export const getUsers = async(req, res) => {
     } catch (error) {
         console.log(error);
         res.status(500).json({message: "No se han podido visualizar los usuarios del sistema"})
+    }
+}
+
+// ******* CONTROLADOR PARA VISUALIZAR UN USUARIO POR SU ID ******* //
+export const getUser = async(req, res) => {
+    try {
+        const showUser = await User.findById(req.params.id);
+        if (!showUser) return res.status(404).json({message: "Usuario no encontrado."})
+        return res.json(showUser);
+    } catch (error) {
+        console.log(error);
+        res.status(500).json({message: "No se ha podido visualizar el usuario solicitado."})
+    }
+}
+
+// ******* CONTROLADOR PARA BORRAR UN USUARIO DEL SISTEMA ******* //
+export const deleteUser = async(req, res) => {
+    try {
+        const deletedUser = await User.findByIdAndDelete(req.params.id);
+        if(!deletedUser) return res.status(404).json({message: "Usuario no encontrado"});
+    } catch (error) {
+        console.log(error);
+        res.status(500).json({message: "No se ha podido borrar el usuario solicitado con éxito."})
+    }
+}
+
+// ******* CONTROLADOR PARA ACTUALIZAR UN USUARIO DEL SISTEMA ******* //
+export const updateUser = async(req, res) => {
+    try {
+        const {name, surnames, username, email, password, birthday, premium_user} = req.body;
+        const userUpdated = await User.findByIdAndUpdate(
+            {_id: req.params.id},
+            {name, surnames, username, email, password, birthday, premium_user},
+            {new: true}
+        )
+        return res.json(userUpdated);
+    } catch (error) {
+        console.log(error);
+        res.status(500).json({message: "No se ha podido actualizar el usuario con éxito."})
     }
 }

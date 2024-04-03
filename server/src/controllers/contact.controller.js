@@ -25,6 +25,7 @@ export const sendQuestions = async(req, res) => {
     }
 }
 
+// ******* CONTROLADOR PARA VISUALIZAR LAS PREGUNTAS DE LOS USUARIOS ******* //
 export const getQuestions = async(req, res) => {
     try {                                                                              
         const showQuestions = await Contact.find();
@@ -35,6 +36,7 @@ export const getQuestions = async(req, res) => {
     }
 }
 
+// ******* CONTROLADOR PARA BORRAR LAS PREGUNTAS DE LOS USUARIOS ******* //
 export const deleteQuestion = async(req,res) => {
     try {
         const deletedQuestion = await Contact.findByIdAndDelete(req.params.id);
@@ -45,6 +47,7 @@ export const deleteQuestion = async(req,res) => {
     }
 }
 
+// ******* CONTROLADOR PARA ACTUALIZAR PREGUNTAS DE LOS USUARIOS ******* //
 export const updateQuestion = async(req, res) => {
     try {
         const {name, email, message} = req.body;
@@ -59,6 +62,7 @@ export const updateQuestion = async(req, res) => {
     }
 }
 
+// ******* CONTROLADOR PARA RECOGER UNA PREGUNTA DE UN USUARIO MEDIANTE UN ID ******* //
 export const getQuestion = async(req,res) => {
     try {
         const showQuestion = await Contact.findById(req.params.id);

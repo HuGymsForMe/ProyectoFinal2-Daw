@@ -11,6 +11,7 @@ export const getFaQs = async (req, res) => {
     }
 }
 
+// ******* CONTROLADOR UNA FaQ DEL SISTEMA MEDIANTE SU ID ******* //
 export const getFaQ = async(req, res) => {
     try {
         const showFaQ = await FaQ.findById(req.params.id);
@@ -21,6 +22,7 @@ export const getFaQ = async(req, res) => {
     }
 }
 
+// ******* CONTROLADOR PARA BORRAR LAS FaQs DEL SISTEMA ******* //
 export const deleteFaQ = async(req, res) => {
     try {
         const deletedFaQ = await FaQ.findByIdAndDelete(req.params.id);
@@ -31,6 +33,7 @@ export const deleteFaQ = async(req, res) => {
     }
 }
 
+// ******* CONTROLADOR PARA ACTUALIZAR LAS FaQs DEL SISTEMA ******* //
 export const updateFaQ = async(req, res) => {
     try {
         const {question, answer} = req.body;
@@ -45,6 +48,7 @@ export const updateFaQ = async(req, res) => {
     }
 }
 
+// ******* CONTROLADOR PARA ENVIAR UNA FaQ AL SISTEMA
 export const sendFaQ = async(req, res) => {
     try {
         const { question, answer } = req.body;

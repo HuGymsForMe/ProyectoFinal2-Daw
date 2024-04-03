@@ -9,14 +9,13 @@ import faQsRoutes from "./routes/faq.routes.js";
 import testsRoutes from "./routes/test.routes.js";
 import questionTestRoutes from "./routes/questiontest.routes.js";
 import gamesRoutes from "./routes/game.routes.js";
-import newsRoutes from "./routes/news.routes.js";
 import workRoutes from "./routes/work.routes.js";
 
 const app = express();
 
 const corsOptions = {
-    //origin: "https://autoescuela-fast.vercel.app",
-    origin: "http://localhost:5173",
+    origin: "https://autoescuela-fast.vercel.app",
+    //origin: "http://localhost:5173",
     credentials: true,
 }
 
@@ -33,7 +32,6 @@ app.use("/api", faQsRoutes);
 app.use("/api", testsRoutes);
 app.use("/api", questionTestRoutes);
 app.use("/api", gamesRoutes);
-app.use("/api", newsRoutes);
 app.use("/api", workRoutes);
 
 export default app;
