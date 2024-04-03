@@ -23,7 +23,7 @@ function Navbar() {
                     <img className="sm:w-64 w-32 cursor-pointer"  src={LogoAutoescuelaFast} alt="Logo AutoescuelaFast" />
                 </Link>
             </div>
-            <div className={`nav-links duration-1000 lg:static absolute bg-slate-200 lg:min-h-fit min-h-[100vh] left-0 ${menuToggle ? 'top-[7%] sm:top-[8%] md:top-[9%]' : ''} top-[-400%] lg:w-auto w-full flex items-center justify-center px-5 z-20`}>
+            <div className={`nav-links duration-1000 lg:static absolute bg-slate-200 xl:min-h-fit min-h-[100vh] left-0 ${menuToggle ? 'top-[7%] sm:top-[8%] md:top-[9%]' : ''} top-[-400%] xl:w-auto w-full flex items-center justify-center px-5 z-20`}>
                 <ul className='flex lg:flex-row flex-col lg:items-center md:gap-[4vw] gap-8'>
                     <li className='text-center hover:scale-110 duration-500'>
                         <Link className={`hover:text-[#C21D30] cursor-pointer`} to={`/`} onClick={() => {setMenuToggle(false)}}>Inicio</Link>
@@ -31,15 +31,18 @@ function Navbar() {
                     <li className='text-center hover:scale-110 duration-500'>
                         <Link className={`hover:text-[#C21D30] cursor-pointer`} to={isAuthenticated ? `/tests/${user.id}` : "/login"} onClick={() => {setMenuToggle(false)}}>Realizar Test</Link>
                     </li>
-                    {/* <li className='text-center hover:scale-110 duration-500'>
-                        <Link className={`hover:text-[#C21D30] cursor-pointer`} to={`/news`} onClick={() => {setMenuToggle(false)}}>Noticias</Link>
-                    </li> */}
                     <li className='text-center hover:scale-110 duration-500'>
                         <Link className={`hover:text-[#C21D30] cursor-pointer`} to={`/contact`} onClick={() => {setMenuToggle(false)}}>Contáctanos</Link>
                     </li>
                     <li className='text-center hover:scale-110 duration-500'>
                         <Link className={`hover:text-[#C21D30] cursor-pointer`} to={`/work`} onClick={() => {setMenuToggle(false)}}>Trabaja con Nosotros</Link>
                     </li>
+                    {
+                        isAuthenticated && user.admin &&
+                        (<li className='text-center hover:scale-110 duration-500'>
+                            <Link className={`hover:text-[#C21D30] cursor-pointer font-semibold italic`} to={`/`} onClick={() => {setMenuToggle(false)}}>PANEL DE ADMINISTRADOR</Link>
+                        </li>)
+                    }
                 </ul>
             </div>
             <div className='flex items-center gap-4'>

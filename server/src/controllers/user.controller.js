@@ -4,7 +4,7 @@ import { createAccessToken } from "../libs/jwt.js";
 
 // ******* CONTROLADOR DE REGISTRO (PÁGINA DE REGISTRO) ******* //
 export const register = async (req, res) => {
-    const { name, surnames, username, email, password, birthday, premium_user } = req.body;
+    const { name, surnames, username, email, password, birthday, premium_user, admin } = req.body;
     try {
         const userFoundbyEmail = await User.findOne({email});
         const userFoundbyUsername = await User.findOne({username});
@@ -21,6 +21,7 @@ export const register = async (req, res) => {
             password: passwordHash,
             birthday,
             premium_user,
+            admin,
         });
 
         const userSaved = await newUser.save();
@@ -41,6 +42,7 @@ export const register = async (req, res) => {
             password: userSaved.password,
             birthday: userSaved.birthday,
             premium_user: userSaved.premium_user,
+            admin: userSaved.admin,
         });
     } catch (error) {
         console.log(error);
@@ -80,6 +82,7 @@ export const login = async(req, res) => {
             birthday: userFound.birthday,
             premium_user: userFound.premium_user,
             create_account: userFound.createdAt,
+            admin: userFound.admin,
         });
         
     } catch (error) {
@@ -135,10 +138,10 @@ export const deleteUser = async(req, res) => {
 // ******* CONTROLADOR PARA ACTUALIZAR UN USUARIO DEL SISTEMA ******* //
 export const updateUser = async(req, res) => {
     try {
-        const {name, surnames, username, email, password, birthday, premium_user} = req.body;
+        const {name, surnames, username, email, password, birthday, premium_user, admin} = req.body;
         const userUpdated = await User.findByIdAndUpdate(
             {_id: req.params.id},
-            {name, surnames, username, email, password, birthday, premium_user},
+            {name, surnames, username, email, password, birthday, premium_user, admin},
             {new: true}
         )
         return res.json(userUpdated);

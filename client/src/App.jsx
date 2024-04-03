@@ -16,6 +16,7 @@ const LoginPage = lazy(() => import("./pages/LoginPage"));
 const RegisterPage = lazy(() => import("./pages/RegisterPage"));
 const ProfilePage = lazy(() => import("./pages/ProfilePage"));
 const WorkPage = lazy(() => import("./pages/WorkPage"));
+const AdminPage = lazy(() => import("./pages/AdminPage"));
 
 function App() {
 
