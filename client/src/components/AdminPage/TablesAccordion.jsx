@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 // ******* COMPONENTE DE PREGUNTAS Y RESPUESTAS DEL INICIO ******* //
-const TablesAccordion = ({ title, first_option, second_option, third_option, fourth_option, fifth_option }) => {
+const TablesAccordion = ({ title, first_option, second_option, third_option, fourth_option }) => {
 
   const [accordionOpen, setAccordionOpen] = useState(false);
 
@@ -49,7 +49,6 @@ const TablesAccordion = ({ title, first_option, second_option, third_option, fou
         <div className="overflow-hidden">{second_option}</div>
         <div className="overflow-hidden">{third_option}</div>
         <div className="overflow-hidden">{fourth_option}</div>
-        <div className="overflow-hidden">{fifth_option}</div>
       </div>
     </div>
   );
