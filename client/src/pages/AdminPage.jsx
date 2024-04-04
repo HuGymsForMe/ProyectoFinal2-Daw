@@ -5,6 +5,9 @@ import LogoAutoescuelaFast from "../assets/logo.png";
 
 import TablesAccordion from '../components/AdminPage/TablesAccordion';
 import TableQuestionsTest from '../components/AdminPage/TableQuestionsTest';
+import TableWorks from '../components/AdminPage/TableWorks';
+import TableUsers from '../components/AdminPage/TableUsers';
+import TableFaQs from '../components/AdminPage/TableFaQs';
 
 // ******* PÁGINA DEL PANEL DE ADMINISTRADOR ******* //
 function AdminPage() {
@@ -38,7 +41,10 @@ function AdminPage() {
                     </div>
                 </aside>
                 <section className="w-[75%] mt-6">
-                    <TableQuestionsTest />
+                    {/* <TableUsers /> */}
+                    {/* <TableQuestionsTest /> */}
+                    {/* <TableWorks /> */}
+                    <TableFaQs />
                 </section>
             </main>
         </>
