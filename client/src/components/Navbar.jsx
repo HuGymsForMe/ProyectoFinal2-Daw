@@ -40,7 +40,7 @@ function Navbar() {
                     {
                         isAuthenticated && user.admin &&
                         (<li className='text-center hover:scale-110 duration-500'>
-                            <Link className={`hover:text-[#C21D30] cursor-pointer font-semibold italic`} to={`/`} onClick={() => {setMenuToggle(false)}}>PANEL DE ADMINISTRADOR</Link>
+                            <Link className={`hover:text-[#C21D30] cursor-pointer font-semibold italic`} to={`/admin`} onClick={() => {setMenuToggle(false)}}>PANEL DE ADMINISTRADOR</Link>
                         </li>)
                     }
                 </ul>

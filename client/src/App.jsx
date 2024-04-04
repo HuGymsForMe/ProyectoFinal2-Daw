@@ -3,6 +3,9 @@ import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 
 // ******* CONTEXTOS DE LA APLICACIÓN ******* //
 import { UserProvider } from "./context/UserContext";
+import CookiesPolicyPage from "./pages/footer/CookiesPolicyPage";
+import LegalNoticePage from "./pages/footer/LegalNoticePage";
+import PrivatePolicyPage from "./pages/footer/PrivatePolicyPage";
 
 const LoadingPage = lazy(() => import("./pages/LoadingPage"))
 const ProtectedRoute = lazy(() => import("./pages/private/ProtectedRoute"))
@@ -31,10 +34,14 @@ return (
             <Route path="/login" element={<LoginPage />}></Route>
             <Route path="/register" element={<RegisterPage />}></Route>
             <Route path="/work" element={<WorkPage />}></Route>
+            <Route path="/cookiespolicy" element={<CookiesPolicyPage />}></Route>
+            <Route path="/legalnotice" element={<LegalNoticePage />}></Route>
+            <Route path="/privatepolicy" element={<PrivatePolicyPage />}></Route>
             <Route element={<ProtectedRoute />}>
               <Route path="/test/:idTest" element={<TestPage />}></Route>
               <Route path="/profile/:idUser" element={<ProfilePage />}></Route>
               <Route path="/tests/:idUser" element={<TestsPage />}></Route>
+              <Route path="/admin" element={<AdminPage />}></Route>
             </Route>
           </Routes> 
         </Suspense>

@@ -17,27 +17,21 @@ function Footer() {
             <section className="flex md:flex-row flex-col items-center gap-y-8">
                 <ul className="md:w-[50%] w-[80%] flex flex-col justify-center items-center">
                     <li className="flex justify-center text-lg hover:scale-105 duration-300">
-                        <Link className={`hover:text-[#C21D30] cursor-pointer`}>Sobre Nosotros</Link>
+                        <Link className={`hover:text-[#C21D30] cursor-pointer`} to={`/contact`}>Contáctanos</Link>
                     </li>
                     <li className="flex justify-center text-lg hover:scale-105 duration-300">
-                        <Link className={`hover:text-[#C21D30] cursor-pointer`}>Contáctanos</Link>
+                        <Link className={`hover:text-[#C21D30] cursor-pointer`} to={`/legalnotice`}>Aviso Legal</Link>
                     </li>
                     <li className="flex justify-center text-lg hover:scale-105 duration-300">
-                        <Link className={`hover:text-[#C21D30] cursor-pointer`}>Aviso Legal</Link>
+                        <Link className={`hover:text-[#C21D30] cursor-pointer`} to={`/cookiespolicy`}>Política de cookies</Link>
                     </li>
                     <li className="flex justify-center text-lg hover:scale-105 duration-300">
-                        <Link className={`hover:text-[#C21D30] cursor-pointer`}>Política de privacidad</Link>
-                    </li>
-                    <li className="flex justify-center text-lg hover:scale-105 duration-300">
-                        <Link className={`hover:text-[#C21D30] cursor-pointer`}>Política de cookies</Link>
-                    </li>
-                    <li className="flex justify-center text-lg hover:scale-105 duration-300">
-                        <Link className={`hover:text-[#C21D30] cursor-pointer`}>Política de redes sociales</Link>
+                        <Link className={`hover:text-[#C21D30] cursor-pointer`} to={`/privatepolicy`}>Política de privacidad</Link>
                     </li>
                 </ul>
                 <section className="flex flex-col justify-center items-center md:w-[50%] w-[80%]">
                     <p className="text-center text-2xl font-semibold uppercase flex">Únete al club de aprobados de Autoescuela Fast</p>
-                    <p className="text-center text-xl flex">Muchos alumnos han confiado en nuestros servicios para poder sacar su exámen teórico adelante</p>
+                    <p className="text-center text-xl flex">Muchos alumnos han confiado en nuestros servicios para poder sacar su exámen teórico adelante.</p>
                 </section>
             </section>
             <section className="flex gap-x-2 justify-center items-end">
