@@ -35,6 +35,7 @@ export const sendGames = async(req,res) => {
 // ******* CONTROLADOR PARA VISUALIZAR LAS PARTIDAS DEL SISTEMA ******* //
 export const getGames = async(req, res) => {
     try {
+        // TODO: Modificar el "select".
         const showGames = await Game.find();
         res.json(showGames);
     } catch (error) {
@@ -184,6 +185,37 @@ export const gamesArea = async (req,res) => {
     }
 }
 
+// ******* CONTROLADOR ÚLTIMO PORCENTAJE PARA COMPROBAR SI EL USUARIO YA ES PREMIUM ******* //
+export const gamesPremium = async (req,res) => {
+    try {
+        const idUser = req.params.id;
+        const percentages = [];
+
+        let countPasses = 0;
+
+        const totalTests = await Game.countDocuments({user: idUser});
+        let countTestRegressive = totalTests;
+
+        const allTest = await Game.find({user: idUser}).sort({createdAt: 1});
+
+        allTest.forEach((test) => {
+            countTestRegressive--;
+            console.log(test.pass)
+            if(test.pass){
+                countPasses++;
+            }
+            percentages.push({
+                name: (totalTests-countTestRegressive),
+                percentage: Number((countPasses/(totalTests-countTestRegressive)*100).toFixed(2))
+            })
+        })
+
+        res.status(200).json(percentages[percentages.length-1]);
+    } catch (error) {
+        res.status(500).json({message: "No se han podido recoger los porcentajes del usuario"})
+    }
+}
+
 // ******* CONTROLADOR TIEMPO MEDIO EN HACER LOS TEST ******* //
 export const timeAverage = async (req,res) => {
     try {
@@ -217,6 +249,45 @@ export const timeAverage = async (req,res) => {
 
 // ******* CONTROLADOR DE MEJOR RESULTADO POR TEST (PÁGINA DE TODOS LOS TEST) ******* //
 export const bestGame = async (req, res) => {
+    try {
+        const idUser = req.params.id;
+        const bestGames = [];
+
+        const TestsAutoescuelaFastWithoutPremium = TestsAutoescuelaFast.slice(0, 10)
+
+        for (const testId of TestsAutoescuelaFastWithoutPremium) {
+            const bestGame = await Game.findOne({ user: idUser, test: testId })
+                .sort({ successes: -1, time: 1 })
+                .limit(1);
+
+            if (bestGame) {
+                const {misses, time, test} = bestGame;
+                const minutes = Math.floor(time / 60);
+                const seconds = time % 60;
+                const timeFormat = `${minutes.toString().padStart(2, "0")}:${seconds.toString().padStart(2, "0")}`;
+                
+                bestGames.push({
+                    misses,
+                    time: timeFormat,
+                    test
+                });
+            } else {
+                bestGames.push({
+                    misses: "XX",
+                    time: "XX:XX",
+                    test: testId
+                });
+            }
+        }
+
+        res.status(200).json(bestGames);
+    } catch (error) {
+        res.status(500).json({ message: "Se ha producido un error al mostrar los resultados de los test" });
+    }
+};
+
+// ******* CONTROLADOR DE MEJOR RESULTADO POR TEST (PÁGINA DE TODOS LOS TEST) *PARA USUARIOS PREMIUM* ******* //
+export const bestGamePremium = async (req, res) => {
     try {
         const idUser = req.params.id;
         const bestGames = [];

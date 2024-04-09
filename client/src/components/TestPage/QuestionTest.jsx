@@ -2,6 +2,8 @@ import {FormControl, RadioGroup, Radio, FormControlLabel} from "@mui/material";
 
 import { imagesQuestions, firstRed, secondRed, firstGreen, secondGreen } from "../../config/config";
 
+import "../../styles/QuestionTest.css";
+
 const controlProps = (id) => ({
     id,
     name: 'radio-group',
@@ -25,7 +27,7 @@ function QuestionTest({number_question, index_question, question, first_answer, 
         </div>
         <div className="flex md:flex-row flex-col gap-y-4 gap-x-6">
             <div className="flex items-center justify-center md:w-[30%]">
-                <img src={imagesQuestions[index_question-1]} alt={`FOTO ${index_question}`} />
+                <img src={imagesQuestions[index_question-1]} alt={`FOTO ${index_question}`} className="imagen" />
             </div>
             <div className="flex flex-col gap-4 justify-center md:w-[70%]">
                 <label>{question}</label>

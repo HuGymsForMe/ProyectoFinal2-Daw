@@ -298,9 +298,99 @@ import Imagen297 from "../assets/imgtest/imagen297.webp";
 import Imagen298 from "../assets/imgtest/imagen298.webp";
 import Imagen299 from "../assets/imgtest/imagen299.webp";
 import Imagen300 from "../assets/imgtest/imagen300.webp";
+import Imagen301 from "../assets/imgtest/imagen301.webp";
+import Imagen302 from "../assets/imgtest/imagen302.webp";
+import Imagen303 from "../assets/imgtest/imagen303.webp";
+import Imagen304 from "../assets/imgtest/imagen304.webp";
+import Imagen305 from "../assets/imgtest/imagen305.webp";
+import Imagen306 from "../assets/imgtest/imagen306.webp";
+import Imagen307 from "../assets/imgtest/imagen307.webp";
+import Imagen308 from "../assets/imgtest/imagen308.webp";
+import Imagen309 from "../assets/imgtest/imagen309.webp";
+import Imagen310 from "../assets/imgtest/imagen310.webp";
+import Imagen311 from "../assets/imgtest/imagen311.webp";
+import Imagen312 from "../assets/imgtest/imagen312.webp";
+import Imagen313 from "../assets/imgtest/imagen313.webp";
+import Imagen314 from "../assets/imgtest/imagen314.webp";
+import Imagen315 from "../assets/imgtest/imagen315.webp";
+import Imagen316 from "../assets/imgtest/imagen316.webp";
+import Imagen317 from "../assets/imgtest/imagen317.webp";
+import Imagen318 from "../assets/imgtest/imagen318.webp";
+import Imagen319 from "../assets/imgtest/imagen319.webp";
+import Imagen320 from "../assets/imgtest/imagen320.webp";
+import Imagen321 from "../assets/imgtest/imagen321.webp";
+import Imagen322 from "../assets/imgtest/imagen322.webp";
+import Imagen323 from "../assets/imgtest/imagen323.webp";
+import Imagen324 from "../assets/imgtest/imagen324.webp";
+import Imagen325 from "../assets/imgtest/imagen325.webp";
+import Imagen326 from "../assets/imgtest/imagen326.webp";
+import Imagen327 from "../assets/imgtest/imagen327.webp";
+import Imagen328 from "../assets/imgtest/imagen328.webp";
+import Imagen329 from "../assets/imgtest/imagen329.webp";
+import Imagen330 from "../assets/imgtest/imagen330.webp";
+import Imagen331 from "../assets/imgtest/imagen331.webp";
+import Imagen332 from "../assets/imgtest/imagen332.webp";
+import Imagen333 from "../assets/imgtest/imagen333.webp";
+import Imagen334 from "../assets/imgtest/imagen334.webp";
+import Imagen335 from "../assets/imgtest/imagen335.webp";
+import Imagen336 from "../assets/imgtest/imagen336.webp";
+import Imagen337 from "../assets/imgtest/imagen337.webp";
+import Imagen338 from "../assets/imgtest/imagen338.webp";
+import Imagen339 from "../assets/imgtest/imagen339.webp";
+import Imagen340 from "../assets/imgtest/imagen340.webp";
+import Imagen341 from "../assets/imgtest/imagen341.webp";
+import Imagen342 from "../assets/imgtest/imagen342.webp";
+import Imagen343 from "../assets/imgtest/imagen343.webp";
+import Imagen344 from "../assets/imgtest/imagen344.webp";
+import Imagen345 from "../assets/imgtest/imagen345.webp";
+import Imagen346 from "../assets/imgtest/imagen346.webp";
+import Imagen347 from "../assets/imgtest/imagen347.webp";
+import Imagen348 from "../assets/imgtest/imagen348.webp";
+import Imagen349 from "../assets/imgtest/imagen349.webp";
+import Imagen350 from "../assets/imgtest/imagen350.webp";
+import Imagen351 from "../assets/imgtest/imagen351.webp";
+import Imagen352 from "../assets/imgtest/imagen352.webp";
+import Imagen353 from "../assets/imgtest/imagen353.webp";
+import Imagen354 from "../assets/imgtest/imagen354.webp";
+import Imagen355 from "../assets/imgtest/imagen355.webp";
+import Imagen356 from "../assets/imgtest/imagen356.webp";
+import Imagen357 from "../assets/imgtest/imagen357.webp";
+import Imagen358 from "../assets/imgtest/imagen358.webp";
+import Imagen359 from "../assets/imgtest/imagen359.webp";
+import Imagen360 from "../assets/imgtest/imagen360.webp";
+import Imagen361 from "../assets/imgtest/imagen361.webp";
+import Imagen362 from "../assets/imgtest/imagen362.webp";
+import Imagen363 from "../assets/imgtest/imagen363.webp";
+import Imagen364 from "../assets/imgtest/imagen364.webp";
+import Imagen365 from "../assets/imgtest/imagen365.webp";
+import Imagen366 from "../assets/imgtest/imagen366.webp";
+import Imagen367 from "../assets/imgtest/imagen367.webp";
+import Imagen368 from "../assets/imgtest/imagen368.webp";
+import Imagen369 from "../assets/imgtest/imagen369.webp";
+import Imagen370 from "../assets/imgtest/imagen370.webp";
+import Imagen371 from "../assets/imgtest/imagen371.webp";
+import Imagen372 from "../assets/imgtest/imagen372.webp";
+import Imagen373 from "../assets/imgtest/imagen373.webp";
+import Imagen374 from "../assets/imgtest/imagen374.webp";
+import Imagen375 from "../assets/imgtest/imagen375.webp";
+import Imagen376 from "../assets/imgtest/imagen376.webp";
+import Imagen377 from "../assets/imgtest/imagen377.webp";
+import Imagen378 from "../assets/imgtest/imagen378.webp";
+import Imagen379 from "../assets/imgtest/imagen379.webp";
+import Imagen380 from "../assets/imgtest/imagen380.webp";
+import Imagen381 from "../assets/imgtest/imagen381.webp";
+import Imagen382 from "../assets/imgtest/imagen382.webp";
+import Imagen383 from "../assets/imgtest/imagen383.webp";
+import Imagen384 from "../assets/imgtest/imagen384.webp";
+import Imagen385 from "../assets/imgtest/imagen385.webp";
+import Imagen386 from "../assets/imgtest/imagen386.webp";
+import Imagen387 from "../assets/imgtest/imagen387.webp";
+import Imagen388 from "../assets/imgtest/imagen388.webp";
+import Imagen389 from "../assets/imgtest/imagen389.webp";
+import Imagen390 from "../assets/imgtest/imagen390.webp";
 
 import fileDefault from "../assets/fileinput/archivo-generic.png";
-import filePDF from "../assets/fileinput/archivo-pdf.png";
+import filePDF from "../assets/fileinput/archivo-pdf.png"
 import fileDOCX from "../assets/fileinput/archivo-doc.png";
 import fileJPG from "../assets/fileinput/archivo-jpg.png";
 import filePNG from "../assets/fileinput/archivo-png.png";
@@ -358,11 +448,20 @@ export const imagesQuestions = [
                   Imagen271, Imagen272, Imagen273, Imagen274, Imagen275, Imagen276, Imagen277, Imagen278, Imagen279, Imagen280,
                   Imagen281, Imagen282, Imagen283, Imagen284, Imagen285, Imagen286, Imagen287, Imagen288, Imagen289, Imagen290,
                   Imagen291, Imagen292, Imagen293, Imagen294, Imagen295, Imagen296, Imagen297, Imagen298, Imagen299, Imagen300,
+                  Imagen301, Imagen302, Imagen303, Imagen304, Imagen305, Imagen306, Imagen307, Imagen308, Imagen309, Imagen310,
+                  Imagen311, Imagen312, Imagen313, Imagen314, Imagen315, Imagen316, Imagen317, Imagen318, Imagen319, Imagen320,
+                  Imagen321, Imagen322, Imagen323, Imagen324, Imagen325, Imagen326, Imagen327, Imagen328, Imagen329, Imagen330,
+                  Imagen331, Imagen332, Imagen333, Imagen334, Imagen335, Imagen336, Imagen337, Imagen338, Imagen339, Imagen340,
+                  Imagen341, Imagen342, Imagen343, Imagen344, Imagen345, Imagen346, Imagen347, Imagen348, Imagen349, Imagen350,
+                  Imagen351, Imagen352, Imagen353, Imagen354, Imagen355, Imagen356, Imagen357, Imagen358, Imagen359, Imagen360,
+                  Imagen361, Imagen362, Imagen363, Imagen364, Imagen365, Imagen366, Imagen367, Imagen368, Imagen369, Imagen370,
+                  Imagen371, Imagen372, Imagen373, Imagen374, Imagen375, Imagen376, Imagen377, Imagen378, Imagen379, Imagen380,
+                  Imagen381, Imagen382, Imagen383, Imagen384, Imagen385, Imagen386, Imagen387, Imagen388, Imagen389, Imagen390,
                 ];
 
 // ******* API REST ******* //
-//export const API = "http://localhost:4000/api";
-export const API = "https://autoescuela-fast-api.onrender.com/api/";
+export const API = "http://localhost:4000/api";
+//export const API = "https://autoescuela-fast-api.onrender.com/api/";
 
 // ******* ID DE LOS TESTS ******* //
 export const TestsAutoescuelaFast = ["659e56222d2690f6d6cdd561", "659e56422d2690f6d6cdd562",
@@ -370,7 +469,8 @@ export const TestsAutoescuelaFast = ["659e56222d2690f6d6cdd561", "659e56422d2690
                                      "659e5bc044fa4228946c0b96", "659e5be344fa4228946c0b97",
                                      "659e5bf244fa4228946c0b98", "659e5c0444fa4228946c0b99",
                                      "659e5c1444fa4228946c0b9a", "659e5c3b44fa4228946c0b9b",
-                                     "660eb3f27a1008a5c3f59745"];  
+                                     "660eb3f27a1008a5c3f59745", "660eb54b7a1008a5c3f59751",
+                                     "660eb55f7a1008a5c3f59752"];  
 
 // ******* COLORES EMPLEADOS EN DIFERENTES PARTES DE LA APLICACIÓN ******* //
 export const firstRed = "#E8162E";

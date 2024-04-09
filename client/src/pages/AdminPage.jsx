@@ -8,9 +8,12 @@ import TableQuestionsTest from '../components/AdminPage/TableQuestionsTest';
 import TableWorks from '../components/AdminPage/TableWorks';
 import TableUsers from '../components/AdminPage/TableUsers';
 import TableFaQs from '../components/AdminPage/TableFaQs';
+import TableGames from '../components/AdminPage/TableGames';
 
 // ******* PÁGINA DEL PANEL DE ADMINISTRADOR ******* //
 function AdminPage() {
+
+    //TODO: Cambiar el exportar a excel.
 
     useSeo({
         title: "Panel de Administrador | AutoescuelaFast",
@@ -44,7 +47,8 @@ function AdminPage() {
                     {/* <TableUsers /> */}
                     {/* <TableQuestionsTest /> */}
                     {/* <TableWorks /> */}
-                    <TableFaQs />
+                    {/* <TableFaQs /> */}
+                    <TableGames />
                 </section>
             </main>
         </>

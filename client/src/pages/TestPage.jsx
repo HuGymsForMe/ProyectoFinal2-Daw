@@ -19,6 +19,8 @@ const ModalChecked = lazy(() => import("../components/TestPage/ModalChecked"));
 function TestPage(){
 
     const [data, setData] = useState(null); //Preguntas de los test
+    const [percentage, setPercentage] = useState(null) //Comprobador porcentaje usuario
+    
     const [selectedAnswer, setSelectedAnswer] = useState({}); //Almacena las preguntas contestadas
     const [checked,setChecked] = useState(false);
 
@@ -110,6 +112,14 @@ function TestPage(){
         setChecked(true);
         setSeeModalCorrection(true);
       };
+
+      axios.get(`${API}/gamepremium/${user.id}`).then((response) => {
+        setPercentage(response.data.percentage);
+      })
+
+      if(percentage > 30 && !user.premium_user) {
+        // TODO: Petición actualización de usuario a usuario premium
+      }
 
     // ******* PROP PARA EL MODAL ******* //
     const closeModal = () => {

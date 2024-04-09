@@ -5,6 +5,7 @@ import { useParams } from "react-router-dom";
 import { useSeo } from "../hooks/useSeo";
 
 import { API } from "../config/config";
+import { useAuth } from "../context/UserContext";
 
 const ButtonTest = lazy(() => import("../components/TestsPage/ButtonTest"));
 const Navbar = lazy(() => import("../components/Navbar"));
@@ -19,9 +20,22 @@ function TestsPage(){
     })
 
     const {idUser} = useParams();
+    const { user } = useAuth();
 
     const [data, setData] = useState(null) //Test de la autoescuela.
 
+    console.log(user);
+
+    if (user.premium_user) {
+        useEffect(() => {
+            axios.get(`${API}/gametestspremium/${idUser}`)
+                .then((response) => {
+                    setData(response.data);
+                }).catch((error) => {
+                    console.log("Error fetching data:", error);
+            })
+        }, [idUser]);
+    }
     useEffect(() => {
         axios.get(`${API}/gametests/${idUser}`)
             .then((response) => {
