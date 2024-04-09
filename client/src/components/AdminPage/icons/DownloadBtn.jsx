@@ -14,7 +14,7 @@ const DownloadBtn = ({ data = [], fileName }) => {
       }}
     >
       <div className="flex">
-      Descargar en formato Excel
+      Exportar a Excel
       <DownloadIcon />
       </div>
     </button>

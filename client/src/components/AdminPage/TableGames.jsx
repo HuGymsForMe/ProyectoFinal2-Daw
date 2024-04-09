@@ -142,7 +142,7 @@ function TableGames(){
         <span className="flex items-center gap-1 text-white">
           <div>Página</div>
           <strong>
-            {table.getState().pagination.pageIndex + 1} of{" "}
+            {table.getState().pagination.pageIndex + 1} de{" "}
             {table.getPageCount()}
           </strong>
         </span>
