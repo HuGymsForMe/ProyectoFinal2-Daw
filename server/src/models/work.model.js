@@ -1,5 +1,7 @@
 import mongoose from "mongoose";
 
+// ******* ESQUEMA DE LAS CANDIDATURAS DE LOS USUARIOS ******* //
+
 const workSchema = new mongoose.Schema({
     name: {
         type: String,
