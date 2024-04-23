@@ -22,8 +22,8 @@ const workSchema = new mongoose.Schema({
         type: Number,
         required: true,
     },
-    files: {
-        type: Array,
+    file: {
+        type: String,
         required: false,
     }
 },  {
