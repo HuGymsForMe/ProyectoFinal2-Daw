@@ -124,7 +124,7 @@ function WorkPage () {
       });
     
       try {
-        const response = await axios.post(`http://httpbin.org/post`, fd, {
+        const response = await axios.post(`${API}/work`, fd, {
           onUploadProgress: (progressEvent) => {
             setProgress((prevState) => {
               return { ...prevState, pc: (progressEvent.loaded / progressEvent.total) * 100 };
