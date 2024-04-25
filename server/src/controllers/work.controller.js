@@ -4,8 +4,6 @@ import { uploadImage } from "../libs/cloudinary.js";
 
 // ******* CONTROLADOR PARA QUE EL USUARIO SUBA SUS DATOS (PÁGINA DE TRABAJA CON NOSOTROS) ******* //
 export const sendWork = async(req, res) => {
-    //const { name, surnames, email, telephone } = req.body;
-    const {file} = req.file;
     //console.log(file); // Me da esto "{ '0': {} }"
     //const nameFile = "pepe"+file//A la BBDD solo subo el nombre del fichero
     // try {
