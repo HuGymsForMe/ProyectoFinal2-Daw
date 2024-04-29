@@ -10,9 +10,27 @@
 </div>
 
 ## 📂 ¿Cómo clonar este repositorio?
-```bash
-git clone https://github.com/HuGymsForMe/ProyectoFinal2-Daw
-```
+<ul>
+    <li>Clonamos el repositorio</li>
+    ```bash
+    git clone https://github.com/HuGymsForMe/ProyectoFinal2-Daw
+    ```
+    <li>Instalamos las dependencias tanto en servidor como en cliente</li>
+    ```bash
+    npm install-server
+    ```
+    ```bash
+    npm install-client
+    ```
+    <li>Arrancamos la aplicación</li>
+    ```bash
+    npm dev-server
+    ```
+    ```bash
+    npm dev-client
+    ```
+</ul>
+
 
 ## 📚 ¿Porqué este proyecto y no otro?
 <div>
