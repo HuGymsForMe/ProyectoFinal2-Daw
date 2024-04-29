@@ -24,8 +24,6 @@ function TestsPage(){
 
     const [data, setData] = useState(null) //Test de la autoescuela.
 
-    console.log(user);
-
     if (user.premium_user) {
         useEffect(() => {
             axios.get(`${API}/gametestspremium/${idUser}`)

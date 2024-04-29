@@ -8,7 +8,7 @@ function Footer() {
     const currentYear = new Date().getFullYear(); //Calcula el año actual para el footer
 
     return (
-        <footer className="bg-slate-200 flex xl:flex-row flex-col justify-center gap-x-8 p-8 gap-y-4">
+        <footer className="bg-slate-200 flex xl:flex-row flex-col justify-center gap-x-8 p-8 gap-y-8">
             <section className="flex justify-center items-center flex-col">
                 <img className="w-72" src={LogoAutoescuelaFast} alt="Logo AutoescuelaFast" />
                 <p className="text-center text-xs">&copy; {currentYear} Autoescuela Fast.</p>
@@ -29,8 +29,8 @@ function Footer() {
                         <Link className={`hover:text-[#C21D30] cursor-pointer`} to={`/privatepolicy`}>Política de privacidad</Link>
                     </li>
                 </ul>
-                <section className="flex flex-col justify-center items-center md:w-[50%] w-[80%]">
-                    <p className="text-center text-2xl font-semibold uppercase flex">Únete al club de aprobados de Autoescuela Fast</p>
+                <section className="flex flex-col justify-center items-center md:w-[50%] w-[80%] gap-y-2">
+                    <p className="text-center text-2xl font-semibold uppercase flex text-pretty">Únete al club de aprobados de Autoescuela Fast</p>
                     <p className="text-center text-xl flex">Muchos alumnos han confiado en nuestros servicios para poder sacar su exámen teórico adelante.</p>
                 </section>
             </section>

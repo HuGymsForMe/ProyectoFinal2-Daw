@@ -20,7 +20,7 @@ function TestPage(){
 
     const [data, setData] = useState(null); //Preguntas de los test
     const [percentage, setPercentage] = useState(null) //Comprobador porcentaje usuario
-    
+
     const [selectedAnswer, setSelectedAnswer] = useState({}); //Almacena las preguntas contestadas
     const [checked,setChecked] = useState(false);
 
@@ -67,23 +67,9 @@ function TestPage(){
         axios.get(`${API}/test/${idTest}`).then((response) => {
             setData(response.data);
         });
-    }, []);
+    });
 
-    // ******* ENVÍA LA PARTIDA A LA BBDD ******* //
-    useEffect(() => {
-        if (checked){
-            axios.post(`${API}/game/${idTest}`, {
-                time: stopwatch-1, 
-                successes: successes, 
-                misses: 30-successes,
-                pass: pass,
-                user: user.id,
-                test: idTest
-            })
-        }
-    }, [checked]);
-
-    const onSubmit = () => {
+    const onSubmit = async () => {
         const correctAnswers = data.map((ask) => ask.correct_answer);
         const userAnswers = Object.values(selectedAnswer);
         const checkedAnswers = userAnswers.map((answer, index) => ({
@@ -91,7 +77,13 @@ function TestPage(){
             correctAnswer: correctAnswers[index],
             isCorrect: answer === correctAnswers[index],
         }));
-        
+
+
+        // ******* COMPROBAMOS EL NÚMERO DE ACIERTOS DEL TEST ******* //
+        for (const answer of checkedAnswers) {
+            if (answer.isCorrect) setSuccesses(prevSuccesses => prevSuccesses + 1);
+        }
+
         // ******* AVISA AL USUARIO DE QUE LE QUEDAN PREGUNTAS SIN CONTESTAR ******* //
         if (checkedAnswers.length < 30) {
             setShowToast(true);
@@ -99,37 +91,45 @@ function TestPage(){
                 setShowToast(false);
             }, 3000);
             return;
-        }
-
-        // ******* COMPROBAMOS EL NÚMERO DE ACIERTOS DEL TEST ******* //
-        for (const answer of checkedAnswers) {
-            console.log(answer.isCorrect);
-            if (answer.isCorrect) setSuccesses(prevSuccesses => prevSuccesses + 1);
-        }
-
-        // ******* SI EL USUARIO ACIERTA AL MENOS 27 PREGUNTAS ESTARÁ APTO ******* //
-        if(successes >= 27) setPass(true);
-        setChecked(true);
-        setSeeModalCorrection(true);
-      };
-
-    // ******* OBTIENE EL PORCENTAJE DE ÉXITO DEL USUARIO Y ACTUALIZA EL ESTADO ******* //
-    useEffect(() => {
-        axios.get(`${API}/gamepremium/${user.id}`).then((response) => {
-            setPercentage(response.data.percentage);
-            if (response.data.percentage > 30 && !user.premium_user) {
-                // Realizar la solicitud para actualizar el estado de premium_user
-                axios.put(`${API}/user/${user.id}`, { premium_user: true })
-                    .then(response => {
-                        // Actualizar el contexto de usuario con el nuevo estado
-                        setUser({ ...user, premium_user: true });
-                    })
-                    .catch(error => {
-                        console.error("Error al actualizar el estado del usuario:", error);
-                    });
+        } else {
+            // ******* ENVÍA LA PARTIDA A LA BBDD ******* //
+            // ******* SI EL USUARIO ACIERTA AL MENOS 27 PREGUNTAS ESTARÁ APTO ******* //
+            setChecked(true)
+            let newPass = false
+            if(successes >= 27) {
+                newPass = true;
+                setPass(newPass)
+                setSeeModalCorrection(true);
             }
-        });
-    }, [checked]);
+
+            axios.post(`${API}/game/${idTest}`, {
+                time: stopwatch-1,
+                successes: successes,
+                misses: 30-successes,
+                pass: newPass,
+                user: user.id,
+                test: idTest
+            })
+            }
+        }
+
+    // // ******* OBTIENE EL PORCENTAJE DE ÉXITO DEL USUARIO Y ACTUALIZA EL ESTADO ******* //
+    // useEffect(() => {
+    //     axios.get(`${API}/gamepremium/${user.id}`).then((response) => {
+    //         setPercentage(response.data.percentage);
+    //         if (response.data.percentage > 30 && !user.premium_user) {
+    //             // Realizar la solicitud para actualizar el estado de premium_user
+    //             axios.put(`${API}/user/${user.id}`, { premium_user: true })
+    //                 .then(response => {
+    //                     // Actualizar el contexto de usuario con el nuevo estado
+    //                     setUser({ ...user, premium_user: true });
+    //                 })
+    //                 .catch(error => {
+    //                     console.error("Error al actualizar el estado del usuario:", error);
+    //                 });
+    //         }
+    //     });
+    // }, [checked]);
 
     // ******* PROP PARA EL MODAL ******* //
     const closeModal = () => {
@@ -151,14 +151,14 @@ function TestPage(){
                 <h1 className="text-bold text-4xl m-8 sm:mt-8 mt-24 text-white">TEST {TestsAutoescuelaFast.indexOf(idTest)+1}</h1>
                 <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col items-center bg-slate-200 lg:w-[85%] w-[95%] p-8 rounded-lg mb-8 shadow-lg shadow-slate-700">
                 {data.map((ask, i) => (
-                    <QuestionTest 
-                        key={ask._id} 
+                    <QuestionTest
+                        key={ask._id}
                         number_question={i+1}
-                        index_question={30*TestsAutoescuelaFast.indexOf(idTest)+i+1} 
+                        index_question={30*TestsAutoescuelaFast.indexOf(idTest)+i+1}
                         question={ask.question}
                         first_answer={ask.first_answer}
                         second_answer={ask.second_answer}
-                        third_answer={ask.third_answer}  
+                        third_answer={ask.third_answer}
                         correct_answer={ask.correct_answer}
                         checked={checked}
                         setSelectedAnswer={setSelectedAnswer} // Pasa la función para actualizar el estado como prop

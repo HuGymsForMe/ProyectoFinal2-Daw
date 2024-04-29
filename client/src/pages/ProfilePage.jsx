@@ -138,9 +138,9 @@ function ProfilePage() {
                         </article>
                     </div>
                 </section>
-                <section className="bg-slate-200 p-6 shadow-lg shadow-slate-500 rounded-xl xl:w-[90%] w-[85%]">
+                <section className="bg-slate-200 p-6 shadow-lg shadow-slate-500 rounded-xl xl:w-[90%] w-[85%] -mt-4">
                 <div className="flex md:flex-row flex-col justify-center items-center mb-4">
-                            <h1 className={`text-2xl text-[#C21D30]`}>Cambiar Contraseña</h1>
+                            <h1 className={`text-2xl text-[#C21D30] font-semibold`}>Cambiar Contraseña</h1>
                         </div>
                         <form className="flex gap-x-4 justify-center" onSubmit={handleSubmit(onSubmit)}>
                             <div className="flex gap-4 xl:flex-row flex-col">
