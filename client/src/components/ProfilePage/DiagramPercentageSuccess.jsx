@@ -8,7 +8,6 @@ import { API } from '../../config/config';
 function DiagramPercentageSuccess() {
 
     const [data, setData] = useState();
-
     const { idUser } = useParams();
 
     useEffect(() => {

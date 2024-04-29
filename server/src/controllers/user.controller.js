@@ -139,9 +139,10 @@ export const deleteUser = async(req, res) => {
 export const updateUser = async(req, res) => {
     try {
         const {name, surnames, username, email, password, birthday, premium_user, admin} = req.body;
+        const passwordHash = await bcryptjs.hash(password, 10);
         const userUpdated = await User.findByIdAndUpdate(
             {_id: req.params.id},
-            {name, surnames, username, email, password, birthday, premium_user, admin},
+            {name, surnames, username, email, password: passwordHash, birthday, premium_user, admin},
             {new: true}
         )
         return res.json(userUpdated);

@@ -23,8 +23,8 @@ function Navbar() {
                     <img className="sm:w-64 w-32 cursor-pointer"  src={LogoAutoescuelaFast} alt="Logo AutoescuelaFast" />
                 </Link>
             </div>
-            <div className={`nav-links duration-1000 lg:static absolute bg-slate-200 xl:min-h-fit min-h-[100vh] left-0 ${menuToggle ? 'top-[7%] sm:top-[8%] md:top-[9%]' : ''} top-[-400%] xl:w-auto w-full flex items-center justify-center px-5 z-20`}>
-                <ul className='flex lg:flex-row flex-col lg:items-center md:gap-[4vw] gap-8'>
+            <div className={`nav-links duration-1000 xl:static absolute bg-slate-200 xl:min-h-fit min-h-[100vh] left-0 ${menuToggle ? 'top-[7%] sm:top-[8%] md:top-[9%]' : ''} top-[-400%] xl:w-auto w-full flex items-center justify-center px-5 z-20`}>
+                <ul className='flex xl:flex-row flex-col xl:items-center md:gap-[4vw] gap-8'>
                     <li className='text-center hover:scale-110 duration-500'>
                         <Link className={`hover:text-[#C21D30] cursor-pointer`} to={`/`} onClick={() => {setMenuToggle(false)}}>Inicio</Link>
                     </li>
@@ -58,7 +58,7 @@ function Navbar() {
                         <button type='button' className={`bg-[#C21D30] text-white px-5 py-2 rounded-full hover:bg-[#B30519] sm:text-base text-xs focus:border-slate-800 border-2`}>Iniciar Sesión</button>
                     </Link>
                 )}
-                <button className="text-3xl cursor-pointer lg:hidden flex justify-center items-center" onClick={toggleMenu} role='presentation' aria-label='toggleButton'>
+                <button className="text-3xl cursor-pointer xl:hidden flex justify-center items-center" onClick={toggleMenu} role='presentation' aria-label='toggleButton'>
                     <ion-icon name={menuToggle ? "close" : "menu-outline"} aria-label='toggleIcon'></ion-icon>
                 </button>
             </div>

@@ -10,6 +10,7 @@ import { secondRed, firstGreen, API } from '../../config/config';
 function DiagramSuccess() {
 
     const [data, setData] = useState(null);
+    const [percentageSuccess, setPercentageSuccess] = useState(null);
     const [chartCx, setChartCx] = useState(0);
 
     const { idUser } = useParams();

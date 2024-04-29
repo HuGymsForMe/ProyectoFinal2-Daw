@@ -94,9 +94,9 @@ function TestPage(){
         
         // ******* AVISA AL USUARIO DE QUE LE QUEDAN PREGUNTAS SIN CONTESTAR ******* //
         if (checkedAnswers.length < 30) {
-            setShowModal(true);
+            setShowToast(true);
             setTimeout(() => {
-                setShowModal(false);
+                setShowToast(false);
             }, 3000);
             return;
         }
@@ -113,13 +113,23 @@ function TestPage(){
         setSeeModalCorrection(true);
       };
 
-      axios.get(`${API}/gamepremium/${user.id}`).then((response) => {
-        setPercentage(response.data.percentage);
-      })
-
-      if(percentage > 30 && !user.premium_user) {
-        // TODO: Petición actualización de usuario a usuario premium
-      }
+    // ******* OBTIENE EL PORCENTAJE DE ÉXITO DEL USUARIO Y ACTUALIZA EL ESTADO ******* //
+    useEffect(() => {
+        axios.get(`${API}/gamepremium/${user.id}`).then((response) => {
+            setPercentage(response.data.percentage);
+            if (response.data.percentage > 30 && !user.premium_user) {
+                // Realizar la solicitud para actualizar el estado de premium_user
+                axios.put(`${API}/user/${user.id}`, { premium_user: true })
+                    .then(response => {
+                        // Actualizar el contexto de usuario con el nuevo estado
+                        setUser({ ...user, premium_user: true });
+                    })
+                    .catch(error => {
+                        console.error("Error al actualizar el estado del usuario:", error);
+                    });
+            }
+        });
+    }, [checked]);
 
     // ******* PROP PARA EL MODAL ******* //
     const closeModal = () => {

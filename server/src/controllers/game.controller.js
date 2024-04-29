@@ -169,7 +169,6 @@ export const gamesArea = async (req,res) => {
 
         allTest.forEach((test) => {
             countTestRegressive--;
-            console.log(test.pass)
             if(test.pass){
                 countPasses++;
             }

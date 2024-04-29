@@ -18,7 +18,6 @@ const TestPage = lazy(() => import("./pages/TestPage"));
 const LoginPage = lazy(() => import("./pages/LoginPage"));
 const RegisterPage = lazy(() => import("./pages/RegisterPage"));
 const ProfilePage = lazy(() => import("./pages/ProfilePage"));
-const UpdateUserPage = lazy(() => import("./pages/UpdateUserPage"));
 const WorkPage = lazy(() => import("./pages/WorkPage"));
 const AdminPage = lazy(() => import("./pages/AdminPage"));
 
@@ -39,7 +38,6 @@ return (
             <Route path="/legalnotice" element={<LegalNoticePage />}></Route>
             <Route path="/privatepolicy" element={<PrivatePolicyPage />}></Route>
             <Route element={<ProtectedRoute />}>
-              <Route path="/updateuser/:idUser" element={<UpdateUserPage />}></Route>
               <Route path="/test/:idTest" element={<TestPage />}></Route>
               <Route path="/profile/:idUser" element={<ProfilePage />}></Route>
               <Route path="/tests/:idUser" element={<TestsPage />}></Route>
