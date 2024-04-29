@@ -66,6 +66,7 @@ export const UserProvider = ({ children }) => {
       user,
       isAuthenticated,
       errors,
+      setUser
     }}>
       {children}
     </userContext.Provider>

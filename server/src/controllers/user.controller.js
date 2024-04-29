@@ -151,3 +151,18 @@ export const updateUser = async(req, res) => {
         res.status(500).json({message: "No se ha podido actualizar el usuario con éxito."})
     }
 }
+
+export const updatePremiumUser = async(req,res) => {
+    try {
+        const {premium_user} = req.body;
+        const userUpdated = await User.findByIdAndUpdate(
+            {_id: req.params.id},
+            {premium_user},
+            {new: true}
+        )
+        return res.json(userUpdated);
+    } catch (error) {
+        console.log(error);
+        res.status(500).json({message: "No se ha podido actualizar el usuario a premium con éxito."})
+    }
+}

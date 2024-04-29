@@ -185,35 +185,18 @@ export const gamesArea = async (req,res) => {
 }
 
 // ******* CONTROLADOR ÚLTIMO PORCENTAJE PARA COMPROBAR SI EL USUARIO YA ES PREMIUM ******* //
-export const gamesPremium = async (req,res) => {
+export const gamesPremium = async (req, res) => {
     try {
         const idUser = req.params.id;
-        const percentages = [];
-
-        let countPasses = 0;
-
-        const totalTests = await Game.countDocuments({user: idUser});
-        let countTestRegressive = totalTests;
-
-        const allTest = await Game.find({user: idUser}).sort({createdAt: 1});
-
-        allTest.forEach((test) => {
-            countTestRegressive--;
-            console.log(test.pass)
-            if(test.pass){
-                countPasses++;
-            }
-            percentages.push({
-                name: (totalTests-countTestRegressive),
-                percentage: Number((countPasses/(totalTests-countTestRegressive)*100).toFixed(2))
-            })
-        })
-
-        res.status(200).json(percentages[percentages.length-1]);
+        const countGamesOK = await Game.countDocuments({ pass: true, user: idUser });
+        const countGames = await Game.countDocuments({ user: idUser });
+        const successPercentage = (countGamesOK / countGames) * 100;
+        res.status(200).json({ successPercentage });
     } catch (error) {
-        res.status(500).json({message: "No se han podido recoger los porcentajes del usuario"})
+        res.status(500).json({ message: "No se pudo calcular el porcentaje de tests aprobados del usuario" });
     }
-}
+};
+
 
 // ******* CONTROLADOR TIEMPO MEDIO EN HACER LOS TEST ******* //
 export const timeAverage = async (req,res) => {

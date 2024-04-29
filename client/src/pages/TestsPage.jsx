@@ -33,15 +33,16 @@ function TestsPage(){
                     console.log("Error fetching data:", error);
             })
         }, [idUser]);
+    } else {
+            useEffect(() => {
+                axios.get(`${API}/gametests/${idUser}`)
+                    .then((response) => {
+                        setData(response.data);
+                    }).catch((error) => {
+                        console.log("Error fetching data:", error);
+                })
+            }, [idUser]);
     }
-    useEffect(() => {
-        axios.get(`${API}/gametests/${idUser}`)
-            .then((response) => {
-                setData(response.data);
-            }).catch((error) => {
-                console.log("Error fetching data:", error);
-        })
-    }, [idUser]);
 
     if(!data) return null;
 

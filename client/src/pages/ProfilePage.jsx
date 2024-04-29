@@ -31,7 +31,7 @@ function ProfilePage() {
 
     const { register, handleSubmit, formState: { errors } } = useForm();
 
-    const { isAuthenticated, errors: updateErrors, user, logout } = useAuth();
+    const { isAuthenticated, errors: updateErrors, user, logout, setUser } = useAuth();
     const { idUser } = useParams();
 
     // ******* VISUALIZAR CONTRASEÑAS *******//

@@ -35,7 +35,7 @@ function TestPage(){
     const [pass, setPass] = useState(false);
 
     const { idTest } = useParams();
-    const { user } = useAuth();
+    const { user, setUser } = useAuth();
     const { handleSubmit } = useForm();
 
     useSeo({
@@ -47,7 +47,7 @@ function TestPage(){
     useEffect(() => {
         let interval;
 
-        // Solo inicia el intervalo si el test no ha sido corregido
+        // ******* SE INICIA CUANDO COMIENZA EL TEST Y SE PARA CUANDO ESTE FINALIZA ******* //
         if (!checked) {
             interval = setInterval(() => {
                 setStopwatch((prevStopwatch) => prevStopwatch + 1);
@@ -67,10 +67,11 @@ function TestPage(){
         axios.get(`${API}/test/${idTest}`).then((response) => {
             setData(response.data);
         });
-    });
+    }, [idTest]);
 
+    // ******* FUNCIÓN QUE SE EJECUTA AL ACABAR EL TEST ******* //
     const onSubmit = async () => {
-        const correctAnswers = data.map((ask) => ask.correct_answer);
+        const correctAnswers = data.map(ask => ask.correct_answer);
         const userAnswers = Object.values(selectedAnswer);
         const checkedAnswers = userAnswers.map((answer, index) => ({
             userAnswer: answer,
@@ -78,58 +79,61 @@ function TestPage(){
             isCorrect: answer === correctAnswers[index],
         }));
 
-
-        // ******* COMPROBAMOS EL NÚMERO DE ACIERTOS DEL TEST ******* //
-        for (const answer of checkedAnswers) {
-            if (answer.isCorrect) setSuccesses(prevSuccesses => prevSuccesses + 1);
-        }
-
-        // ******* AVISA AL USUARIO DE QUE LE QUEDAN PREGUNTAS SIN CONTESTAR ******* //
-        if (checkedAnswers.length < 30) {
+        // ******* COMPRUEBA SI TODAS LAS PREGUNTAS HAN SIDO CONTESTADAS ******* //
+        if (checkedAnswers.length < data.length) {
             setShowToast(true);
-            setTimeout(() => {
-                setShowToast(false);
-            }, 3000);
+            setTimeout(() => setShowToast(false), 3000);
             return;
-        } else {
-            // ******* ENVÍA LA PARTIDA A LA BBDD ******* //
-            // ******* SI EL USUARIO ACIERTA AL MENOS 27 PREGUNTAS ESTARÁ APTO ******* //
-            setChecked(true)
-            let newPass = false
-            if(successes >= 27) {
-                newPass = true;
-                setPass(newPass)
-                setSeeModalCorrection(true);
-            }
-
-            axios.post(`${API}/game/${idTest}`, {
-                time: stopwatch-1,
-                successes: successes,
-                misses: 30-successes,
-                pass: newPass,
-                user: user.id,
-                test: idTest
-            })
-            }
         }
 
-    // // ******* OBTIENE EL PORCENTAJE DE ÉXITO DEL USUARIO Y ACTUALIZA EL ESTADO ******* //
-    // useEffect(() => {
-    //     axios.get(`${API}/gamepremium/${user.id}`).then((response) => {
-    //         setPercentage(response.data.percentage);
-    //         if (response.data.percentage > 30 && !user.premium_user) {
-    //             // Realizar la solicitud para actualizar el estado de premium_user
-    //             axios.put(`${API}/user/${user.id}`, { premium_user: true })
-    //                 .then(response => {
-    //                     // Actualizar el contexto de usuario con el nuevo estado
-    //                     setUser({ ...user, premium_user: true });
-    //                 })
-    //                 .catch(error => {
-    //                     console.error("Error al actualizar el estado del usuario:", error);
-    //                 });
-    //         }
-    //     });
-    // }, [checked]);
+        // ******* DETIENE EL CRONO ******* //
+        setChecked(true);
+
+        // ******* CALCULA EL Nº DE PREGUNTAS ACERTADAS ******* //
+        let successesCount = 0;
+        for (const answer of checkedAnswers) {
+            if (answer.isCorrect) successesCount++;
+        }
+        setSuccesses(successesCount);
+
+        // ******* COMPRUEBA SI EL USUARIO APRUEBA EL TEST ******* //
+        const newPass = successesCount >= 27;
+        setPass(newPass);
+        setSeeModalCorrection(true);
+
+        // ******* AÑADE LA PARTIDA A LA BBDD ******* //
+        axios.post(`${API}/game/${idTest}`, {
+            time: stopwatch-1,
+            successes: successesCount,
+            misses: data.length - successesCount,
+            pass: newPass,
+            user: user.id,
+            test: idTest
+        });
+
+        // ******* MANDA UN TOAST DE FELICITACIÓN AL USUARIO Y ACTUALIZA EL USUARIO A PREMIUM ******* //
+        axios.get(`${API}/gamepremium/${user.id}`)
+        .then(response => {
+            if(response.data.successPercentage > 30){
+                if (!user.premium_user) {
+                    axios.put(`${API}/userspremium/${user.id}`, { premium_user: true })
+                    .then(response => {
+                        setUser({ ...user, premium_user: true });
+                        setShowToast(true);
+                        setTimeout(() => setShowToast(false), 3000);
+                        return;
+                    })
+                    .catch(error => {
+                        console.error("Error al actualizar el estado del usuario:", error);
+                    });
+                }
+            }
+        })
+        .catch(error => {
+
+            console.error('Error al obtener los datos:', error);
+        });
+    };
 
     // ******* PROP PARA EL MODAL ******* //
     const closeModal = () => {
@@ -171,6 +175,9 @@ function TestPage(){
                 </form>
                 { showToast && (
                     <ToastErrors onClose={closeToast} error={true}>Te quedan preguntas sin contestar</ToastErrors>
+                ) }
+                { showToast && checked && (
+                    <ToastErrors onClose={closeToast} error={false}>Felicidades ya eres Usuario Premium!! &#128586;&#128586;</ToastErrors>
                 ) }
             </main>
             { seeModalCorrection ? <ModalChecked misses={30-successes} pass={pass} format_stopwatch={formatStopwatch} onClose={closeModal} /> : null}
