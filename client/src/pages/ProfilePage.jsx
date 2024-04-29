@@ -134,7 +134,7 @@ function ProfilePage() {
                 <div className="flex md:flex-row flex-col justify-center items-center mb-4">
                             <h1 className={`text-2xl text-[#C21D30] font-semibold`}>Cambiar Contraseña</h1>
                         </div>
-                        <form className="flex gap-x-4 justify-center w-[90%]" onSubmit={handleSubmit(onSubmit)}>
+                        <form className="flex gap-x-4 justify-center" onSubmit={handleSubmit(onSubmit)}>
                             <div className="flex gap-4 xl:flex-row flex-col">
                                 <div className="flex flex-col">
                                     <label className="text-xl">Contraseña:</label>
