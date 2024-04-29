@@ -92,7 +92,7 @@ function ContactPage(){
                         )}
                     </div>
                     <div className="flex justify-end mt-4">
-                        <button type="submit" className="bg-[#C21D30] text-white py-2 px-4 rounded-md cursor-pointer hover:shadow-xl hover:bg-[#B30519]">Enviar Dudas</button>
+                        <button type="submit" className="bg-[#C21D30] border-2 border-[#999] text-white py-2 px-4 rounded-md cursor-pointer hover:shadow-xl hover:bg-[#B30519]">Enviar Dudas</button>
                     </div>
                 </form>
             </section>

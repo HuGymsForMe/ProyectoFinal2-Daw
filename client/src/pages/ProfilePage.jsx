@@ -1,16 +1,14 @@
-import { useState, useEffect, lazy, Suspense } from "react";
+import { useState, useEffect, lazy } from "react";
 import { Link, useParams } from "react-router-dom";
 import { Avatar } from "@mui/material";
 import axios from "axios";
 import { useForm } from "react-hook-form";
-import { zodResolver } from "@hookform/resolvers/zod";
 
 import { useSeo } from "../hooks/useSeo";
 
 import { secondRed, API } from "../config/config";
 
 import { useAuth } from "../context/UserContext";
-import { registerSchema } from "../schemas/user.schema";
 
 const ToastErrors = lazy(() => import("../components/ToastErrors"));
 const Navbar = lazy(() => import("../components/Navbar"));
@@ -31,7 +29,7 @@ function ProfilePage() {
 
     const { register, handleSubmit, formState: { errors } } = useForm();
 
-    const { isAuthenticated, errors: updateErrors, user, logout, setUser } = useAuth();
+    const { user, logout } = useAuth();
     const { idUser } = useParams();
 
     // ******* VISUALIZAR CONTRASEÑAS *******//
@@ -64,22 +62,16 @@ function ProfilePage() {
     }
 
     const onSubmit = async (data) => {
-        if (data.password !== data.confirm_password) {
+        if (data.password !== data.confirm_password || data.password.length < 5 || data.confirm_password.length < 5) {
             setPasswordEquals(false);
-            setShowToast(true);
-            setTimeout(() => {
-                setShowToast(false);
-            }, 3000);
-            return;
-        } else if (data.password === data.confirm_password && data.password !== "" && data.confirm_password !== "") {
-            await axios.put(`${API}/users/${idUser}`, { password: data.password }).then((response) => {
-                setShowToast(true);
-                setTimeout(() => {
-                    setShowToast(false);
-                }, 3000);
-                return;
-            });
+        } else {
+            await axios.put(`${API}/users/${idUser}`, { password: data.password })   
         }
+        setShowToast(true);
+        setTimeout(() => {
+            setShowToast(false);
+        }, 3000);
+        return;
     }
 
     return (
@@ -92,7 +84,7 @@ function ProfilePage() {
                 <section className="flex gap-4 w-[90%] xl:flex-row flex-col items-center xl:items-stretch">
                     <article className="flex items-center justify-center flex-col gap-y-8 bg-slate-200 p-6 shadow-lg shadow-slate-500 rounded-xl xl:w-[90%] w-[95%]">
                         <p className="text-2xl">PERFIL DE USUARIO</p>
-                        <Avatar sx={{ width: 80, height: 80, bgcolor: secondRed, border: (theme) => `3px solid #` }} alt={user.name}>{(user.name).substr(0, 1) + (user.surnames).substr(0, 1)}</Avatar>
+                        <Avatar sx={{ width: 80, height: 80, bgcolor: secondRed, border: (theme) => `3px solid #bbb` }} alt={user.name}>{(user.name).substr(0, 1) + (user.surnames).substr(0, 1)}</Avatar>
                         <div className="flex justify-between gap-y-3 flex-col w-[100%]">
                             <p className="ml-6">Nombre de usuario:</p>
                             <p className="text-center text-xl">{user.username}</p>
@@ -114,7 +106,7 @@ function ProfilePage() {
                             <p className="text-center text-xl">{time}</p>
                         </div>
                         <div className="flex gap-x-6">
-                            <Link to='/' onClick={() => { logout() }} className={`bg-[#C21D30] py-4 text-white px-8 rounded-md cursor-pointer hover:shadow-xl hover:bg-[#B30519] text-center`}>Cerrar Sesión</Link>
+                            <Link to='/' onClick={() => { logout() }} className={`bg-[#C21D30] py-4 text-white px-8  border-2 border-[#999] rounded-md cursor-pointer hover:shadow-xl hover:bg-[#B30519] text-center`}>Cerrar Sesión</Link>
                         </div>
                     </article>
                     <div className="flex flex-col gap-4 xl:w-[90%] w-[95%]">
@@ -185,13 +177,13 @@ function ProfilePage() {
                                     )}
                                 </div>
                                 <div className="flex md:mt-0 mt-8 sm:flex-row flex-col w-[100%] justify-end pt-1">
-                                <button type="submit" className={`bg-[#C21D30] text-white px-8 py-2 rounded-md cursor-pointer hover:shadow-xl hover:bg-[#B30519] mt-6`}>Actualizar Perfil</button>
+                                <button type="submit" className={`bg-[#C21D30] text-white px-8 py-2 rounded-md cursor-pointer hover:shadow-xl hover:bg-[#B30519] border-2 border-[#999] mt-6`}>Actualizar Perfil</button>
                             </div>
                             </div>
                         </form>
                 </section>
             </main>
-            {showToast && !passwordsEquals && (<ToastErrors onClose={closeToast} error={true}>Las dos contraseñas son distintas.</ToastErrors>)}
+            {showToast && !passwordsEquals && (<ToastErrors onClose={closeToast} error={true}>Se ha producido un error al modificar la contraseña.</ToastErrors>)}
             {showToast && passwordsEquals && (<ToastErrors onClose={closeToast} error={false}>La contraseña se modificó con éxito.</ToastErrors>)}
             <Footer />
         </>

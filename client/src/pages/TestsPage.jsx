@@ -34,14 +34,14 @@ function TestsPage(){
             })
         }, [idUser]);
     } else {
-            useEffect(() => {
-                axios.get(`${API}/gametests/${idUser}`)
-                    .then((response) => {
-                        setData(response.data);
-                    }).catch((error) => {
-                        console.log("Error fetching data:", error);
-                })
-            }, [idUser]);
+        useEffect(() => {
+            axios.get(`${API}/gametests/${idUser}`)
+                .then((response) => {
+                    setData(response.data);
+                }).catch((error) => {
+                    console.log("Error fetching data:", error);
+            })
+        }, [idUser]);
     }
 
     if(!data) return null;
@@ -54,7 +54,8 @@ function TestsPage(){
                 <h1 className="text-3xl text-white my-8">MIS TESTS</h1>
             </section>
             <section className="flex flex-col justify-center items-center gap-y-8 mb-8">
-                {data.map((testToBePeformed, i) => (
+                {data.map((testToBePeformed, i) => 
+                    (
                     (testToBePeformed.misses == "XX") 
                     ? <ButtonTest key={testToBePeformed.test} number_test={i+1} id_test={testToBePeformed.test} time={testToBePeformed.time} misses={testToBePeformed.misses} made={false} />
                     : <ButtonTest key={testToBePeformed.test} number_test={i+1} id_test={testToBePeformed.test} time={testToBePeformed.time} misses={testToBePeformed.misses} made={true} />

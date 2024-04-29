@@ -154,7 +154,7 @@ function RegisterPage() {
                     </div>
                     <div className="flex justify-around md:mt-0 mt-8 sm:flex-row flex-col">
                         <Link to={`/login`} className="flex justify-center p-4 text-sky-600 hover:drop-shadow-md">¿Ya tienes una cuenta?</Link>
-                        <button className={`bg-[#C21D30] text-white px-8 py-2 rounded-md cursor-pointer hover:shadow-xl hover:bg-[#B30519] `}>Regístrate</button>
+                        <button className={`bg-[#C21D30] text-white px-8 py-2 rounded-md cursor-pointer hover:shadow-xl hover:bg-[#B30519] border-2 border-[#999]`}>Regístrate</button>
                     </div>
                 </form>
             </section>

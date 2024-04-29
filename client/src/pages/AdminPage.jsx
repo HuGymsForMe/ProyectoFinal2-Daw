@@ -28,7 +28,7 @@ function AdminPage() {
                     <img className="sm:w-64 w-32 cursor-pointer"  src={LogoAutoescuelaFast} alt="Logo AutoescuelaFast" />
                 </div>
                 <Link to={`/`} onClick={() => {setMenuToggle(false)}} className='lg:absolute lg:right-4'>
-                        <button type='button' className={`bg-[#C21D30] text-white px-5 py-2 rounded-full hover:bg-[#B30519] sm:text-base text-xs focus:border-slate-800 border-2`}>Volver al panel de usuario</button>
+                        <button type='button' className={`bg-[#C21D30] text-white px-5 py-2 rounded-full hover:bg-[#B30519] border-[#999] sm:text-base text-xs focus:border-slate-800 border-2`}>Volver al panel de usuario</button>
                 </Link>
             </header>
             <main className="min-h-screen flex">

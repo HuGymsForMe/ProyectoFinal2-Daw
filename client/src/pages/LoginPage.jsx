@@ -93,8 +93,8 @@ function LoginPage() {
                         )}
                     </div>
                     <div className="flex sm:flex-row flex-col gap-x-4 sm:pt-4 justify-evenly">
-                        <Link to={`/register`} className="flex justify-center p-4 text-sky-600 hover:drop-shadow-md cursor-pointer">¿Aún no tienes una cuenta?</Link>
-                        <input type="submit" value="Iniciar sesión" className="bg-[#C21D30] text-white py-2 px-4 rounded-md cursor-pointer hover:shadow-xl hover:bg-[#B30519]" />
+                        <Link to={`/register`} className="flex justify-center p-4 text-sky-600  border-2 border-[#999] hover:drop-shadow-md cursor-pointer">¿Aún no tienes una cuenta?</Link>
+                        <input type="submit" value="Iniciar sesión" className="bg-[#C21D30] border-2 border-[#999] text-white py-2 px-4 rounded-md cursor-pointer hover:shadow-xl hover:bg-[#B30519]" />
                     </div>
                 </form>
             </section>

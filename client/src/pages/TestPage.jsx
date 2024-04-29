@@ -19,16 +19,15 @@ const ModalChecked = lazy(() => import("../components/TestPage/ModalChecked"));
 function TestPage(){
 
     const [data, setData] = useState(null); //Preguntas de los test
-    const [percentage, setPercentage] = useState(null) //Comprobador porcentaje usuario
 
     const [selectedAnswer, setSelectedAnswer] = useState({}); //Almacena las preguntas contestadas
-    const [checked,setChecked] = useState(false);
+    const [checked,setChecked] = useState(false); //Comprueba si el test ha sido checkeado
 
-    const [seeModalCorrection, setSeeModalCorrection] = useState(false);
-    const [showToast, setShowToast] = useState(false);
+    const [seeModalCorrection, setSeeModalCorrection] = useState(false); //Muestra el modal
+    const [showToast, setShowToast] = useState(false); //Muestra el toast
 
-    const [stopwatch, setStopwatch] = useState(1);
-    const [formatStopwatch, setFormatStopwatch] = useState("00:00");
+    const [stopwatch, setStopwatch] = useState(1); //Contador para el backend
+    const [formatStopwatch, setFormatStopwatch] = useState("00:00"); //Formato del cronómetro
 
     // ******* ESTADOS PARA PODER PASARLOS AL MODAL ******* //
     const [successes, setSuccesses] = useState(0);
@@ -130,8 +129,7 @@ function TestPage(){
             }
         })
         .catch(error => {
-
-            console.error('Error al obtener los datos:', error);
+            console.error('Error al hacer Premium al usuario', error);
         });
     };
 
