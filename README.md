@@ -21,7 +21,7 @@ npm install-server
 ```bash
 npm install-client
 ```
-Arrancamos la aplicación
+Arrancamos la aplicación:
 ```bash
 npm dev-server
 ```
