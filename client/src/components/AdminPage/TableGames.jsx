@@ -54,6 +54,9 @@ function TableGames(){
             cell: (info) => <span>{info.getValue()}</span>,
             header: "Test",
           }),
+          // columnHelper.accessor("delete", {
+          //   cell: (info) => IconoBasura
+          // }),
     ];
 
     const table = useReactTable({
@@ -66,6 +69,18 @@ function TableGames(){
         getCoreRowModel: getCoreRowModel(),
         getPaginationRowModel: getPaginationRowModel(),
     });
+
+    /* Borra las partidas */
+    const handleDelete = async (info) => {
+      try {
+        // Lógica para borrar la celda utilizando la API
+        const response = await axios.delete(`${API}/game/${info.row.original.id}`);
+        // Actualiza los datos después de borrar la celda
+        setData(data.filter((row) => row.id !== info.row.original.id));
+      } catch (error) {
+        console.error("Error deleting data: ", error);
+      }
+    };
 
     return(
         <div className="p-2 max-w-5xl mx-auto text-black fill-gray-400 w-[80%]">

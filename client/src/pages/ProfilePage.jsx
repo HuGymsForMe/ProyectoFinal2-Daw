@@ -70,7 +70,7 @@ function ProfilePage() {
                             <p className="text-center text-xl">{time}</p>
                         </div>
                         <div className="flex gap-x-6">
-                            {/* <Link to='/' className={`bg-sky-500 py-4 text-white px-8 rounded-md cursor-pointer hover:shadow-xl hover:bg-sky-600 text-center`}>Cambiar Contraseña</Link> */}
+                            <Link to={`/updateuser/${idUser}`} className={`bg-sky-500 py-4 text-white px-8 rounded-md cursor-pointer hover:shadow-xl hover:bg-sky-600 text-center`}>Editar Perfil</Link>
                             <Link to='/' onClick={() => { logout() }} className={`bg-[#C21D30] py-4 text-white px-8 rounded-md cursor-pointer hover:shadow-xl hover:bg-[#B30519] text-center`}>Cerrar Sesión</Link>
                         </div>
                     </article>

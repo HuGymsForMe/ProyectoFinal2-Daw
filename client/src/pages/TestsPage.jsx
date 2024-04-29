@@ -59,7 +59,8 @@ function TestsPage(){
                     (testToBePeformed.misses == "XX") 
                     ? <ButtonTest key={testToBePeformed.test} number_test={i+1} id_test={testToBePeformed.test} time={testToBePeformed.time} misses={testToBePeformed.misses} made={false} />
                     : <ButtonTest key={testToBePeformed.test} number_test={i+1} id_test={testToBePeformed.test} time={testToBePeformed.time} misses={testToBePeformed.misses} made={true} />
-                ))}
+                ))
+                }
             </section>
         </main>
         <Footer />
