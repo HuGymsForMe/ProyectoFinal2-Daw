@@ -1,7 +1,7 @@
 import { config } from "dotenv";
 config();
 
-export const MONGODB_URI =  process.env.MONGODB_URL;
+export const MONGODB_URI =  process.env.MONGODB_URL || "mongodb+srv://hugodiazcasado31:Carton1313@autoescuelafast.dwurlay.mongodb.net/";
 export const PORT = process.env.PORT || 4000;
 
 // ******* CONSTANTES TOKEN ******* //
