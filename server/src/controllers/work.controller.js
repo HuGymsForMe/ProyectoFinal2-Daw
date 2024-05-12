@@ -29,6 +29,22 @@ export const sendWork = async(req, res) => {
     //     console.error(error);
     //     return res.status(500).json({ message: "No se ha podido enviar la información" });
     // }
+    try {
+        const file = req.files.file;
+
+        uploadImage(file.tempFilePath);
+    
+        // Subir el archivo a Cloudinary
+        cloudinary.uploader.upload(file.tempFilePath, (error, result) => {
+          if (error) {
+            res.status(500).json({ success: false, error: error.message });
+          } else {
+            res.status(200).json({ success: true, url: result.secure_url });
+          }
+        });
+      } catch (error) {
+        res.status(500).json({ success: false, error: error.message });
+      }
 };
 
 // ******* CONTROLADOR PARA VISUALIZAR LAS DATOS DE TRABAJO ******* //

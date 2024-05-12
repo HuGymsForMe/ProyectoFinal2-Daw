@@ -389,33 +389,6 @@ import Imagen388 from "../assets/imgtest/imagen388.webp";
 import Imagen389 from "../assets/imgtest/imagen389.webp";
 import Imagen390 from "../assets/imgtest/imagen390.webp";
 
-import fileDefault from "../assets/fileinput/archivo-generic.png";
-import filePDF from "../assets/fileinput/archivo-pdf.png"
-import fileDOCX from "../assets/fileinput/archivo-doc.png";
-import fileJPG from "../assets/fileinput/archivo-jpg.png";
-import filePNG from "../assets/fileinput/archivo-png.png";
-import fileSQL from "../assets/fileinput/archivo-sql.png";
-import fileTXT from "../assets/fileinput/archivo-txt.png";
-import fileXLS from "../assets/fileinput/archivo-xls.png";
-import fileXML from "../assets/fileinput/archivo-sql.png";
-import fileEXE from "../assets/fileinput/archivo-exe.png";
-import fileAI from "../assets/fileinput/archivo-ai.png";
-
-export const ImageConfig = {
-  default: fileDefault,
-  pdf: filePDF,
-  docx: fileDOCX,
-  jpg: fileJPG,
-  png: filePNG,
-  sql: fileSQL,
-  txt: fileTXT,
-  xls: fileXLS,
-  xml: fileXML,
-  exe: fileEXE,
-  ai: fileAI,
-}
-
-
 // ******* IMÁGENES DE LAS PREGUNTAS ******* //
 export const imagesQuestions = [
                   Imagen1, Imagen2, Imagen3, Imagen4, Imagen5, Imagen6, Imagen7, Imagen8, Imagen9, Imagen10,
