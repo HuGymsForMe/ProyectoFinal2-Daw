@@ -14,7 +14,7 @@ function LegalNoticePage(){
         <>
         <Navbar />
         <main className="text-black flex flex-col items-center min-h-screen py-8">
-                <section className="flex justify-center sm:w-[75%] w-[90%] gap-6 bg-white rounded-lg p-8 flex-col md:my-auto">
+                <section className="flex justify-center sm:w-[75%] w-[90%] gap-6 bg-white rounded-lg p-8 flex-col md:my-auto xl:mt-32">
                     <h1 className="sm:text-4xl text-2xl text-bold text-center">AVISO LEGAL</h1>
                     <h2 className="font-semibold">Condiciones de Uso</h2>
                     <p>La utilización del sitio Web le otorga la condición de Usuario, e implica la aceptación completa de todas las cláusulas y condiciones de uso incluidas en las páginas:</p>

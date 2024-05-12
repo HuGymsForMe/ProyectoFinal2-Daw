@@ -4,47 +4,34 @@ import { uploadImage } from "../libs/cloudinary.js";
 
 // ******* CONTROLADOR PARA QUE EL USUARIO SUBA SUS DATOS (PÁGINA DE TRABAJA CON NOSOTROS) ******* //
 export const sendWork = async(req, res) => {
-    //console.log(file); // Me da esto "{ '0': {} }"
-    //const nameFile = "pepe"+file//A la BBDD solo subo el nombre del fichero
-    // try {
-    //     const newWork = new Work({
-    //         name,
-    //         surnames,
-    //         email,
-    //         telephone,
-    //         file: nameFile,
-    //     });
-
-    //     const workSaved = await newWork.save();
-
-    //     res.json({
-    //         id: workSaved._id,
-    //         name: workSaved.name,
-    //         surnames: workSaved.surnames,
-    //         email: workSaved.email,
-    //         telephone: workSaved.telephone,
-    //         file: workSaved.file,
-    //     });
-    // } catch (error) {
-    //     console.error(error);
-    //     return res.status(500).json({ message: "No se ha podido enviar la información" });
-    // }
+    const {name, surnames, email, telephone, age, contact, moreInfo} = req.body;
     try {
-        const file = req.files.file;
+        const newWork = new Work ({
+            name,
+            surnames,
+            email,
+            telephone,
+            age,
+            contact,
+            moreInfo
+        }) 
 
-        uploadImage(file.tempFilePath);
-    
-        // Subir el archivo a Cloudinary
-        cloudinary.uploader.upload(file.tempFilePath, (error, result) => {
-          if (error) {
-            res.status(500).json({ success: false, error: error.message });
-          } else {
-            res.status(200).json({ success: true, url: result.secure_url });
-          }
+        const workSaved = await newWork.save();
+
+        res.json({
+            id: workSaved._id,
+            name: workSaved.name,
+            surnames: workSaved.surnames,
+            email: workSaved.email,
+            telephone: workSaved.telephone,
+            age: workSaved.age,
+            contact: workSaved.contact,
+            moreInfo: workSaved.moreInfo
         });
-      } catch (error) {
-        res.status(500).json({ success: false, error: error.message });
-      }
+        
+    } catch (error) {
+        res.status(500).json({message: "Se ha producido un error al guardar el nuevo test."});
+    }
 };
 
 // ******* CONTROLADOR PARA VISUALIZAR LAS DATOS DE TRABAJO ******* //

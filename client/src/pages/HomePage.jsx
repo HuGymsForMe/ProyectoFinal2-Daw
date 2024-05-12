@@ -36,7 +36,7 @@ function HomePage() {
         <>
             <Navbar />
             <main className="text-white py-8 gap-y-8 flex flex-col items-center min-h-screen">
-                <section className="flex justify-center">
+                <section className="flex justify-center xl:mt-20">
                     <h1 className="text-4xl text-bold text-center">Bienvenido a Autoescuela Fast</h1>
                 </section>
                 <section className="flex justify-center w-[75%] items-center gap-6 bg-white text-[#C21D30] rounded-lg p-8 xl:flex-row flex-col md:my-auto">

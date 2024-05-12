@@ -16,7 +16,7 @@ function CookiesPolicyPage() {
         <>
             <Navbar />
             <main className="text-black flex flex-col items-center min-h-screen py-8">
-                <section className="flex justify-center sm:w-[75%] w-[90%] gap-6 bg-white rounded-lg p-8 flex-col md:my-auto">
+                <section className="flex justify-center sm:w-[75%] w-[90%] gap-6 bg-white rounded-lg p-8 flex-col md:my-auto xl:mt-32">
                     <h1 className="sm:text-4xl text-2xl text-bold text-center">POLÍTICA DE COOKIES</h1>
                     <p>AutoescuelaFast informa acerca del uso de las cookies en su página web:</p>
                     <Link to={"/"} className='text-blue-600'>autoescuela-fast.vercel.app</Link>

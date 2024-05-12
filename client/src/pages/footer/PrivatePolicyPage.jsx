@@ -14,7 +14,7 @@ function PrivatePolicyPage(){
         <>
         <Navbar />
         <main className="text-black flex flex-col items-center min-h-screen py-8">
-        <section className="flex justify-center sm:w-[75%] w-[90%] gap-6 bg-white rounded-lg p-8 flex-col md:my-auto">
+        <section className="flex justify-center sm:w-[75%] w-[90%] gap-6 bg-white rounded-lg p-8 flex-col md:my-auto xl:mt-32">
             <h1 className="sm:text-4xl text-3xl text-bold text-center">POLÍTICA DE PRIVACIDAD</h1>
             <p>El presente Política de Privacidad establece los términos en que AutoescuelaFast usa y protege la información que es proporcionada por sus usuarios al momento de utilizar su sitio web. Esta compañía está comprometida con la seguridad de los datos de sus usuarios. Cuando le pedimos llenar los campos de información personal con la cual usted pueda ser identificado, lo hacemos asegurando que sólo se empleará de acuerdo con los términos de este documento. Sin embargo esta Política de Privacidad puede cambiar con el tiempo o ser actualizada por lo que le recomendamos y enfatizamos revisar continuamente esta página para asegurarse que está de acuerdo con dichos cambios.</p>
             <h2 className="font-semibold">Información que es recogida</h2>

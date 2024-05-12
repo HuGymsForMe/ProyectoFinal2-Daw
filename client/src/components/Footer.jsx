@@ -17,16 +17,24 @@ function Footer() {
             <section className="flex md:flex-row flex-col items-center gap-y-8">
                 <ul className="md:w-[50%] w-[80%] flex flex-col justify-center items-center">
                     <li className="flex justify-center text-lg hover:scale-105 duration-300">
-                        <Link className={`hover:text-[#C21D30] cursor-pointer`} to={`/contact`}>Contáctanos</Link>
+                        <Link className={`hover:text-[#C21D30] cursor-pointer`} to={`/contact`}
+                        onClick={() => window.scrollTo(0, 0)}>Contáctanos</Link>
                     </li>
                     <li className="flex justify-center text-lg hover:scale-105 duration-300">
-                        <Link className={`hover:text-[#C21D30] cursor-pointer`} to={`/legalnotice`}>Aviso Legal</Link>
+                        <Link className={`hover:text-[#C21D30] cursor-pointer`} to={`/legalnotice`}
+                        onClick={() => window.scrollTo(0, 0)}>Aviso Legal</Link>
                     </li>
                     <li className="flex justify-center text-lg hover:scale-105 duration-300">
-                        <Link className={`hover:text-[#C21D30] cursor-pointer`} to={`/cookiespolicy`}>Política de cookies</Link>
+                        <Link className={`hover:text-[#C21D30] cursor-pointer`} to={`/cookiespolicy`}
+                        onClick={() => window.scrollTo(0, 0)}>Política de cookies</Link>
                     </li>
                     <li className="flex justify-center text-lg hover:scale-105 duration-300">
-                        <Link className={`hover:text-[#C21D30] cursor-pointer`} to={`/privatepolicy`}>Política de privacidad</Link>
+                        <Link className={`hover:text-[#C21D30] cursor-pointer`} to={`/privatepolicy`}
+                        onClick={() => window.scrollTo(0, 0)}>Política de privacidad</Link>
+                    </li>
+                    <li className="flex justify-center text-lg hover:scale-105 duration-300">
+                        <Link className={`hover:text-[#C21D30] cursor-pointer`} to={`/work`}
+                        onClick={() => window.scrollTo(0, 0)}>Trabaja con Nosotros</Link>
                     </li>
                 </ul>
                 <section className="flex flex-col justify-center items-center md:w-[50%] w-[80%] gap-y-2">

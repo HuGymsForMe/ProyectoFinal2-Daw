@@ -10,7 +10,6 @@ import LogoAutoescuelaFast from "../assets/logo.png";
 
 const Navbar = lazy(() => import("../components/Navbar"));
 const Footer = lazy(() => import("../components/Footer"));
-const InputCV = lazy (() => import("../components/WorkPage/InputCV"))
 const ToastErrors = lazy(() => import("../components/ToastErrors"));
 
 function WorkPage() {
@@ -21,6 +20,7 @@ function WorkPage() {
     })
 
     const [showToast, setShowToast] = useState(false);
+    const [message, setMessage] = useState(null);
 
     const {register, handleSubmit, reset} = useForm();
 
@@ -36,11 +36,9 @@ function WorkPage() {
                 contact: data.contact,
                 moreInfo: data.moreInfo
             };
-
-            console.log(formData.files)
             
+            setMessage("El formulario se envío correctamente");
             await axios.post(`${API}/work`, formData);
-            setMessage("El mensaje se envió correctamente.");
             reset();
         } catch (error) {
             console.log(error);
@@ -60,7 +58,7 @@ function WorkPage() {
         <>
         <Navbar />
         <main className="flex justify-center items-center flex-col min-h-screen">
-        <section className="bg-white p-8 flex flex-col gap-y-8 rounded-xl shadow-slate-500 shadow-lg z-10 sm:w-auto w-[90%] my-16">
+        <section className="bg-white p-8 flex flex-col gap-y-8 rounded-xl shadow-slate-500 shadow-lg z-10 sm:w-auto w-[90%] my-16 xl:mt-32">
             <div className="flex gap-x-10 justify-center sm:flex-row flex-col items-center gap-y-4">
                 <h1 className="text-3xl text-[#C21D30] text-center">Trabaja con Nosotros</h1>
                 <img className="sm:w-48 w-40"  src={LogoAutoescuelaFast} alt="Autoescuela Fast" />

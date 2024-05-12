@@ -22,7 +22,15 @@ const workSchema = new mongoose.Schema({
         type: Number,
         required: true,
     },
-    file: {
+    age: {
+        type: Number,
+        required: false,
+    },
+    contact: {
+        type: String,
+        required: false,
+    },
+    moreInfo: {
         type: String,
         required: false,
     }

@@ -16,7 +16,7 @@ function Navbar() {
     };
 
     return (
-      <header className="bg-slate-200 z-30">
+      <header className="bg-slate-200 z-30 xl:fixed xl:w-full">
         <nav className="flex justify-between items-center w-[92%] mx-auto p-3 z-30">
             <div>
                 <Link to={"/"}>
@@ -37,12 +37,9 @@ function Navbar() {
                     <li className='text-center hover:scale-110 duration-500'>
                         <Link className={`hover:text-[#C21D30] cursor-pointer`} to={`/work`} onClick={() => {setMenuToggle(false)}}>Trabaja con Nosotros</Link>
                     </li>
-                    {
-                        isAuthenticated && user.admin &&
-                        (<li className='text-center hover:scale-110 duration-500'>
-                            <Link className={`hover:text-[#C21D30] cursor-pointer font-semibold italic`} to={`/admin`} onClick={() => {setMenuToggle(false)}}>PANEL DE ADMINISTRADOR</Link>
-                        </li>)
-                    }
+                    <li className='text-center hover:scale-110 duration-500'>
+                        <Link className={`hover:text-[#C21D30] cursor-pointer`} to={`/we-are`} onClick={() => {setMenuToggle(false)}}>¿Quiénes Somos?</Link>
+                    </li>
                 </ul>
             </div>
             <div className='flex items-center gap-4'>

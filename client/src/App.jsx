@@ -19,7 +19,7 @@ const LoginPage = lazy(() => import("./pages/LoginPage"));
 const RegisterPage = lazy(() => import("./pages/RegisterPage"));
 const ProfilePage = lazy(() => import("./pages/ProfilePage"));
 const WorkPage = lazy(() => import("./pages/WorkPage"));
-const AdminPage = lazy(() => import("./pages/AdminPage"));
+const WeArePage = lazy(() => import("./pages/WeArePage"))
 
 function App() {
 
@@ -37,11 +37,11 @@ return (
             <Route path="/cookiespolicy" element={<CookiesPolicyPage />}></Route>
             <Route path="/legalnotice" element={<LegalNoticePage />}></Route>
             <Route path="/privatepolicy" element={<PrivatePolicyPage />}></Route>
+            <Route path="/we-are" element={<WeArePage />}></Route>
             <Route element={<ProtectedRoute />}>
               <Route path="/test/:idTest" element={<TestPage />}></Route>
               <Route path="/profile/:idUser" element={<ProfilePage />}></Route>
               <Route path="/tests/:idUser" element={<TestsPage />}></Route>
-              <Route path="/admin" element={<AdminPage />}></Route>
             </Route>
           </Routes> 
         </Suspense>
