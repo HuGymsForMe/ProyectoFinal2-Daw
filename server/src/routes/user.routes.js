@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { register, login, getUsers, getUser, updateUser, deleteUser, updatePremiumUser } from "../controllers/user.controller.js";
+import { register, login, getUsers, getUser, updateUser, deleteUser, updatePremiumUser, sendVerificationEmail } from "../controllers/user.controller.js";
 import { registerSchema, loginSchema } from "../schemas/user.schema.js";
 import { validateSchema } from "../middlewares/validator.middleware.js";
 
@@ -13,5 +13,6 @@ router.get("/users/:id", getUser);
 router.put("/users/:id", updateUser);
 router.delete("/users/:id", deleteUser);
 router.put("/userspremium/:id", updatePremiumUser);
+router.put("/usersemail", sendVerificationEmail);
 
 export default router;

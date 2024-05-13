@@ -1,6 +1,7 @@
 import User from "../models/user.model.js";
 import bcryptjs from "bcryptjs";
 import { createAccessToken } from "../libs/jwt.js";
+import nodemailer from "nodemailer";
 
 // ******* CONTROLADOR DE REGISTRO (PÁGINA DE REGISTRO) ******* //
 export const register = async (req, res) => {
@@ -152,6 +153,7 @@ export const updateUser = async(req, res) => {
     }
 }
 
+// ******* CONTROLADOR PARA ACTUALIZAR EL USUARIO A PREMIUM ******* //
 export const updatePremiumUser = async(req,res) => {
     try {
         const {premium_user} = req.body;
@@ -164,5 +166,64 @@ export const updatePremiumUser = async(req,res) => {
     } catch (error) {
         console.log(error);
         res.status(500).json({message: "No se ha podido actualizar el usuario a premium con éxito."})
+    }
+}
+
+// ******* CONTROLADOR PARA ACTUALIZAR LA CONTRASEÑA Y ENVIAR UN CORREO ******* //
+export const sendVerificationEmail = async(req,res) => {
+
+    try {
+        const { email } = req.body;
+        const user = await User.findOne({ email });
+
+        if (!user) {
+            return res.status(404).json({ message: "Usuario no encontrado" });
+        }
+    
+        let newPassword = "";
+        let caracteres = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+        for (let i = 0; i < 10; i++) {
+            newPassword += caracteres.charAt(Math.floor(Math.random() * caracteres.length));
+        }
+    
+        let transporter = nodemailer.createTransport({
+            host: "smtp.gmail.com",
+            port: 465,
+            secure: true,
+            auth: {
+                user: "hugodiazcasado31@gmail.com",
+                pass: "aksnhofyiosiuxes"
+            }
+        });
+    
+        let mailOptions = {
+            from: "hugodiazcasado31@gmail.com",
+            to: email,
+            subject: "Cambio de Contraseña Autoescuela Fast",
+            html:   `<div> 
+                        <img src="https://autoescuela-fast.vercel.app/assets/logo-B98mQ9TH.png" alt="Logo Autoescuela Fast" />
+                        <p>Aquí te enviamos la nueva contraseña, la cuál podrás modificar posteriormente al acceder a "Mi perfil". Esta es tu nueva contraseña: <strong>${newPassword}</strong></h4>
+                    </div>`
+        };
+    
+        transporter.sendMail(mailOptions, async (error, info) => {
+            if (error) {
+                console.log(error);
+                return res.status(500).json({ message: "No se ha podido enviar el correo de verificación para poder modificar la contraseña." });
+            } else {
+                console.log('Correo enviado con éxito!!');
+                const passwordHash = await bcryptjs.hash(newPassword, 10);
+                const userUpdated = await User.findOneAndUpdate(
+                    { email },
+                    { password: passwordHash },
+                    { new: true }
+                );
+                return res.json(userUpdated);
+            }
+        });
+    
+    } catch (error) {
+        console.log(error);
+        res.status(500).json({ message: "Error interno del servidor" });
     }
 }
