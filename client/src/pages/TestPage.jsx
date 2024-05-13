@@ -150,7 +150,7 @@ function TestPage(){
         <Navbar />
             <p className="text-center text-white absolute right-4 top-[85px] text-3xl font-[Inconsolata]">Tiempo: {formatStopwatch}</p>
             <main className="flex flex-col items-center">
-                <h1 className="text-bold text-4xl m-8 sm:mt-8 mt-24 text-white">TEST {TestsAutoescuelaFast.indexOf(idTest)+1}</h1>
+                <h1 className="xl:mt-32 text-bold text-4xl m-8 sm:mt-8 mt-24 text-white">TEST {TestsAutoescuelaFast.indexOf(idTest)+1}</h1>
                 <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col items-center bg-slate-200 lg:w-[85%] w-[95%] p-8 rounded-lg mb-8 shadow-lg shadow-slate-700">
                 {data.map((ask, i) => (
                     <QuestionTest

@@ -78,7 +78,7 @@ function ProfilePage() {
         <>
             <Navbar />
             <main className="py-8 gap-y-8 flex flex-col items-center">
-                <section className="flex justify-center">
+                <section className="flex justify-center xl:mt-16">
                     <h1 className="text-4xl text-bold text-center text-white">Mi perfil</h1>
                 </section>
                 <section className="flex gap-4 w-[90%] xl:flex-row flex-col items-center xl:items-stretch">

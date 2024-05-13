@@ -50,7 +50,7 @@ function TestsPage(){
         <>
         <Navbar />
         <main className="flex flex-col">
-            <section className="flex justify-center items-center">
+            <section className="flex justify-center items-center xl:mt-20">
                 <h1 className="text-3xl text-white my-8">MIS TESTS</h1>
             </section>
             <section className="flex flex-col justify-center items-center gap-y-8 mb-8">

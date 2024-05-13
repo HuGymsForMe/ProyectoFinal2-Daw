@@ -50,7 +50,7 @@ function HomePage() {
                             <li><span className="italic font-semibold">Simulacros de Examen:</span> Practica con nuestros simulacros de examen para evaluar tu progreso. Identifica tus áreas de mejora y fortalece tus conocimientos antes de enfrentarte al examen teórico oficial.</li>
                         </ul>
                     </div>
-                    <img src={carLicense} alt="Coche Autoescuela" className="rounded-lg xl:w-[33%] xl:h-[17%] sm:w-[66%] sm:h-[33%] w-[90%] h-[45%]" />
+                    <img src={carLicense} alt="Coche Autoescuela" className="rounded-lg shadow-2xl xl:w-[33%] xl:h-[17%] sm:w-[66%] sm:h-[33%] w-[90%] h-[45%]" />
                 </section>
                 <section className="flex xl:flex-row flex-col w-[75%] items-center gap-6">
                         <article className="xl:w-[50%] w-[100%]">
