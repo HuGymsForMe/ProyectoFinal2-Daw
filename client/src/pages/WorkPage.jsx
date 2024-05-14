@@ -58,46 +58,52 @@ function WorkPage() {
         <>
         <Navbar />
         <main className="flex justify-center items-center flex-col min-h-screen">
-        <section className="bg-white p-8 flex flex-col gap-y-8 rounded-xl shadow-slate-500 shadow-lg z-10 sm:w-auto w-[90%] my-16 xl:mt-32">
+        <section className="bg-white p-8 px-12 flex flex-col gap-y-8 rounded-xl shadow-slate-500 shadow-lg z-10 sm:w-auto w-[90%] my-16 xl:mt-32">
             <div className="flex gap-x-10 justify-center sm:flex-row flex-col items-center gap-y-4">
                 <h1 className="text-3xl text-[#C21D30] text-center">Trabaja con Nosotros</h1>
                 <img className="sm:w-48 w-40"  src={LogoAutoescuelaFast} alt="Autoescuela Fast" />
             </div>
-            <form className="flex flex-col gap-y-4" onSubmit={handleSubmit(onSubmit)}>
-                <div className="flex flex-col">
-                    <label>Nombre:</label>
-                    <input type="text" placeholder="Su nombre" className="rounded-md p-2 bg-slate-200"
-                    {...register("name", {required: true})} />
-                </div>
-                <div className="flex flex-col">
-                    <label>Apellidos:</label>
-                    <input type="text" placeholder="Sus apellidos" className="rounded-md p-2 bg-slate-200"
-                    {...register("surnames", {required: true})} />
-                </div>
-                <div className="flex flex-col">
-                    <label>Correo electrónico:</label>
-                    <input type="email" placeholder="Su correo electrónico" className="rounded-md p-2 bg-slate-200"
-                    {...register("email", {required: true})} />
-                </div>
-                <div className="flex flex-col">
-                    <label>Teléfono Móvil:</label>
-                    <input type="tel" placeholder="Su teléfono" className="rounded-md p-2 bg-slate-200"
-                    {...register("telephone", {required: true})} />
-                </div>
-                <div className="flex flex-col">
-                    <label>Edad:</label>
-                    <input type="number" placeholder="Su edad" className="rounded-md p-2 bg-slate-200" min={0}
-                    {...register("age", {required: false})} />
-                </div>
-                <div className="flex flex-col">
-                    <label>Muéstrenos su perfil:</label>
-                    <textarea type="tel" placeholder="Enlaces para ver su perfil..." className="rounded-md p-2 bg-slate-200 resize-none h-[200px]"
-                    {...register("contact", {required: false})} />
-                </div>
-                <div className="flex flex-col">
-                    <label>Más Información:</label>
-                    <textarea type="tel" placeholder="Escríbanos sus dudas..." className="rounded-md p-2 bg-slate-200 resize-none h-[200px]"
-                    {...register("moreInfo", {required: false})} />
+            <form className="flex flex-col gap-y-8" onSubmit={handleSubmit(onSubmit)}>
+                <div className="flex gap-6 flex-col md:flex-row">
+                    <div className="flex flex-col gap-4 md:w-[40%]">
+                        <div className="flex flex-col">
+                            <label>Nombre:</label>
+                            <input type="text" placeholder="Su nombre" className="rounded-md p-2 bg-slate-200"
+                            {...register("name", {required: true})} />
+                        </div>
+                        <div className="flex flex-col">
+                            <label>Apellidos:</label>
+                            <input type="text" placeholder="Sus apellidos" className="rounded-md p-2 bg-slate-200"
+                            {...register("surnames", {required: true})} />
+                        </div>
+                        <div className="flex flex-col">
+                            <label>Correo electrónico:</label>
+                            <input type="email" placeholder="Su correo electrónico" className="rounded-md p-2 bg-slate-200"
+                            {...register("email", {required: true})} />
+                        </div>
+                        <div className="flex flex-col">
+                            <label>Teléfono Móvil:</label>
+                            <input type="tel" placeholder="Su teléfono" className="rounded-md p-2 bg-slate-200"
+                            {...register("telephone", {required: true})} />
+                        </div>
+                        <div className="flex flex-col">
+                            <label>Edad:</label>
+                            <input type="number" placeholder="Su edad" className="rounded-md p-2 bg-slate-200" min={0}
+                            {...register("age", {required: false})} />
+                        </div>
+                    </div>
+                    <div className="flex flex-col gap-4 md:w-[60%]">
+                        <div className="flex flex-col">
+                            <label>Muéstrenos su perfil:</label>
+                            <textarea type="tel" placeholder="Enlaces para ver su perfil..." className="rounded-md p-2 bg-slate-200 resize-none h-[160px]"
+                            {...register("contact", {required: false})} />
+                        </div>
+                        <div className="flex flex-col">
+                            <label>Más Información:</label>
+                            <textarea type="tel" placeholder="Escríbanos sus dudas..." className="rounded-md p-2 bg-slate-200 resize-none h-[160px]"
+                            {...register("moreInfo", {required: false})} />
+                        </div>
+                    </div>
                 </div>
                 <div className="flex justify-end">
                     <input type="submit" value="Enviar Información" onSubmit={handleSubmit(onSubmit)} className="bg-[#C21D30] text-white py-2 px-4 rounded-md cursor-pointer hover:shadow-xl hover:bg-[#B30519]" />

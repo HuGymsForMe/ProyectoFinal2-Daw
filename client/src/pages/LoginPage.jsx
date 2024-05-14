@@ -27,6 +27,7 @@ function LoginPage() {
     const [seePassword, setSeePassword] = useState(false);
     const [errorHTTP, setErrorHTTP] = useState(false); //Comprueba si hay errores a la hora de hacer peticiones HTTP
     const [showToast, setShowToast] = useState(false); //Hace desaparecer y aparecer el toast
+    const [showModal, setShowModal] = useState(false); //Hace desaparecer y aparecer el modal de "has olvidado tu contraseña"
 
     // ******* VISUALIZAR CONTRASEÑAS *******//
     const toggleSeePassword = () => {
@@ -63,6 +64,48 @@ function LoginPage() {
     }, [isAuthenticated]);
 
     return (
+        // <><Navbar />
+        //     <main className="flex justify-center items-center min-h-screen">
+        //         <section className=" bg-white p-8 flex flex-col gap-y-8 rounded-xl shadow-slate-500 shadow-lg z-10 sm:w-auto w-[0%] md:my-16 xl:mt-32">
+        //             <div className="flex gap-x-10 justify-center sm:flex-row flex-col items-center gap-y-4">
+        //                 <h1 className="text-4xl text-[#C21D30]">Iniciar Sesión</h1>
+        //                 <img className="sm:w-56 w-40" src={LogoAutoescuelaFast} alt="Logo AutoescuelaFast" />
+        //             </div>
+        //             <form className="flex flex-col gap-y-4" onSubmit={handleSubmit(onSubmit)}>
+        //                 <div className="flex flex-col">
+        //                     <label className="text-xl">Nombre de usuario:</label>
+        //                     {/* <ion-icon name="person-outline"></ion-icon> */}
+        //                     <input type="text" placeholder="Nombre de usuario" className="rounded-md p-2 bg-slate-200"
+        //                         {...register("username", { required: true, minLength: 6, maxLength: 14 })} />
+        //                     {errors.username?.message && (
+        //                         <p className="text-red-500 text-sm w-[90%] mt-4">{errors.username?.message}</p>
+        //                     )}
+        //                 </div>
+        //                 <div className="flex flex-col">
+        //                     <label className="text-xl">Contraseña:</label>
+        //                     {/* <ion-icon name="key-outline"></ion-icon> */}
+        //                     <input type={seePassword ? "text" : "password"} placeholder="Contraseña" className="rounded-md p-2 bg-slate-200"
+        //                         {...register("password", { required: true, minLength: 6, maxLength: 18 })} />
+        //                     <button type="button" className="-mt-[1.82rem] sm:ml-[20rem] ml-[12rem] relative md:right-[6px] text-end pr-1" onClick={toggleSeePassword} aria-label="buttonSeePassword">
+        //                         <ion-icon name={seePassword ? "eye-off-outline" : "eye-outline"} aria-label="iconSeePassword"></ion-icon>
+        //                     </button>
+        //                     {errors.password?.message && (
+        //                         <p className="text-red-500 text-sm w-[90%] mt-4">{errors.password?.message}</p>
+        //                     )}
+        //                 </div>
+        //                 <div className="flex justify-between sm:flex-row flex-col items-center gap-4 pt-4">
+        //                     <div className="flex sm:gap-[0.25rem] items-start justify-between flex-col">
+        //                         <Link to={`/register`} className="flex text-center text-[0.95rem] justify-center text-sky-600 hover:drop-shadow-md cursor-pointer">¿Aún no tienes una cuenta?</Link>
+        //                         <button className="flex justify-center  text-center text-[0.95rem] text-sky-600 hover:drop-shadow-md cursor-pointer">¿Has olvidado tu contraseña?</button>
+        //                     </div>
+        //                     <div className="flex justify-end items-end">
+        //                         <input type="submit" value="Iniciar sesión" className="bg-[#C21D30] border-2 border-[#999] text-white py-2 px-10 text-md rounded-md cursor-pointer hover:shadow-xl hover:bg-[#B30519]" />
+        //                     </div>
+        //                 </div>
+        //             </form>
+        //         </section>
+        //         {showToast && errorHTTP && (<ToastErrors onClose={closeToast} error={true}>{loginErrors}</ToastErrors>)}
+        //     </main><Footer /></>
         <><Navbar />        
         <main className="flex justify-center items-center min-h-screen">
             <section className=" bg-white p-8 flex flex-col gap-y-8 rounded-xl shadow-slate-500 shadow-lg z-10 sm:w-auto w-[90%] md:my-16 xl:mt-32">
@@ -92,10 +135,15 @@ function LoginPage() {
                             <p className="text-red-500 text-sm w-[90%] mt-4">{errors.password?.message}</p>
                         )}
                     </div>
-                    <div className="flex sm:flex-row flex-col gap-x-4 sm:pt-4 justify-evenly">
-                        <Link to={`/register`} className="flex justify-center p-4 text-sky-600 hover:drop-shadow-md cursor-pointer">¿Aún no tienes una cuenta?</Link>
-                        <input type="submit" value="Iniciar sesión" className="bg-[#C21D30] border-2 border-[#999] text-white py-2 px-4 rounded-md cursor-pointer hover:shadow-xl hover:bg-[#B30519]" />
-                    </div>
+                    <div className="flex justify-between sm:flex-row flex-col items-center gap-4 pt-4">
+                             <div className="flex sm:gap-[0.25rem] gap-2 2xs:items-start justify-between items-center  sm:flex-col 2xs:flex-row flex-col sm:w-auto w-full">
+                                 <Link to={`/register`} className="flex text-center text-sm justify-center text-sky-600 hover:drop-shadow-md cursor-pointer">¿Aún no tienes una cuenta?</Link>
+                                 <button className="flex justify-center text-center text-sm  text-sky-600 hover:drop-shadow-md cursor-pointer">¿Has olvidado tu contraseña?</button>
+                             </div>
+                             <div className="flex justify-end items-end sm:w-auto w-full">
+                                <input type="submit" value="Iniciar sesión" className="sm:w-auto w-full bg-[#C21D30] border-2 border-[#999] text-white py-2 px-10 text-md rounded-md cursor-pointer hover:shadow-xl hover:bg-[#B30519]" />
+                             </div>
+                         </div>
                 </form>
             </section>
             {showToast && errorHTTP && (<ToastErrors onClose={closeToast} error={true}>{loginErrors}</ToastErrors>)}
