@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 import { useAuth } from '../context/UserContext';
@@ -10,10 +10,20 @@ function Navbar() {
 
     const [menuToggle, setMenuToggle] = useState(false);
     const { isAuthenticated, user } = useAuth();
+    const [fontSizeLinks, setFontSizeLinks] = useState("text-sm");
 
     const toggleMenu = () => {
         setMenuToggle(!menuToggle);
     };
+
+    useEffect(() => {
+        const screenWidth = window.innerWidth;
+        if (screenWidth >= 1280 && screenWidth < 1536) {
+          setFontSizeLinks("text-sm");
+        } else {
+          setFontSizeLinks("text-md");
+        }
+    }, []);
 
     return (
       <header className="bg-slate-200 z-30 xl:fixed xl:w-full">
@@ -26,19 +36,19 @@ function Navbar() {
             <div className={`nav-links duration-1000 xl:static absolute bg-slate-200 xl:min-h-fit min-h-[100vh] left-0 ${menuToggle ? 'top-[7%] sm:top-[8%] md:top-[9%]' : ''} top-[-400%] xl:w-auto w-full flex items-center justify-center px-5 z-20`}>
                 <ul className='flex xl:flex-row flex-col xl:items-center md:gap-[4vw] gap-8'>
                     <li className='text-center hover:scale-110 duration-500'>
-                        <Link className={`hover:text-[#C21D30] cursor-pointer`} to={`/`} onClick={() => {setMenuToggle(false)}}>Inicio</Link>
+                        <Link className={`hover:text-[#C21D30] cursor-pointer ${fontSizeLinks}`} to={`/`} onClick={() => {setMenuToggle(false)}}>Inicio</Link>
                     </li>
                     <li className='text-center hover:scale-110 duration-500'>
-                        <Link className={`hover:text-[#C21D30] cursor-pointer`} to={isAuthenticated ? `/tests/${user.id}` : "/login"} onClick={() => {setMenuToggle(false)}}>Realizar Test</Link>
+                        <Link className={`hover:text-[#C21D30] cursor-pointer ${fontSizeLinks}`} to={isAuthenticated ? `/tests/${user.id}` : "/login"} onClick={() => {setMenuToggle(false)}}>Realizar Test</Link>
                     </li>
                     <li className='text-center hover:scale-110 duration-500'>
-                        <Link className={`hover:text-[#C21D30] cursor-pointer`} to={`/contact`} onClick={() => {setMenuToggle(false)}}>Contáctanos</Link>
+                        <Link className={`hover:text-[#C21D30] cursor-pointer ${fontSizeLinks}`} to={`/contact`} onClick={() => {setMenuToggle(false)}}>Contáctanos</Link>
                     </li>
                     <li className='text-center hover:scale-110 duration-500'>
-                        <Link className={`hover:text-[#C21D30] cursor-pointer`} to={`/work`} onClick={() => {setMenuToggle(false)}}>Trabaja con Nosotros</Link>
+                        <Link className={`hover:text-[#C21D30] cursor-pointer ${fontSizeLinks}`} to={`/work`} onClick={() => {setMenuToggle(false)}}>Trabaja con Nosotros</Link>
                     </li>
                     <li className='text-center hover:scale-110 duration-500'>
-                        <Link className={`hover:text-[#C21D30] cursor-pointer`} to={`/we-are`} onClick={() => {setMenuToggle(false)}}>¿Quiénes Somos?</Link>
+                        <Link className={`hover:text-[#C21D30] cursor-pointer ${fontSizeLinks}`} to={`/we-are`} onClick={() => {setMenuToggle(false)}}>¿Quiénes Somos?</Link>
                     </li>
                 </ul>
             </div>

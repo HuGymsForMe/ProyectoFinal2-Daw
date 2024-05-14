@@ -47,7 +47,6 @@ function ContactPage(){
             setShowToast(false);
         }, 3000);
     }
-    
 
     // ******* PROP PARA EL TOAST ******* //
     const closeToast = () => {
