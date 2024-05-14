@@ -8,7 +8,7 @@ import "../../styles/ModalChecked.css"
 
 const ToastErrors = lazy(() => import("../ToastErrors"));
 
-function ModalChecked ({onClose}) {
+function ModalForgetPassword ({onClose}) {
 
     const [message, setMessage] = useState(null)
     const [showToast, setShowToast] = useState(false);
@@ -37,7 +37,7 @@ function ModalChecked ({onClose}) {
     return(
         <>
         <div className="modal-overlay z-30">
-            <div className="modal bg-white">
+            <div className="modal bg-white" id="modalPassword">
                 <div className="flex justify-center flex-col gap-4">
                     <div className="flex gap-x-10 justify-center sm:flex-row flex-col items-center gap-y-4">
                         <h1 className="text-xl text-[#C21D30]">Olvidaste tu contraseña</h1>
@@ -53,7 +53,7 @@ function ModalChecked ({onClose}) {
                             {...register("email", { required: true })}/>
                         </div>
                         <div className="flex justify-end">
-                            <input type="submit" value="Enviar Correo" className="bg-[#C21D30] border-2 border-[#999] text-white py-2 px-10 text-md rounded-md cursor-pointer hover:shadow-xl hover:bg-[#B30519]" />
+                            <input type="submit" value="Enviar Correo" className="bg-[#C21D30] 2xs:w-auto w-full border-2 border-[#999] text-white py-2 px-10 text-md rounded-md cursor-pointer hover:shadow-xl hover:bg-[#B30519]" />
                         </div>
                     </form>
                 </div> 
@@ -68,4 +68,4 @@ function ModalChecked ({onClose}) {
     )
 }
 
-export default ModalChecked;
+export default ModalForgetPassword;

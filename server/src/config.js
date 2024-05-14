@@ -5,7 +5,7 @@ export const MONGODB_URI =  process.env.MONGODB_URL || "mongodb+srv://hugodiazca
 export const PORT = process.env.PORT || 4000;
 
 // ******* CONSTANTES TOKEN ******* //
-export const TOKEN_SECRET = process.env.TOKEN_SECRET;
+export const TOKEN_SECRET = process.env.TOKEN_SECRET || "AutoescuelaFastSecretToken";
 
 // ******* ID'S DE LOS TEST ******* //
 export const TestsAutoescuelaFast = ["659e56222d2690f6d6cdd561", "659e56422d2690f6d6cdd562",

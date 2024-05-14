@@ -17,6 +17,10 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     position: relative;
   }
+
+  #modalPassword{
+    width: 40%;
+  }
   
   .close-button {
     position: absolute;
@@ -34,8 +38,14 @@
     transition:.2s;
   }
 
-  @media screen and (width < 700px) {
-    .modal{
+  @media screen and (width < 1200px){
+    #modalPassword{
+      width: 60%;
+    }
+  }
+
+  @media screen and (width < 720px) {
+    .modal, #modalPassword{
       width: 90%;
     }
   }

@@ -17,29 +17,18 @@ const DiagramSuccess = lazy(() => import("../components/ProfilePage/DiagramSucce
 const DiagramLastTest = lazy(() => import("../components/ProfilePage/DiagramLastTest"));
 const DiagramResultsByTest = lazy(() => import("../components/ProfilePage/DiagramResultsByTest"));
 const DiagramPercentageSuccess = lazy(() => import("../components/ProfilePage/DiagramPercentageSuccess"));
+const ModalChangePassword = lazy(() => import("../components/ProfilePage/ModalChangePassword"));
 
 // ******* PÁGINA DE PERFIL DEL USUARIO ******* //
 function ProfilePage() {
 
     const [time, setTime] = useState(null);
-    const [seePassword, setSeePassword] = useState(false);
-    const [seePasswordConfirm, setSeePasswordConfirm] = useState(false);
-    const [passwordsEquals, setPasswordEquals] = useState(true); //Comprueba si coinciden las contraseñas
-    const [showToast, setShowToast] = useState(false); //Hace desaparecer y aparecer el toast
+    const [showModal, setShowModal] = useState(false); //Hace desaparecer y aparecer el modal de cambiar contraseña
 
     const { register, handleSubmit, formState: { errors } } = useForm();
 
     const { user, logout } = useAuth();
     const { idUser } = useParams();
-
-    // ******* VISUALIZAR CONTRASEÑAS *******//
-    const toggleSeePassword = () => {
-        setSeePassword(!seePassword);
-    };
-
-    const toggleSeePasswordConfirm = () => {
-        setSeePasswordConfirm(!seePasswordConfirm);
-    };
 
     useEffect(() => {
         axios.get(`${API}/gametime/${idUser}`)
@@ -56,23 +45,14 @@ function ProfilePage() {
         description: "Aquí podrás consultar todas tus estadísticas."
     })
 
-    // ******* PROP PARA EL TOAST ******* //
-    const closeToast = () => {
-        setShowToast(false);
+    // ******* PROPS PARA EL MODAL ******* //
+    const closeModal = () => {
+        setShowModal(false);
     }
 
-    const onSubmit = async (data) => {
-        if (data.password !== data.confirm_password || data.password.length < 5 || data.confirm_password.length < 5) {
-            setPasswordEquals(false);
-        } else {
-            await axios.put(`${API}/users/${idUser}`, { password: data.password })   
-        }
-        setShowToast(true);
-        setTimeout(() => {
-            setShowToast(false);
-        }, 3000);
-        return;
-    }
+    const openModal = () => {
+        setShowModal(true);
+    };
 
     return (
         <>
@@ -105,8 +85,9 @@ function ProfilePage() {
                             <p className="ml-6">Tiempo Medio:</p>
                             <p className="text-center text-xl">{time}</p>
                         </div>
-                        <div className="flex gap-x-6">
-                            <Link to='/' onClick={() => { logout() }} className={`bg-[#C21D30] py-4 text-white px-8  border-2 border-[#999] rounded-md cursor-pointer hover:shadow-xl hover:bg-[#B30519] text-center`}>Cerrar Sesión</Link>
+                        <div className="flex justify-center gap-x-6">
+                            <Link to='/' onClick={() => { logout() }} className={`bg-[#C21D30] py-4 text-white px-6  border-2 border-[#999] rounded-md cursor-pointer hover:shadow-xl hover:bg-[#B30519] text-center text-sm`}>Cerrar Sesión</Link>
+                            <Link className={`bg-[#318950] py-4 text-white px-6 border-2 border-[#999] rounded-md cursor-pointer hover:shadow-xl hover:bg-[#26693e] text-center text-sm`} onClick={openModal}>Cambiar Contraseña</Link>
                         </div>
                     </article>
                     <div className="flex flex-col gap-4 xl:w-[90%] w-[95%]">
@@ -130,63 +111,9 @@ function ProfilePage() {
                         </article>
                     </div>
                 </section>
-                <section className="bg-slate-200 p-6 shadow-lg shadow-slate-500 rounded-xl xl:w-[90%] w-[85%] -mt-4">
-                <div className="flex md:flex-row flex-col justify-center items-center mb-4">
-                            <h1 className={`text-2xl text-[#C21D30] font-semibold`}>Cambiar Contraseña</h1>
-                        </div>
-                        <form className="flex gap-x-4 justify-center" onSubmit={handleSubmit(onSubmit)}>
-                            <div className="flex gap-4 xl:flex-row flex-col">
-                                <div className="flex flex-col">
-                                    <label className="text-xl">Contraseña:</label>
-                                    <input
-                                        type={seePassword ? "text" : "password"}
-                                        placeholder="Contraseña"
-                                        className="rounded-md p-2 bg-slate-200 border-2 border-black"
-                                        {...register("password", { required: true })}
-                                    />
-                                    <button
-                                        type="button"
-                                        className="-mt-[1.82rem] sm:ml-[20rem] ml-[12rem] relative md:right-[6px] text-end pr-1"
-                                        onClick={toggleSeePassword}
-                                        aria-label="buttonSeePassword"
-                                    >
-                                        <ion-icon name={seePassword ? "eye-off-outline" : "eye-outline"} aria-label="iconSeePassword"></ion-icon>
-                                    </button>
-                                    {errors.password?.message && (
-                                        <p className="text-red-500 text-sm w-[90%] mt-2">{errors.password?.message}</p>
-                                    )}
-                                </div>
-                                <div className="flex flex-col">
-                                    <label className="text-xl">Confirmar Contraseña:</label>
-                                    <input
-                                        type={seePasswordConfirm ? "text" : "password"}
-                                        placeholder="Confirmar Contraseña"
-                                        className="rounded-md p-2 bg-slate-200 border-2 border-black"
-                                        {...register("confirm_password", { required: true })}
-                                    />
-                                    <button
-                                        type="button"
-                                        className="-mt-[1.82rem] sm:ml-[20rem] ml-[12rem] relative md:right-[6px] text-end pr-1"
-                                        onClick={toggleSeePasswordConfirm}
-                                        aria-label="buttonSeePasswordConfirm"
-                                    >
-                                        <ion-icon name={seePasswordConfirm ? "eye-off-outline" : "eye-outline"} aria-label="iconSeePasswordConfirm"></ion-icon>
-                                    </button>
-                                    {errors.confirm_password?.message && (
-                                        <p className="text-red-500 text-sm w-[90%] mt-2">{errors.confirm_password?.message}</p>
-                                    )}
-                                </div>
-                                <div className="flex md:mt-0 mt-8 sm:flex-row flex-col w-[100%] justify-end pt-1">
-                                <button type="submit" className={`bg-[#C21D30] text-white px-8 py-2 rounded-md cursor-pointer hover:shadow-xl hover:bg-[#B30519] border-2 border-[#999] mt-6`}>Actualizar Perfil</button>
-                            </div>
-                            </div>
-                        </form>
-                </section>
             </main>
-            {showToast && !passwordsEquals && (<ToastErrors onClose={closeToast} error={true}>Se ha producido un error al modificar la contraseña.</ToastErrors>)}
-            {showToast && passwordsEquals && (<ToastErrors onClose={closeToast} error={false}>La contraseña se modificó con éxito.</ToastErrors>)}
             <Footer />
-        </>
+            { showModal && <ModalChangePassword onClose={closeModal} />}</>
     )
 }
 

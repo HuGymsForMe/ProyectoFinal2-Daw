@@ -5,7 +5,7 @@ import nodemailer from "nodemailer";
 
 // ******* CONTROLADOR DE REGISTRO (PÁGINA DE REGISTRO) ******* //
 export const register = async (req, res) => {
-    const { name, surnames, username, email, password, birthday, premium_user, admin } = req.body;
+    const { name, surnames, username, email, password, birthday, premium_user } = req.body;
     try {
         const userFoundbyEmail = await User.findOne({email});
         const userFoundbyUsername = await User.findOne({username});
@@ -21,12 +21,11 @@ export const register = async (req, res) => {
             email,
             password: passwordHash,
             birthday,
-            premium_user,
-            admin,
+            premium_user
         });
 
         const userSaved = await newUser.save();
-        const token = await createAccessToken({id: userSaved._id});
+        const token = await createAccessToken({id: userSaved._id, username: userSaved.username});
         
         res.cookie("token", token, {
             httpOnly: process.env.NODE_ENV !== "development",
@@ -43,7 +42,6 @@ export const register = async (req, res) => {
             password: userSaved.password,
             birthday: userSaved.birthday,
             premium_user: userSaved.premium_user,
-            admin: userSaved.admin,
         });
     } catch (error) {
         console.log(error);
@@ -55,7 +53,6 @@ export const register = async (req, res) => {
 export const login = async(req, res) => {
     const { username, password } = req.body;
     try {
-
         const userFound = await User.findOne({username});
         if(!userFound) return res.status(400).json({message: "El nombre de usuario no existe"});
 
@@ -83,10 +80,10 @@ export const login = async(req, res) => {
             birthday: userFound.birthday,
             premium_user: userFound.premium_user,
             create_account: userFound.createdAt,
-            admin: userFound.admin,
         });
         
     } catch (error) {
+        console.log(error);
         res.status(500).json({ message: "Se ha producido un error" });
     }
 }
@@ -139,11 +136,11 @@ export const deleteUser = async(req, res) => {
 // ******* CONTROLADOR PARA ACTUALIZAR UN USUARIO DEL SISTEMA ******* //
 export const updateUser = async(req, res) => {
     try {
-        const {name, surnames, username, email, password, birthday, premium_user, admin} = req.body;
+        const {name, surnames, username, email, password, birthday, premium_user} = req.body;
         const passwordHash = await bcryptjs.hash(password, 10);
         const userUpdated = await User.findByIdAndUpdate(
             {_id: req.params.id},
-            {name, surnames, username, email, password: passwordHash, birthday, premium_user, admin},
+            {name, surnames, username, email, password: passwordHash, birthday, premium_user},
             {new: true}
         )
         return res.json(userUpdated);

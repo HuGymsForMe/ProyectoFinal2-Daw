@@ -40,7 +40,7 @@ function LoginPage() {
         setShowToast(false);
     }
 
-    // ******* PROP PARA EL MODAL ******* //
+    // ******* PROPS PARA EL MODAL ******* //
     const closeModal = () => {
         setShowModal(false);
     }
@@ -106,18 +106,18 @@ function LoginPage() {
                         <div className="flex justify-between sm:flex-row flex-col items-center gap-4 pt-4">
                             <div className="flex sm:gap-[0.25rem] gap-2 2xs:items-start justify-between items-center  sm:flex-col 2xs:flex-row flex-col sm:w-auto w-full">
                                 <Link to={`/register`} className="flex text-center text-sm justify-center text-sky-600 hover:drop-shadow-md cursor-pointer">¿Aún no tienes una cuenta?</Link>
-                                <button className="flex justify-center text-center text-sm text-sky-600 hover:drop-shadow-md cursor-pointer" onClick={openModal}>¿Has olvidado tu contraseña?</button>
+                                <Link className="flex justify-center text-center text-sm text-sky-600 hover:drop-shadow-md cursor-pointer" onClick={openModal}>¿Has olvidado tu contraseña?</Link>
                             </div>
                             <div className="flex justify-end items-end sm:w-auto w-full">
                                 <input type="submit" value="Iniciar sesión" className="sm:w-auto w-full bg-[#C21D30] border-2 border-[#999] text-white py-2 px-10 text-md rounded-md cursor-pointer hover:shadow-xl hover:bg-[#B30519]" />
                             </div>
                         </div>
                     </form>
-                    { showModal && <ModalForgetPassword onClose={closeModal} />}
                 </section>
                 {showToast && errorHTTP && (<ToastErrors onClose={closeToast} error={true}>{loginErrors}</ToastErrors>)}
                 {/* {showToast && showModal && (<ToastErrors onClose={closeToast} error={true}></ToastErrors>)} */}
-            </main><Footer /></>
+            </main><Footer />
+            { showModal && <ModalForgetPassword onClose={closeModal} />}</>
     )
 }
 

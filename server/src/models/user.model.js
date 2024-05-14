@@ -34,10 +34,6 @@ const userSchema = new mongoose.Schema({
     premium_user: {
         type: Boolean,
         default: false,
-    },
-    admin: {
-        type: Boolean,
-        default: false,
     }
 },  {
     timestamps: true,
