@@ -4,7 +4,7 @@ import { useForm } from "react-hook-form";
 import axios from "axios";
 import { API } from "../../config/config";
 
-import "../../styles/ModalChecked.css"
+import "../../styles/Modals.css"
 
 const ToastErrors = lazy(() => import("../ToastErrors"));
 

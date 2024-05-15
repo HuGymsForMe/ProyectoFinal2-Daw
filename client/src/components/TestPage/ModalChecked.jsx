@@ -4,7 +4,7 @@ import { useAuth } from "../../context/UserContext";
 
 import LogoAutoescuelaFast from "../../assets/logo.png";
 
-import "../../styles/ModalChecked.css"
+import "../../styles/Modals.css"
 
 function ModalChecked ({format_stopwatch, misses, pass, onClose}) {
 

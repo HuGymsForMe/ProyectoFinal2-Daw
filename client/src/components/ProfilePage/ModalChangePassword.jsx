@@ -5,7 +5,7 @@ import axios from "axios";
 import { API } from "../../config/config";
 import { useParams } from "react-router-dom";
 
-import "../../styles/ModalChecked.css"
+import "../../styles/Modals.css"
 
 const ToastErrors = lazy(() => import("../ToastErrors"));
 
