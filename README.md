@@ -1,7 +1,10 @@
 <div align="center">
     <img src="./client/src/assets/logo.png" alt="Logo Autoescuela Fast" heigth="100px" width="auto" />
     <h1>Bienvenidos a Autoescuela Fast</h1>
+    <img src="./client/src/assets/pantalla-inicio.png" alt="Pantalla Inicio Autoescuela Fast" heigth="500px" width="auto">
 </div>
+
+
 
 ## ℹ️ Información sobre el proyecto.
 <div>
@@ -16,17 +19,14 @@ git clone https://github.com/HuGymsForMe/ProyectoFinal2-Daw
 ```
 Instalamos las dependencias tanto en servidor como en cliente:
 ```bash
-npm install-server
+cd server | npm i
 ```
 ```bash
-npm install-client
+cd server | npm i
 ```
 Arrancamos la aplicación:
 ```bash
-npm dev-server
-```
-```bash
-npm dev-client
+npm run dev
 ```
 
 ## 📚 ¿Porqué este proyecto y no otro?
