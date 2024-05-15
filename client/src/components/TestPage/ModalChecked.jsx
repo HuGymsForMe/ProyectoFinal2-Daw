@@ -11,7 +11,7 @@ function ModalChecked ({format_stopwatch, misses, pass, onClose}) {
     const { user } = useAuth();
 
     return(
-        <div className="modal-overlay z-30">
+        <div className="modal-overlay z-50">
             <div className="modal bg-slate-200">
                 <div className="flex justify-between flex-row">
                     <p className="text-2xl flex items-center p-2 font-semibold italic">TEST CORREGIDO</p>

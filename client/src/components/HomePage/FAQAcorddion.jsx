@@ -3,7 +3,7 @@ import { useState } from "react";
 // ******* COMPONENTE DE PREGUNTAS Y RESPUESTAS DEL INICIO ******* //
 const FAQAccordion = ({ question, answer }) => {
 
-  const [accordionOpen, setAccordionOpen] = useState(false);
+  const [accordionOpen, setAccordionOpen] = useState(false); //Estado para manejar los acordeones.
 
   return (
     <div className="p-4 bg-white w-[90%] text-[#B30519] font-medium rounded-lg m-1">

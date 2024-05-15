@@ -8,9 +8,10 @@ import LogoAutoescuelaFast from "../assets/logo.png";
 // ******* CABECERA ******* //
 function Navbar() {
 
-    const [menuToggle, setMenuToggle] = useState(false);
+    const [menuToggle, setMenuToggle] = useState(false); //Estado para el desplegable del menú
+    const [fontSizeLinks, setFontSizeLinks] = useState("text-sm"); //Estado para modificar el tamaño de los textos
+
     const { isAuthenticated, user } = useAuth();
-    const [fontSizeLinks, setFontSizeLinks] = useState("text-sm");
 
     const toggleMenu = () => {
         setMenuToggle(!menuToggle);
@@ -28,12 +29,12 @@ function Navbar() {
     return (
       <header className="bg-slate-200 z-30 xl:fixed xl:w-full">
         <nav className="flex justify-between items-center w-[92%] mx-auto p-3 z-30">
-            <div>
+            <div className='z-40'>
                 <Link to={"/"}>
                     <img className="sm:w-64 w-32 cursor-pointer"  src={LogoAutoescuelaFast} alt="Logo AutoescuelaFast" />
                 </Link>
             </div>
-            <div className={`nav-links duration-1000 xl:static absolute bg-slate-200 xl:min-h-fit min-h-[100vh] left-0 ${menuToggle ? 'top-[7%] sm:top-[8%] md:top-[9%]' : ''} top-[-400%] xl:w-auto w-full flex items-center justify-center px-5 z-20`}>
+            <div className={`nav-links duration-1000 xl:static absolute bg-slate-200 xl:min-h-fit min-h-[100vh] left-0 ${menuToggle ? 'top-[7%] sm:top-[8%] md:top-[5%]' : ''} top-[-400%] xl:w-auto w-full flex items-center justify-center px-5 z-20`}>
                 <ul className='flex xl:flex-row flex-col xl:items-center md:gap-[4vw] gap-8'>
                     <li className='text-center hover:scale-110 duration-500'>
                         <Link className={`hover:text-[#C21D30] cursor-pointer ${fontSizeLinks}`} to={`/`} onClick={() => {setMenuToggle(false)}}>Inicio</Link>
@@ -52,7 +53,7 @@ function Navbar() {
                     </li>
                 </ul>
             </div>
-            <div className='flex items-center gap-4'>
+            <div className='flex items-center gap-4 z-40'>
                 {isAuthenticated ? (
                     <Link to={`/profile/${user.id}`} onClick={() => {setMenuToggle(false)}}>
                         <button type='button' className={`bg-[#C21D30] text-white px-4 py-2 rounded-full hover:bg-[#B30519] border-[#999] sm:text-base text-xs focus:border-slate-800 border-2 flex gap-x-[.25rem]`}>

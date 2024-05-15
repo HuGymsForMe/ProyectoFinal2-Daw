@@ -1,13 +1,14 @@
 import { useState, lazy } from "react";
-import LogoAutoescuelaFast from "../../assets/logo.png";
 import { useForm } from "react-hook-form";
+import { Link, useParams } from "react-router-dom";
+
 import axios from "axios";
 import { API } from "../../config/config";
-import { useParams } from "react-router-dom";
-
-import "../../styles/Modals.css"
 
 const ToastErrors = lazy(() => import("../ToastErrors"));
+
+import LogoAutoescuelaFast from "../../assets/logo.png";
+import "../../styles/Modals.css"
 
 function ModalChangePassword ({onClose}) {
 
@@ -51,7 +52,7 @@ function ModalChangePassword ({onClose}) {
 
     return(
         <>
-        <div className="modal-overlay z-30">
+        <div className="modal-overlay z-50">
             <div className="modal bg-white" id="modalPassword">
                 <div className="flex justify-center flex-col gap-4">
                     <div className="flex gap-x-10 justify-center sm:flex-row flex-col items-center gap-y-4">
@@ -63,41 +64,43 @@ function ModalChangePassword ({onClose}) {
                     </div>
                     <form className="flex flex-col gap-4" onSubmit={handleSubmit(onSubmit)}>
                         <div className="flex flex-col gap-2">
-                            <label>Contraseña:</label>
+                            <label className="fontSM">Contraseña:</label>
                             <input
                                         type={seePassword ? "text" : "password"}
                                         placeholder="Contraseña"
-                                        className="rounded-md p-2 bg-slate-200"
+                                        className="rounded-md p-2 bg-slate-200 fontSM"
                                         {...register("password", { required: true })}
                                     />
                             <button
                                         type="button"
-                                        onClick={toggleSeePassword}
-                                        className="-mt-[2.3rem] sm:ml-[20rem] ml-[12rem] relative md:right-[6px] text-end pr-1"
+                                        className="cursor-default -mt-[2.3rem] sm:ml-[20rem] ml-[12rem] relative md:right-[6px] text-end pr-1"
                                         aria-label="buttonSeePasswordConfirm"
                                     >
-                                        <ion-icon name={seePassword ? "eye-off-outline" : "eye-outline"} aria-label="iconSeePasswordConfirm"></ion-icon>
+                                        <Link className="cursor-pointer">
+                                            <ion-icon name={seePassword ? "eye-off-outline" : "eye-outline"} onClick={toggleSeePassword} aria-label="iconSeePassword"></ion-icon>
+                                        </Link>
                                     </button>
                         </div>
                         <div className="flex flex-col gap-2">
-                            <label>Confirmar Contraseña:</label>
+                            <label className="fontSM">Confirmar Contraseña:</label>
                             <input
                                         type={seePasswordConfirm ? "text" : "password"}
                                         placeholder="Confirmar Contraseña"
-                                        className="rounded-md p-2 bg-slate-200"
+                                        className="rounded-md p-2 bg-slate-200 fontSM"
                                         {...register("confirm_password", { required: true })}
                                     />
                             <button
                                         type="button"
-                                        className="-mt-[2.3rem] sm:ml-[20rem] ml-[12rem] relative md:right-[6px] text-end pr-1"
-                                        onClick={toggleSeePasswordConfirm}
+                                        className="cursor-default -mt-[2.3rem] sm:ml-[20rem] ml-[12rem] relative md:right-[6px] text-end pr-1"
                                         aria-label="buttonSeePasswordConfirm"
                                     >
-                                        <ion-icon name={seePasswordConfirm ? "eye-off-outline" : "eye-outline"} aria-label="iconSeePasswordConfirm"></ion-icon>
+                                        <Link className="cursor-pointer">
+                                            <ion-icon name={seePassword ? "eye-off-outline" : "eye-outline"} onClick={toggleSeePasswordConfirm} aria-label="iconSeePassword"></ion-icon>
+                                        </Link>
                                     </button>
                         </div>
                         <div className="flex justify-end">
-                            <input type="submit" value="Modificar Contraseña" className="bg-[#C21D30] mt-2 2xs:w-auto w-full border-2 border-[#999] text-white py-2 px-10 text-md rounded-md cursor-pointer hover:shadow-xl hover:bg-[#B30519]" />
+                            <input type="submit" value="Modificar Contraseña" className="bg-[#C21D30] text-sm mt-2 2xs:w-auto w-full border-2 border-[#999] text-white py-2 px-10 text-md rounded-md cursor-pointer hover:shadow-xl hover:bg-[#B30519]" />
                         </div>
                     </form>
                 </div> 

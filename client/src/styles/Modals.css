@@ -18,8 +18,13 @@
     position: relative;
   }
 
+  .fontSM{
+    font-size: .875rem;
+  }
+
   #modalPassword{
     width: 40%;
+    padding: 2rem;
   }
   
   .close-button {

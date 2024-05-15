@@ -78,7 +78,7 @@ function RegisterPage() {
         <>
         <Navbar />
         <main className="flex justify-center items-center min-h-screen">
-            <section className="bg-white p-8 flex flex-col gap-y-8 rounded-xl shadow-slate-500 shadow-lg z-10 sm:w-auto w-[90%] md:my-16 xl:mt-32">
+            <section className="bg-white p-8 flex flex-col gap-y-8 rounded-xl shadow-slate-500 shadow-lg z-10 sm:w-auto w-[90%] my-16 xl:mt-32">
                 <div className="flex gap-x-10 gap-y-4 md:flex-row flex-col justify-center items-center">
                     <h1 className={`text-4xl text-[#C21D30]`}>Regístrate</h1>
                     <img className="sm:w-56 w-40" src={LogoAutoescuelaFast} alt="Logo AutoescuelaFast" />
@@ -124,8 +124,10 @@ function RegisterPage() {
                                 <label className="text-xl">Contraseña:</label>
                                 <input type={seePassword ? "text" : "password"} placeholder="Contraseña" className="rounded-md p-2 bg-slate-200"
                                     {...register("password", { required: true })} />
-                                <button type="button" className="-mt-[1.82rem] sm:ml-[20rem] ml-[12rem] relative md:right-[6px] text-end pr-1" onClick={toggleSeePassword} aria-label="buttonSeePassword">
-                                    <ion-icon name={seePassword ? "eye-off-outline" : "eye-outline"} aria-label="iconSeePassword"></ion-icon>
+                                <button type="button" className="cursor-default -mt-[1.82rem] sm:ml-[20rem] ml-[12rem] relative md:right-[6px] text-end pr-1" aria-label="buttonSeePassword">
+                                    <Link className="cursor-pointer">
+                                        <ion-icon name={seePassword ? "eye-off-outline" : "eye-outline"} onClick={toggleSeePassword} aria-label="iconSeePassword"></ion-icon>
+                                    </Link>
                                 </button>
                                 {errors.password?.message && (
                                     <p className="text-red-500 text-sm w-[90%] mt-2">{errors.password?.message}</p>
@@ -135,8 +137,10 @@ function RegisterPage() {
                                 <label className="text-xl">Confirmar Contraseña:</label>
                                 <input type={seePasswordConfirm ? "text" : "password"} placeholder="Confirmar Contraseña" className="rounded-md p-2 bg-slate-200"
                                     {...register("confirm_password", { required: true })} />
-                                <button type="button" className="-mt-[1.82rem] sm:ml-[20rem] ml-[12rem] relative md:right-[6px] text-end pr-1" onClick={toggleSeePasswordConfirm} aria-label="buttonSeePasswordConfirm">
-                                    <ion-icon name={seePasswordConfirm ? "eye-off-outline" : "eye-outline"} aria-label="iconSeePasswordConfirm"></ion-icon>
+                                <button type="button" className="cursor-default -mt-[1.82rem] sm:ml-[20rem] ml-[12rem] relative md:right-[6px] text-end pr-1" aria-label="buttonSeePasswordConfirm">
+                                    <Link className="cursor-pointer">
+                                        <ion-icon name={seePassword ? "eye-off-outline" : "eye-outline"} onClick={toggleSeePasswordConfirm} aria-label="iconSeePassword"></ion-icon>
+                                    </Link>
                                 </button>
                                 {errors.confirm_password?.message && (
                                     <p className="text-red-500 text-sm w-[90%] mt-2">{errors.confirm_password?.message}</p>

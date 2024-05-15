@@ -1,8 +1,3 @@
-import { thirdRed, secondGreen } from "../config/config";
-
-// TODO: (EDITAR BOTÓN)
-// ******* COMPONENTE QUE CONTIENE MENSAJES DE POSIBLES ERRORES EN LA INTERFAZ DEL USUARIO ******* //
-
 function ToastErrors({onClose, error, children}) {
   return (
     <div className="fixed bottom-8 sm:right-8 z-50 flex justify-center items-center">

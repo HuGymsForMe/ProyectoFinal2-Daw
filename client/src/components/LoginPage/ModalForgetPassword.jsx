@@ -1,17 +1,18 @@
 import { useState, lazy } from "react";
-import LogoAutoescuelaFast from "../../assets/logo.png";
 import { useForm } from "react-hook-form";
+
 import axios from "axios";
 import { API } from "../../config/config";
 
-import "../../styles/Modals.css"
-
 const ToastErrors = lazy(() => import("../ToastErrors"));
+
+import LogoAutoescuelaFast from "../../assets/logo.png";
+import "../../styles/Modals.css"
 
 function ModalForgetPassword ({onClose}) {
 
     const [message, setMessage] = useState(null)
-    const [showToast, setShowToast] = useState(false);
+    const [showToast, setShowToast] = useState(false); // Estado para hacer y desaparecer el toast
 
     const { register, handleSubmit } = useForm();
 
@@ -36,7 +37,7 @@ function ModalForgetPassword ({onClose}) {
 
     return(
         <>
-        <div className="modal-overlay z-30">
+        <div className="modal-overlay z-50">
             <div className="modal bg-white" id="modalPassword">
                 <div className="flex justify-center flex-col gap-4">
                     <div className="flex gap-x-10 justify-center sm:flex-row flex-col items-center gap-y-4">
