@@ -43,6 +43,37 @@ export const register = async (req, res) => {
             birthday: userSaved.birthday,
             premium_user: userSaved.premium_user,
         });
+
+        let transporter = nodemailer.createTransport({
+            host: "smtp.gmail.com",
+            port: 465,
+            secure: true,
+            auth: {
+                user: "hugodiazcasado31@gmail.com",
+                pass: "aksnhofyiosiuxes"
+            }
+        });
+    
+        let mailOptions = {
+            from: "hugodiazcasado31@gmail.com",
+            to: email,
+            subject: "Bienvenido a Autoescuela Fast",
+            html:   `<div> 
+                        <img src="https://autoescuela-fast.vercel.app/assets/logo-B98mQ9TH.png" alt="Logo Autoescuela Fast" />
+                        <p>Estamos encantados de que hayas confiado en nosotros para poder sacar tu éxamen teórico adelante.</p>
+                        <p>Ojalá estar con nosotros sea una experiencia inolvidable y un gran aprendizaje para ti!</p>
+                    </div>`
+        };
+
+        transporter.sendMail(mailOptions, async (error, info) => {
+            if (error) {
+                console.log(error);
+                return res.status(500).json({ message: "No se ha podido enviar el correo de verificación para poder modificar la contraseña." });
+            } else {
+                console.log("Se envió el correo con éxito.")
+            }
+        });
+
     } catch (error) {
         console.log(error);
         res.status(500).json({ message: "No se ha podido registrar el usuario" });
@@ -199,7 +230,7 @@ export const sendVerificationEmail = async(req,res) => {
             subject: "Cambio de Contraseña Autoescuela Fast",
             html:   `<div> 
                         <img src="https://autoescuela-fast.vercel.app/assets/logo-B98mQ9TH.png" alt="Logo Autoescuela Fast" />
-                        <p>Aquí te enviamos la nueva contraseña, la cuál podrás modificar posteriormente al acceder a "Mi perfil". Esta es tu nueva contraseña: <strong>${newPassword}</strong></h4>
+                        <p>Aquí te enviamos la nueva contraseña, la cuál podrás modificar posteriormente al acceder a "Mi perfil". Esta es tu nueva contraseña: <strong>${newPassword}</strong></p>
                     </div>`
         };
     
