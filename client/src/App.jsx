@@ -20,6 +20,7 @@ const RegisterPage = lazy(() => import("./pages/RegisterPage"));
 const ProfilePage = lazy(() => import("./pages/ProfilePage"));
 const WorkPage = lazy(() => import("./pages/WorkPage"));
 const WeArePage = lazy(() => import("./pages/WeArePage"))
+const NotFoundPage = lazy(() => import("./pages/NotFoundPage"));
 
 function App() {
 
@@ -28,6 +29,7 @@ return (
     <BrowserRouter>
         <Suspense fallback={<LoadingPage/>}>
           <Routes>
+            <Route path="*" element={<NotFoundPage />}></Route>
             <Route path="/" element={<HomePage />}></Route>
             <Route path="/tests/:idUser" element={<TestsPage />}></Route>
             <Route path="/contact" element={<ContactPage />}></Route>

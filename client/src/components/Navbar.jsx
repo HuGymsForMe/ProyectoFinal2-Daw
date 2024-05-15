@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 import { useAuth } from '../context/UserContext';
 
@@ -36,20 +36,45 @@ function Navbar() {
             </div>
             <div className={`nav-links duration-1000 xl:static absolute bg-slate-200 xl:min-h-fit min-h-[100vh] left-0 ${menuToggle ? 'top-[7%] sm:top-[8%] md:top-[5%]' : ''} top-[-400%] xl:w-auto w-full flex items-center justify-center px-5 z-20`}>
                 <ul className='flex xl:flex-row flex-col xl:items-center md:gap-[4vw] gap-8'>
-                    <li className='text-center hover:scale-110 duration-500'>
-                        <Link className={`hover:text-[#C21D30] cursor-pointer ${fontSizeLinks}`} to={`/`} onClick={() => {setMenuToggle(false)}}>Inicio</Link>
+                    <li className='text-center'>
+                        <NavLink className={({ isActive }) =>
+                            isActive 
+                            ? "pointer-events-none text-[#C21D30] font-bold" 
+                            : `hover:text-[#C21D30] cursor-pointer ${fontSizeLinks} duration-500`
+                            }
+                        to={`/`} onClick={() => {setMenuToggle(false)}}>Inicio</NavLink>
                     </li>
                     <li className='text-center hover:scale-110 duration-500'>
-                        <Link className={`hover:text-[#C21D30] cursor-pointer ${fontSizeLinks}`} to={isAuthenticated ? `/tests/${user.id}` : "/login"} onClick={() => {setMenuToggle(false)}}>Realizar Test</Link>
+                        <NavLink className={({ isActive }) =>
+                            isActive && isAuthenticated
+                            ? "pointer-events-none text-[#C21D30] font-bold" 
+                            : `hover:text-[#C21D30] cursor-pointer ${fontSizeLinks} duration-500`
+                        }
+                        to={isAuthenticated ? `/tests/${user.id}` : "/login"} onClick={() => {setMenuToggle(false)}}>Realizar Test</NavLink>
                     </li>
                     <li className='text-center hover:scale-110 duration-500'>
-                        <Link className={`hover:text-[#C21D30] cursor-pointer ${fontSizeLinks}`} to={`/contact`} onClick={() => {setMenuToggle(false)}}>Contáctanos</Link>
+                        <NavLink className={({ isActive }) =>
+                            isActive
+                            ? "pointer-events-none text-[#C21D30] font-bold" 
+                            : `hover:text-[#C21D30] cursor-pointer ${fontSizeLinks} duration-500`
+                        }
+                        to={"/contact"} onClick={() => {setMenuToggle(false)}}>Contáctanos</NavLink>
                     </li>
                     <li className='text-center hover:scale-110 duration-500'>
-                        <Link className={`hover:text-[#C21D30] cursor-pointer ${fontSizeLinks}`} to={`/work`} onClick={() => {setMenuToggle(false)}}>Trabaja con Nosotros</Link>
+                        <NavLink className={({ isActive }) =>
+                            isActive
+                            ? "pointer-events-none text-[#C21D30] font-bold" 
+                            : `hover:text-[#C21D30] cursor-pointer ${fontSizeLinks} duration-500`
+                        }
+                        to={"/work"} onClick={() => {setMenuToggle(false)}}>Trabaja con Nosotros</NavLink>
                     </li>
                     <li className='text-center hover:scale-110 duration-500'>
-                        <Link className={`hover:text-[#C21D30] cursor-pointer ${fontSizeLinks}`} to={`/we-are`} onClick={() => {setMenuToggle(false)}}>¿Quiénes Somos?</Link>
+                        <NavLink className={({ isActive }) =>
+                            isActive
+                            ? "pointer-events-none text-[#C21D30] font-bold" 
+                            : `hover:text-[#C21D30] cursor-pointer ${fontSizeLinks} duration-500`
+                        }
+                        to={"/we-are"} onClick={() => {setMenuToggle(false)}}>Sobre Nosotros</NavLink>
                     </li>
                 </ul>
             </div>

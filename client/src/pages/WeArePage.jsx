@@ -1,10 +1,9 @@
-import { useEffect, useState, lazy } from "react";
+import { lazy } from "react";
 
 import { useSeo } from "../hooks/useSeo";
 
-import carLicense from "../assets/cocheautoescuela.png";
-import fotoDefault from "../assets/foto-default.jpg";
-import fotoDefault2 from "../assets/foto-default-2.jpg";
+import primeraFoto from "../assets/we-are-1.jpg";
+import segundaFoto from "../assets/we-are-2.jpg";
 
 const Navbar = lazy(() => import("../components/Navbar"));
 const Footer = lazy(() => import("../components/Footer"));
@@ -32,7 +31,7 @@ function WeArePage() {
                             <p>Nos enorgullece el éxito de nuestros estudiantes. Ver cómo cada uno de ellos avanza desde el primer día de estudio hasta el momento en que obtienen su permiso de conducir es nuestra mayor satisfacción. Sabemos que el camino puede ser desafiante, pero estamos aquí para apoyarte en cada paso del camino. Desde nuestro equipo de instructores expertos hasta nuestra plataforma de aprendizaje intuitiva, estamos comprometidos a brindarte la mejor experiencia educativa posible.</p>
                         </div>
                         <div className="xl:w-[40%] w-full flex justify-center items-center xl:order-2">
-                            <img className="rounded-xl shadow-2xl" src={fotoDefault} alt="Logo Autoescuela Fast" />
+                            <img className="rounded-xl shadow-2xl" src={primeraFoto} alt="Logo Autoescuela Fast" />
                         </div>
                     </div>
                     <div className="h-[1px] w-full bg-[#E13347] my-10"></div>
@@ -43,7 +42,7 @@ function WeArePage() {
                             <p>En nuestra Autoescuela, creemos que la seguridad vial es fundamental. Es por eso que no solo nos enfocamos en enseñarte las reglas de la carretera, sino también en inculcarte hábitos de conducción responsables y respetuosos. Nuestros instructores altamente capacitados te guiarán paso a paso, brindándote las habilidades y la confianza necesarias para enfrentar cualquier situación en la carretera con calma y seguridad.</p>
                         </div>
                         <div className="xl:w-[40%] w-full flex justify-center items-center">
-                            <img className="rounded-xl shadow-2xl" src={fotoDefault2} alt="Logo Autoescuela Fast" />
+                            <img className="rounded-xl shadow-2xl" src={segundaFoto} alt="Logo Autoescuela Fast" />
                         </div>
                     </div>
                 </section>
