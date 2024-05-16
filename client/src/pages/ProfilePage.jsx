@@ -2,7 +2,6 @@ import { useState, useEffect, lazy } from "react";
 import { Link, useParams } from "react-router-dom";
 import { Avatar } from "@mui/material";
 import axios from "axios";
-import { useForm } from "react-hook-form";
 
 import { useSeo } from "../hooks/useSeo";
 
@@ -10,7 +9,6 @@ import { secondRed, API } from "../config/config";
 
 import { useAuth } from "../context/UserContext";
 
-const ToastErrors = lazy(() => import("../components/ToastErrors"));
 const Navbar = lazy(() => import("../components/Navbar"));
 const Footer = lazy(() => import("../components/Footer"));
 const DiagramSuccess = lazy(() => import("../components/ProfilePage/DiagramSuccess"));
@@ -24,8 +22,6 @@ function ProfilePage() {
 
     const [time, setTime] = useState(null);
     const [showModal, setShowModal] = useState(false); //Hace desaparecer y aparecer el modal de cambiar contraseña
-
-    const { register, handleSubmit, formState: { errors } } = useForm();
 
     const { user, logout } = useAuth();
     const { idUser } = useParams();
