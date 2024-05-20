@@ -191,7 +191,12 @@ export const gamesPremium = async (req, res) => {
         const countGamesOK = await Game.countDocuments({ pass: true, user: idUser });
         const countGames = await Game.countDocuments({ user: idUser });
         const successPercentage = (countGamesOK / countGames) * 100;
-        res.status(200).json({ successPercentage });
+        if (countGames > 10) {
+            res.status(200).json({ successPercentage });
+        } else {
+            res.status(200).json(29);
+        }
+        
     } catch (error) {
         res.status(500).json({ message: "No se pudo calcular el porcentaje de tests aprobados del usuario" });
     }

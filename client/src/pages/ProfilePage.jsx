@@ -102,7 +102,7 @@ function ProfilePage() {
                             <DiagramSuccess />
                         </article>
                         <article className="flex justify-center items-center flex-col gap-y-8 bg-slate-200 shadow-lg shadow-slate-500 p-8 rounded-xl min-h-[350px]">
-                            <p className="text-xl text-center">ÚLTIMOS TEST REALIZADOS</p>
+                            <p className="text-xl text-center">ACIERTOS ÚLTIMOS TEST REALIZADOS</p>
                             <DiagramLastTest />
                         </article>
                     </div>
