@@ -6,6 +6,7 @@ const Footer = lazy(() => import("../components/Footer"));
 import LogoAutoescuelaFast from "../assets/logo.png";
 import CaraTriste from "../assets/triste.png";
 
+// ******* PÁGINA DE ERROR 404 *******//
 function NotFoundPage () {
     return(
         <>

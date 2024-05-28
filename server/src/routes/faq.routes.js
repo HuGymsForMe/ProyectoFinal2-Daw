@@ -3,6 +3,7 @@ import { deleteFaQ, getFaQ, getFaQs, sendFaQ, updateFaQ } from "../controllers/f
 
 const router = Router();
 
+// ******* ENRUTADO DE LAS FaQ's DE LOS USUARIOS ******* //
 router.get("/faqs", getFaQs);
 router.get("/faqs/:id", getFaQ);
 router.delete("/faqs/:id", deleteFaQ);

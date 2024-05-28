@@ -3,6 +3,7 @@ import { useSeo } from "../../hooks/useSeo";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 
+// ******* PÁGINA DE POLÍTICA DE PRIVACIDAD ******* //
 function PrivatePolicyPage(){
 
     useSeo({

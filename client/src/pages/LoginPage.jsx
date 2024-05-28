@@ -117,7 +117,6 @@ function LoginPage() {
                     </form>
                 </section>
                 {showToast && errorHTTP && (<ToastErrors onClose={closeToast} error={true}>{loginErrors}</ToastErrors>)}
-                {/* {showToast && showModal && (<ToastErrors onClose={closeToast} error={true}></ToastErrors>)} */}
             </main><Footer />
             { showModal && <ModalForgetPassword onClose={closeModal} />}</>
     )

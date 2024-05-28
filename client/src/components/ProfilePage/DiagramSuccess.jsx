@@ -5,8 +5,6 @@ import axios from 'axios';
 
 import { secondRed, firstGreen, API } from '../../config/config';
 
-// TODO: Mejorar responsive del gráfico (intervalos de anchos)
-
 function DiagramSuccess() {
 
     const [data, setData] = useState(null);

@@ -12,6 +12,7 @@ const Navbar = lazy(() => import("../components/Navbar"));
 const Footer = lazy(() => import("../components/Footer"));
 const ToastErrors = lazy(() => import("../components/ToastErrors"));
 
+// ******* PÁGINA DE TRABAJA CON NOSOTROS ******* //
 function WorkPage() {
 
     useSeo({

@@ -3,6 +3,7 @@ import { deleteTest, getTest, getTests, sendTest, updateTest } from "../controll
 
 const router = Router();
 
+// ******* ENRUTADO DE LOS TEST DE AUTOESCUELA FAST ******* //
 router.get("/tests", getTests);
 router.get("/tests/:id", getTest);
 router.post("/tests", sendTest);

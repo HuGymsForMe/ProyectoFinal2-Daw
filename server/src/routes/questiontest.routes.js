@@ -3,6 +3,7 @@ import { deleteQuestionTest, getOnlyQuestionTest, getQuestionTest, getQuestionsT
 
 const router = Router();
 
+// ******* ENRUTADO DE LAS PREGUNTAS DE LOS TEST ******* //
 router.get("/test", getQuestionsTest);
 router.delete("/test/:id", deleteQuestionTest);
 router.get("/testAdmin/:id", getOnlyQuestionTest); //He de diferenciar entre una sola pregunta o las preguntas de cada uno de los test

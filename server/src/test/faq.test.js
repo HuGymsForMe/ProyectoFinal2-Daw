@@ -1,76 +1,76 @@
 import request from 'supertest';
 import app from '../app';
 
-const ObjectID = "659d917ff0dbb01f7723cf20";
+const ObjectID = "659f16bec6482299f5ae708b";
 const ObjectIDError = "noexisto";
 
-describe("Mostrar FaQs", () => {
+describe("Mostrar todas las FAQs", () => {
   test("Debería devolver un STATUS 200", async () => {
-      const response = await request(app).get("/api/faqs").send();
-      expect(response.statusCode).toBe(200);
+    const response = await request(app).get("/api/faq").send();
+    expect(response.statusCode).toBe(200);
   });
 });
 
-describe("Mostrar un FaQ", () => {
+describe("Mostrar una FAQ concreta", () => {
   test("Debería devolver un STATUS 200", async () => {
-    const response = await request(app).get(`/api/faqs/${ObjectID}`).send();
+    const response = await request(app).get(`/api/faq/${ObjectID}`).send();
     expect(response.statusCode).toBe(200);
   });
   test("Deberá devolver un STATUS 404", async () => {
-    const response = await request(app).get(`/api/faqs/${ObjectIDError}`).send();
+    const response = await request(app).get(`/api/faq/${ObjectIDError}`).send();
     expect(response.statusCode).toBe(404);
   });
 });
 
-describe("Eliminar un FaQ", () => {
+describe("Eliminar una FAQ", () => {
   test("Debería devolver un STATUS 204", async () => {
-    const response = await request(app).delete(`/api/faqs/${ObjectID}`).send();
+    const response = await request(app).delete(`/api/faq/${ObjectID}`).send();
     expect(response.statusCode).toBe(204);
   });
-  test("Debería devolver un STATUS 404", async () => {
-    const response = await request(app).delete(`/api/faqs/${ObjectIDError}`).send();
+  test("Deberá devolver un STATUS 404", async () => {
+    const response = await request(app).delete(`/api/faq/${ObjectIDError}`).send();
     expect(response.statusCode).toBe(404);
   });
 });
 
-describe("Actualizar un FaQ", () => {
+describe("Actualizar una FAQ", () => {
   test("Debería devolver un STATUS 200", async () => {
-    const response = await request(app).put(`/api/faqs/${ObjectID}`).send(
+    const response = await request(app).put(`/api/faq/${ObjectID}`).send(
       {
-        question: 'This is a update FaQ?',
-        email: 'Yes, this is a update FaQ',
+        question: "Updated question",
+        answer: "Updated answer"
       }
     );
     expect(response.statusCode).toBe(200);
   });
   test("Debería devolver un STATUS 500", async () => {
-    const response = await request(app).put(`/api/faqs/${ObjectIDError}`).send(
+    const response = await request(app).put(`/api/faq/${ObjectIDError}`).send(
       {
-        question: 'This is a update FaQ?',
-        email: 'Yes, this is a update FaQ',
+        question: "Updated question",
+        answer: "Updated answer"
       }
     );
     expect(response.statusCode).toBe(500);
   });
 });
 
-describe("Añadir un contacto", () => {
+describe("Añadir una FAQ", () => {
   test("Debería devolver un STATUS 200", async () => {
-    const response = await request(app).post("/api/faqs/").send(
+    const response = await request(app).post("/api/faq").send(
       {
-        question: 'This is a new FaQ?',
-        email: 'Yes, this is a new FaQ',
+        question: "New question",
+        answer: "New answer"
       }
     );
     expect(response.statusCode).toBe(200);
   });
   test("Debería devolver un STATUS 500", async () => {
-    const response = await request(app).post("/api/faqs/").send(
+    const response = await request(app).post("/api/faq").send(
       {
-        question: 'This is a new FaQ?',
+        question: "New question"
+        // Falta el campo 'answer' para provocar un error
       }
     );
     expect(response.statusCode).toBe(500);
   });
 });
-

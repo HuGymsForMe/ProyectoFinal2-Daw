@@ -5,6 +5,7 @@ import Footer from "../../components/Footer";
 
 import { useSeo } from "../../hooks/useSeo";
 
+// ******* PÁGINA DE POLÍTICA DE COOKIES ******* //
 function CookiesPolicyPage() {
 
     useSeo({

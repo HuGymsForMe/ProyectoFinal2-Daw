@@ -3,6 +3,7 @@ import Footer from "../../components/Footer";
 
 import { useSeo } from "../../hooks/useSeo";
 
+// ******* PÁGINA DE AVISO LEGAL ******* //
 function LegalNoticePage(){
 
     useSeo({

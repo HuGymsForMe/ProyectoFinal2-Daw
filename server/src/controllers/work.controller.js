@@ -1,6 +1,4 @@
 import Work from "../models/work.model.js";
-import fs from "fs-extra";
-import { uploadImage } from "../libs/cloudinary.js";
 
 // ******* CONTROLADOR PARA QUE EL USUARIO SUBA SUS DATOS (PÁGINA DE TRABAJA CON NOSOTROS) ******* //
 export const sendWork = async(req, res) => {

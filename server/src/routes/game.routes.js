@@ -3,6 +3,7 @@ import { bestGame, bestGamePremium, deleteGame, gamesArea, gamesBar, gamesLine, 
 
 const router = Router();
 
+// ******* ENRUTADO DE LAS PARTIDAS DE LOS USUARIOS ******* //
 router.get("/game", getGames);
 router.post("/game/:id", sendGames);
 router.get("/game/:id", getGame);
