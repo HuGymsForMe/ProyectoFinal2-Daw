@@ -69,8 +69,6 @@ export const register = async (req, res) => {
             if (error) {
                 console.log(error);
                 return res.status(500).json({ message: "No se ha podido enviar el correo de verificación para poder modificar la contraseña." });
-            } else {
-                console.log("Se envió el correo con éxito.")
             }
         });
 
@@ -239,7 +237,6 @@ export const sendVerificationEmail = async(req,res) => {
                 console.log(error);
                 return res.status(500).json({ message: "No se ha podido enviar el correo de verificación para poder modificar la contraseña." });
             } else {
-                console.log('Correo enviado con éxito!!');
                 const passwordHash = await bcryptjs.hash(newPassword, 10);
                 const userUpdated = await User.findOneAndUpdate(
                     { email },
