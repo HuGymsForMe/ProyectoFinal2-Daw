@@ -1,5 +1,7 @@
 import { lazy } from "react";
 
+import { useSeo } from "../hooks/useSeo";
+
 const Navbar = lazy(() => import("../components/Navbar"));
 const Footer = lazy(() => import("../components/Footer"));
 
@@ -8,6 +10,12 @@ import CaraTriste from "../assets/triste.png";
 
 // ******* PÁGINA DE ERROR 404 *******//
 function NotFoundPage () {
+
+    useSeo({
+        title: "Página no encontrada | AutoescuelaFast",
+        description: "No se ha podido encontrar la página que usted ha solicitado ver."
+    })
+
     return(
         <>
         <Navbar/>

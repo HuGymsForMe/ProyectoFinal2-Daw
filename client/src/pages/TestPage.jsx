@@ -174,11 +174,11 @@ function TestPage(){
                 { showToast && (
                     <ToastErrors onClose={closeToast} error={true}>Te quedan preguntas sin contestar</ToastErrors>
                 ) }
-                { showToast && checked && (
-                    <ToastErrors onClose={closeToast} error={false}>Felicidades ya eres Usuario Premium!! &#128586;&#128586;</ToastErrors>
-                ) }
             </main>
             { seeModalCorrection ? <ModalChecked misses={30-successes} pass={pass} format_stopwatch={formatStopwatch} onClose={closeModal} /> : null}
+            { showToast && checked && (
+                    <ToastErrors className="z-50" onClose={closeToast} error={false}>Felicidades ya eres Usuario Premium!! &#128586;&#128586;</ToastErrors>
+                ) }
         <Footer />
         </>
     )
