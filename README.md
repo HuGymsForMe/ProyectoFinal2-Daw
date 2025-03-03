@@ -22,7 +22,7 @@ Instalamos las dependencias tanto en servidor como en cliente:
 cd server | npm i
 ```
 ```bash
-cd server | npm i
+cd client | npm i
 ```
 Arrancamos la aplicación:
 ```bash
