@@ -30,8 +30,8 @@ npm run dev
 ```
 
 ## 💻 Tecnologías utilizadas para este proyecto
-- Stack MERN (MongoDB, Express.js, React.js, Node.js)
-- HTML, CSS(Tailwind)
+- 🖥️ Stack MERN (MongoDB, Express.js, React.js, Node.js)
+- 🎨 HTML, CSS (Tailwind)
 
 ## 📚 ¿Porqué este proyecto y no otro?
 <div>
@@ -39,4 +39,4 @@ npm run dev
     hecho con Python y mejorarlo, dandole otro enfoque.</p>
 </div>
 
-👉 **[Ver versión web del proyecto](https://github.com/HuGymsForMe/AutoescuelaFast)**
+👉 **[Ver aplicación de escritorio del proyecto](https://github.com/HuGymsForMe/AutoescuelaFast)**
