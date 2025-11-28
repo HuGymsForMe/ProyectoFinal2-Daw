@@ -29,9 +29,14 @@ Arrancamos la aplicación:
 npm run dev
 ```
 
+## 💻 Tecnologías utilizadas para este proyecto
+- Stack MERN (MongoDB, Express.js, React.js, Node.js)
+- HTML, CSS(Tailwind)
+
 ## 📚 ¿Porqué este proyecto y no otro?
 <div>
     <p>Este proyecto está desarrollado como trabajo final del Grado Superior de Desarrollo de Aplicaciones Web, pensé que sería buena idea trasladar mi anterior proyecto
     hecho con Python y mejorarlo, dandole otro enfoque.</p>
-    <p><a href="https://github.com/HuGymsForMe/AutoescuelaFast">Anterior proyecto</a></p>
 </div>
+
+👉 **[Ver versión web del proyecto](https://github.com/HuGymsForMe/AutoescuelaFast)**
